@@ -1,0 +1,2 @@
+Actividad menu:
+en esta actividad se muestran los botones para ir a la actividad donde esta e listado de botones y el boton de servicios para ver los servicios
