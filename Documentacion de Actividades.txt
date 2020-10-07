@@ -1,0 +1,20 @@
+1° Sprint 
+Documentación de actividades
+
+*Durante la semana del 7 al 14 de octubre 
+se debe completar el documento donde se detalla la siguiente información sobre las posibles actividades del sistema:
+
+1-Nombre de la actividad.
+2-Funcionalidad principal
+3-Si recibe datos, de que actividades.
+4-Si envía datos, a que actividades envía esos datos.
+
+1_quienSoy.kt
+ _registro.kt
+ _login.kt
+ _main.kt
+ _lectorQR.kt
+ _listView.kt
+ _detalleABM.kt
+
+2
