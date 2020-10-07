@@ -1,0 +1,17 @@
+Actividad de registro:
+
+Vamos a poder registrarnos, guardando los datos en Firebase Authentication.
+
+Actividad de Login:
+
+Vamos a poder loguearno usando las credenciales cuando nos logueamos.
+
+Actividad de Menu principal:
+
+Vamos a ver las distintas acciones disponibles dentro de la app
+Sobre mi
+Agregar productos
+Consultar productos
+Historicos
+
+
