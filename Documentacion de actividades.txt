@@ -1,2 +1,23 @@
-navadardo
-documentacion de actividades
+DonAR
+
+1-nombre de la actividad.
+MainActivity.kt
+ListadoDondeDonar.kt
+ingresoDondeDonar.kt
+hacerDonacion
+MiPerfil.kt
+
+
+
+2-funcionalidad principal
+Conectar donantes con lugares que necesitan donaciones
+
+3-si recibe datos, de que actividades.
+MainActivity.kt
+ingresoDondeDonar.kt
+MiPerfil.kt
+ListadoDondeDonar.kt
+
+4-si envía datos, a que actividades envía esos datos.
+MiPerfil.kt
+ListadoDondeDonar.kt
