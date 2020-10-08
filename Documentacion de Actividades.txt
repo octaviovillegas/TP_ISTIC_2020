@@ -17,4 +17,4 @@ se debe completar el documento donde se detalla la siguiente información sobre 
  _listView.kt
  _detalleABM.kt
 
-2
+2_3_4_"quienSoy.ky" presenta al desarrollador y sus redes sociales,mediante btnContinuar sigue en la "login.kt" donde si esta registrado accede al "main.kt" sino de acceder previamente a registrarse en firebase para poder utilizar la app. En la "main.kt" dos botones dan las opciones de cargar manualmente los productos mediante el acceso a "listView.kt" donde hay un boton para agregar producto, que dirige al "detalleABM.kt" y alli se puede agregar nombre, precio, descripcion, imagen y codigo del producto a la base de datos y que sera visualizado en el listView. la otra opcion que nos permite es ir a "lectorQR.kt" y escanear el codigo del envase del producto para ser pasado directamente al editText correspondiente al codigo de producto ya sea para su carga como para su busqueda en la base de datos para en "detalle.kt" poder modificar, dar de alta de baja o simplemente ver sus detalles.
