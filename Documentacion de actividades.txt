@@ -1,23 +1,34 @@
 DonAR
 
 1-nombre de la actividad.
-MainActivity.kt
-ListadoDondeDonar.kt
-ingresoDondeDonar.kt
-hacerDonacion
-MiPerfil.kt
 
+MainActivity.kt (bienvenida, acceso, login, registro)
+
+listadoDondeDonar.kt (listado de lugares, comedores, organizaciones que necesitan donaciones)
+
+listadoDonados.kt (detalle de lo listado en listadoDondeDonar.kt)
+
+ingresoDonados.kt (alta de lugares, comedores, organizaciones)
+
+hacerDonacion (efectuar donacion desde listadoDonados.kt)
+
+miPerfil.kt (perfil de usuarios ya sean donantes o donados)
+
+editarMiPerfil.kt (editar perfil de usuarios ya sean donantes o donados)
+
+guardarFavoritosDonados.kt
 
 
 2-funcionalidad principal
+
 Conectar donantes con lugares que necesitan donaciones
 
+
 3-si recibe datos, de que actividades.
-MainActivity.kt
-ingresoDondeDonar.kt
-MiPerfil.kt
-ListadoDondeDonar.kt
+
+guardarFavoritosDonados.kt (recibe de listadoDonados.kt)
+
 
 4-si envía datos, a que actividades envía esos datos.
-MiPerfil.kt
-ListadoDondeDonar.kt
+
+listadoDonados.kt (envía datos a hacerDonacion.kt)
