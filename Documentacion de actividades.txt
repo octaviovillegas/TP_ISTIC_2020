@@ -1,17 +1,103 @@
-Actividad de registro:
+1er sprint Documentación de actividades
+durante la semana del 7 al 14 de octubre 
+se debe completar el documento donde se detalla la siguiente información sobre las posibles actividades del sistema
+1-nombre de la actividad.
+2-funcionalidad principal
+3-si recibe datos, de que actividades.
+4-si envía datos, a que actividades envía esos datos.
+-------------------------------------------------------------------------------------------------------------------
+
+
+Descripcion
+
+La idea principal es poder recolectar info de las compras que hacemos en el supermercado.
+Luego podremos en base a estos datos, saber el ultimo precio pagado por un articulo en particular, donde fue la compra, cuantos items compramos.
+Podremos ver el total de las ultimas compras, ya sea por mes, supermercado, etc.
+Todos los datos seran recopilados y guardados en firebase.
+
+/----Actividad de Registro:
 
 Vamos a poder registrarnos, guardando los datos en Firebase Authentication.
 
-Actividad de Login:
+Recibe datos del usuario:
+	-Nombre
+	-Apellido
+	-Username
+	-Password
+	-Email
 
-Vamos a poder loguearno usando las credenciales cuando nos logueamos.
+No recibe datos de otra actividad
 
-Actividad de Menu principal:
 
-Vamos a ver las distintas acciones disponibles dentro de la app
+		/----Actividad de Login----/
+
+Vamos a poder loguearnos usando las credenciales creadas en el registro.
+
+Recibe datos del usuario:
+	-Username
+	-Password
+
+Una vez logueado envia los datos de sesion a las demas actividades.
+
+
+		/----Actividad de Menu principa----/
+
+Vamos a ver las distintas funcionalidades disponibles dentro de la app.
+
 Sobre mi
-Agregar productos
+Comenzar compra
 Consultar productos
 Historicos
 
 
+		/----Actividad de Sobre mi----/
+
+En esta actividad podremos ver los datos del desarrollador.
+	-Nombre
+	-Apellido
+	-Email
+	-Github
+
+Recibe datos de sesion de la actividad Login.
+
+
+		/----Actividad de Comenzar compra----/
+
+En esta actividad comenzaremos a agregar productos con los datos elegidos que pueden ser los siguientes:
+	-Nombre producto--------(obligatorio)
+	-Precio-----------------(obligatorio)
+	-Lugar de compra--------(obligatorio)
+	-Foto
+	-Cantidad
+	-Promocion de compra
+
+Recibe datos de sesion de la actividad Login.
+Envia datos a la activiad Listado de Compra Actual.
+
+
+		/----Actividad de Listado de Compra Actual----/
+
+En esta actividad podremos ver los productos de la compra en curso listados por nombre, precio, cantidad y foto de tener una cargada.
+
+Recibe datos de sesion de la actividad Login y los datos de los productos de la actividad Comenzar compra.
+
+
+		/----Actividad de Consultar productos----/
+
+En esta actividad podremos consultar un producto en particular con distintos filtros.
+
+Se podra filtrar por los siguientes campos:
+	-Fecha
+	-Lugar de compra
+	-Rango de precio
+
+Recibe datos de sesion de la actividad Login.
+
+		/----Actividad de Historicos----/
+
+Aqui podremos buscar las listas de compras completas historicamente.
+
+Se podra filtrar por los siguientes campos:
+	-Fecha
+	-Lugar de compra
+	-Rango de precio
