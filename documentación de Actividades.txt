@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Proyecto risposisergio: Ferretería Ferretex
 
 Screen 1
@@ -27,3 +28,8 @@ Screen 4
 
 
 
+=======
+Proyecto App Ferre-Tex
+
+Actividades 7/10/2020
+>>>>>>> badea753b8b0727c3a3a173dfe3d879baa11641b
