@@ -1,31 +1,38 @@
 <<<<<<< HEAD
 Proyecto risposisergio: Ferretería Ferretex
 
-Screen 1
-1-registro
-2-Hacer el registro del usuario en Firebase
-3-Recibe datos de un user
-4-En principio no
 
-Screen 2
-1-listadoProductos
-2-Mostrar los productos para vender
-3-No recibe datos
-4-Envía datos a la pantalla detalle
+Pantalla 1
+Splash Screen
 
-Screen 3
-1-detalleProducto
-2-Muestra las características de cada producto
-3-Recibe los datos de la pantalla listadoProductos
-4-Envía los datos a Firebase
+Pantalla 2
+Registro
+Recibe datos del usuario
+Hace el Registro de usuario
 
-Screen 4
+Pantalla 3
+Login
+Recibe datos del usuario
+Hace el Login
+
+Pantalla 4
+Listado de Productos
+No recibe datos
+envía datos a pantalla detalle
+
+Pantalla 5
+Detalle de Producto
+recibe los datos de la lista del producto
+no envía datos
+
+Screen 6
 1-compra
 2-Pantalla para arreglar el pago con el cliente
 3-Recibe los datos de la pantalla listado
 4-Por ahora lo pienso en forma emulada 
 
-
+Pantalla 7
+ABM del producto
 
 
 =======
