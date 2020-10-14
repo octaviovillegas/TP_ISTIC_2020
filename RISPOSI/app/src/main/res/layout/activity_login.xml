@@ -1,74 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ferretex"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity"
+    android:padding="25dp"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/loginImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pavoreal"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/buenard"
+        android:text="Bienvenido a FerreTex!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans" />
 
-        <EditText
-            android:id="@+id/txtName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese su Nombre"
-            android:inputType="textPersonName"
-            android:textColor="@android:color/background_light"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <EditText
-            android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese su Contraseña"
-            android:inputType="textPassword"
-            android:textColor="@android:color/background_light"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/continuarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesion para continuar"
+        android:textSize="24sp"
+        android:fontFamily="@font/buenard"
+        android:transitionName="iniciaSesionTextTrans"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/btnAceptar"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
-            android:text="ACEPTAR" />
+            android:layout_marginBottom="12dp"
+            android:id="@+id/usuarioTextField"
+            android:transitionName="emailInputTextTrans"
+            android:hint="Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/buenard"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/contrasenaTextField"
+            android:hint="Contraseña"
+            android:transitionName="passwordInputTextTrans"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/buenard"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/buenard"
+            android:text="Olvidaste tu contraseña?"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACEPTAR"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            android:transitionName="buttonSignInTrans"/>
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/buenard"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="Eres nuevo? Registrate!"
+            android:transitionName="newUserTrans"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNuevoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            android:transitionName="newUserTrans"/>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
