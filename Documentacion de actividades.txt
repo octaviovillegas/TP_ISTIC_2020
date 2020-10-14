@@ -18,6 +18,8 @@ editarMiPerfil.kt (editar perfil de usuarios ya sean donantes o donados)
 
 guardarFavoritosDondeDonar.kt
 
+donacionesRecibidas.kt (se ve como un filtro un listado de las donaciones por destinatario)
+
 
 2-funcionalidad principal
 
