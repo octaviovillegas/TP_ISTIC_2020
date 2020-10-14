@@ -6,17 +6,17 @@ MainActivity.kt (bienvenida, acceso, login, registro)
 
 listadoDondeDonar.kt (listado de lugares, comedores, organizaciones que necesitan donaciones)
 
-listadoDonados.kt (detalle de lo listado en listadoDondeDonar.kt)
+listadoDondeDetalle.kt (detalle de lo listado en listadoDondeDonar.kt)
 
 ingresoDonados.kt (alta de lugares, comedores, organizaciones)
 
-hacerDonacion (efectuar donacion desde listadoDonados.kt)
+hacerDonacion (efectuar donacion desde listadoDondeDetalle.kt)
 
 miPerfil.kt (perfil de usuarios ya sean donantes o donados)
 
 editarMiPerfil.kt (editar perfil de usuarios ya sean donantes o donados)
 
-guardarFavoritosDonados.kt
+guardarFavoritosDondeDonar.kt
 
 
 2-funcionalidad principal
@@ -26,9 +26,10 @@ Conectar donantes con lugares que necesitan donaciones
 
 3-si recibe datos, de que actividades.
 
-guardarFavoritosDonados.kt (recibe de listadoDonados.kt)
+guardarFavoritosDonados.kt (recibe de listadoDondeDetalle.kt)
 
 
 4-si envía datos, a que actividades envía esos datos.
 
-listadoDonados.kt (envía datos a hacerDonacion.kt)
+listadoDondeDetalle.kt (envía datos a hacerDonacion.kt)
+
