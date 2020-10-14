@@ -6,32 +6,39 @@ Pantalla 1
 Splash Screen
 
 Pantalla 2
-Registro
-Recibe datos del usuario
-Hace el Registro de usuario
-
-Pantalla 3
 Login
 Recibe datos del usuario
 Hace el Login
+
+Pantalla 3
+Registro
+Recibe datos del usuario
+Hace el Registro de usuario
 
 Pantalla 4
 Listado de Productos
 No recibe datos
 envía datos a pantalla detalle
+envía datos a pantalla filtros
+Filtros de Productos por categoría
+Filtros de Productos por cliente
 
 Pantalla 5
-Detalle de Producto
+Recibe datos de Listado
+Filtros del dueño
+
+Pantalla 6
+Detalle de Producto para cliente
 recibe los datos de la lista del producto
 no envía datos
 
-Screen 6
-1-compra
-2-Pantalla para arreglar el pago con el cliente
-3-Recibe los datos de la pantalla listado
-4-Por ahora lo pienso en forma emulada 
-
 Pantalla 7
+compra
+Pantalla para arreglar el pago con el cliente
+Recibe los datos de la pantalla listado
+Por ahora lo pienso en forma emulada 
+
+Pantalla 8
 ABM del producto
 
 

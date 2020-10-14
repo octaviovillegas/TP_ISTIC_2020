@@ -27,8 +27,13 @@ class MainActivity : AppCompatActivity() {
         deTextView.animation = animacion2
         risposiTextView.animation = animacion2
         logoImageView.animation = animacion1
+
         Handler().postDelayed({
             val intent = Intent(this@MainActivity, LoginActivity::class.java)
+            startActivity(intent)
+
+
+            /*
             val pairs: Array<Pair<*, *>?> = arrayOfNulls(2)
             pairs[0] = Pair<View, String>(
                 logoImageView,
@@ -36,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             )
             pairs[1] = Pair<View, String>(risposiTextView, "textTrans")
             //Código para ver si esta la versión correcta
-            /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 val options = ActivityOptions.makeSceneTransitionAnimation(this@MainActivity, *pairs)
                 startActivity(intent, options.toBundle())
             } else {
