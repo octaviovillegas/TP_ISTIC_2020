@@ -26,7 +26,7 @@ Conectar donantes con lugares que necesitan donaciones
 
 3-si recibe datos, de que actividades.
 
-guardarFavoritosDonados.kt (recibe de listadoDondeDetalle.kt)
+gguardarFavoritosDondeDonar.kt (recibe de listadoDondeDetalle.kt)
 
 
 4-si envía datos, a que actividades envía esos datos.
