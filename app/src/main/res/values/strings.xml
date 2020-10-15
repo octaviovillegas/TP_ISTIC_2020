@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ListaDeCompras</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Registrate</string>
+    <string name="btnVolver">Volver</string>
+    <string name="btnComezar">Jugar</string>
+    <string name="btnAdivinar">Adivinar</string>
+    <string name="btnContar">Contar</string>
+    <string name="btnNumeroSecreto">» Numero Secreto</string>
+    <string name="btnContador">Contador «</string>
+    <string name="btnSobreMi">Sobre Mi</string>
+    <string name="txtNombre">Ezequiel Rosso</string>
+    <string name="txtGithub">https://github.com/henchit0/Istic-Android-ejercicios</string>
+    <string name="txtMail">erosso@iiconcepcion.edu.ar</string>
+    <string name="txtLegajo">Legajo: 2767</string>
+    <string name="txtMsjAyuda1">• Presiona Jugar para comenzar</string>
+    <string name="txtMsjAyuda2">• El numero secreto va de 1 a 50</string>
+    <string name="txtMsjAyuda3">• Tienes 5 intentos para adivinar el numero</string>
+    <string name="txtMsjAyudaContador">• Presiona el boton cada vez que quieras contar</string>
 </resources>
