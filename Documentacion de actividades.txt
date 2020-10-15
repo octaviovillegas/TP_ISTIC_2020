@@ -2,13 +2,13 @@ DonAR
 
 1-nombre de la actividad.
 
-MainActivity.kt (bienvenida, acceso, login, registro)
+MainActivity.kt (bienvenida, acceso, login, registro) (Login y/o Registro)
 
-listadoDondeDonar.kt (listado de lugares, comedores, organizaciones que necesitan donaciones)
+listadoDondeDonar.kt (listado de lugares, comedores, organizaciones que necesitan donaciones) (Dónde Donar)
 
-listadoDondeDetalle.kt (detalle de lo listado en listadoDondeDonar.kt)
+listadoDondeDetalle.kt (detalle de lo listado en listadoDondeDonar.kt) (Detalle Dónde Donar)
 
-ingresoDondeDonar.kt (alta de lugares, comedores, organizaciones) (login)
+ingresoDondeDonar.kt (alta de lugares, comedores, organizaciones) (Agregar Lugar Dónde Donar)
 
 hacerDonacion (efectuar donacion desde listadoDondeDetalle.kt) (Donar)
  
