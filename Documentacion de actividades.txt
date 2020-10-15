@@ -8,17 +8,19 @@ listadoDondeDonar.kt (listado de lugares, comedores, organizaciones que necesita
 
 listadoDondeDetalle.kt (detalle de lo listado en listadoDondeDonar.kt)
 
-ingresoDondeDonar.kt (alta de lugares, comedores, organizaciones)
+ingresoDondeDonar.kt (alta de lugares, comedores, organizaciones) (login)
 
-hacerDonacion (efectuar donacion desde listadoDondeDetalle.kt)
+hacerDonacion (efectuar donacion desde listadoDondeDetalle.kt) (Donar)
+ 
+miPerfil.kt (perfil de usuarios ya sean donantes o donados) (Perfil)
 
-miPerfil.kt (perfil de usuarios ya sean donantes o donados)
+editarMiPerfil.kt (editar perfil de usuarios ya sean donantes o donados) (Editar Perfil)
 
-editarMiPerfil.kt (editar perfil de usuarios ya sean donantes o donados)
+guardarFavoritosDondeDonar.kt (Favoritos)
 
-guardarFavoritosDondeDonar.kt
+donacionesRecibidas.kt (se ve como un filtro un listado de las donaciones por destinatario) (Mis Donaciones Recibidas)
 
-donacionesRecibidas.kt (se ve como un filtro un listado de las donaciones por destinatario)
+donacionesRealizadas.kt (se ve como un filtro un listado de las donaciones por usuario) (Mis Donaciones Realizadas)
 
 
 2-funcionalidad principal
