@@ -64,6 +64,7 @@
         app:layout_constraintVertical_bias="0.77" />
 
     <ImageView
+        android:onClick="Logout"
         android:id="@+id/imgLogOut"
         android:layout_width="30dp"
         android:layout_height="30dp"
