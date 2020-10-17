@@ -8,6 +8,8 @@ import android.text.Editable
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.widget.Button
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
 
@@ -87,7 +89,7 @@ class MainActivity : AppCompatActivity() {
                     if (it.isSuccessful)
                     {
                         val usrlogin = txtUsuarioLogin.text
-                        val menuIntent = Intent(this, Menu::class.java)
+                        val menuIntent = Intent(this, QuienSoy::class.java)
                         menuIntent.putExtra("usuarioLogueado", "$usrlogin")
                         startActivity(menuIntent)
                     }else

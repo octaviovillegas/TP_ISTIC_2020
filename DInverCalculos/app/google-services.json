@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "54028828733",
+    "firebase_url": "https://dinvercalculos.firebaseio.com",
+    "project_id": "dinvercalculos",
+    "storage_bucket": "dinvercalculos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54028828733:android:67f83882fb9fde6b2eaa54",
+        "android_client_info": {
+          "package_name": "com.example.dinvercalculos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54028828733-eu2bmdt6r55ej9cesguunrspo0invdr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi_10Z5CWLNyp1G6uxpLvhXsamfd46rkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54028828733-eu2bmdt6r55ej9cesguunrspo0invdr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
