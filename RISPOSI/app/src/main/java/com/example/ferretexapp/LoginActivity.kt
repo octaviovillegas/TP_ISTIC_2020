@@ -10,10 +10,14 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_registro.*
 
 
 class LoginActivity : AppCompatActivity() {
@@ -25,18 +29,32 @@ class LoginActivity : AppCompatActivity() {
     //var contrasenaTextField: TextInputLayout? = null
     //var inicioSesion: MaterialButton? = null
 
+    private lateinit var auth: FirebaseAuth
+    private var user: FirebaseUser? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        auth = FirebaseAuth.getInstance()
+
         val loginImageView = findViewById<ImageView>(R.id.loginImageView)
         val bienvenidoLabel = findViewById<TextView>(R.id.bienvenidoLabel)
         val continuarLabel = findViewById<TextView>(R.id.continuarLabel)
         //val usuarioTextField = findViewById<TextView>(R.id.usuarioTextField)
         //val contrasenaTextField = findViewById<TextView>(R.id.contrasenaTextField)
-        val inicioSesion = findViewById<TextView>(R.id.inicioSesion)
+        val inicioSesion = findViewById<MaterialButton>(R.id.inicioSesion)
         val nuevoUsuario = findViewById<TextView>(R.id.nuevoUsuario)
         val btnNuevoUsuario = findViewById<Button>(R.id.btnNuevoUsuario)
 
+        //////////////////////////////////////////////////////////////////////////////////
+        //Firebase Autentication Login
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
+
+        //Setup
+        val bundle = intent.extras
+        val email = bundle?.getString("email")
+        val provider = bundle?.getString("provider")
+        //setupLogin(email ?: "", provider ?: "")
+        ////////////////////////////////////////////////////////////////////////////////////////
 
         val animacionParaArriba = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba)
         loginImageView.animation = animacionParaArriba;
@@ -46,13 +64,19 @@ class LoginActivity : AppCompatActivity() {
         inicioSesion.animation = animacionParaArriba;
         nuevoUsuario.animation = animacionParaArriba;
 
-        btnNuevoUsuario.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this@LoginActivity, Registro::class.java)
 
 
+        btnLogin.setOnClickListener() {
+            val intent = Intent(this, Registro::class.java)
+            startActivity(intent)
+        }
+    }
+}
+
+    /*
 
             //val pairs: Array<Pair<*, *>?> = arrayOfNulls(7)
-            /*this.loginImageView.animation = logoImageTrans
+            this.loginImageView.animation = logoImageTrans
             pairs[0] = Pair<View?, String>(
                 loginImageView,
                 "logoImageTrans"
@@ -88,7 +112,48 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 startActivity(intent)
                 finish()
-            }*/
+            }
         })
     }
 }
+
+        //Función para loguearse
+        private fun setupLogin(email: String, provider:String) {
+            title = "Inicio"
+            btnLogin.setOnClickListener({
+                if (emailEditText.text.toString().isNotEmpty() && passwordEditText.text.toString().isNotEmpty()) {
+                    FirebaseAuth.getInstance().SignInWithEmailAndPassword(
+                        emailEditText.text.toString(),
+                        passwordEditText.text.toString()
+                    ).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            showHome(it.result?.user?.email? = "", ProviderType.BASIC)
+                        } else {
+                            showAlert()
+                        }
+                    }
+                }
+            })
+        }
+            /////////////////////////////////////////////////////////////////////////////////////
+
+    private fun showAlert(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error autenticando al usuario")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showHome(email:String, provider: ProviderType){
+        val homeIntent = Intent (this, LoginActivity::class.java).apply {
+            putExtra("email",email)
+            putExtra("provider",provider.name)
+        }
+        startActivity(homeIntent)
+
+    }
+}
+
+        */

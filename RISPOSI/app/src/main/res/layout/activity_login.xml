@@ -88,6 +88,16 @@
             android:textColor="@android:color/darker_gray"
             android:textSize="20dp" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/inicioSesion"
             android:layout_width="match_parent"
