@@ -12,8 +12,6 @@
         <activity android:name=".QuienSoy"></activity>
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
-            android:name=".MainActivity"
-            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
