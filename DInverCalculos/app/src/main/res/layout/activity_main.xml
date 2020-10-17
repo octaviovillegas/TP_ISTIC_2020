@@ -1,18 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:backgroundTintMode="multiply"
+    android:hapticFeedbackEnabled="false"
+    android:background="@drawable/fondo1"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/txtUsuarioLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@android:color/background_light"
+        android:editable="true"
+        android:ems="10"
+        android:fontFamily="@font/archivo_black"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txtClaveLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:fontFamily="@font/archivo_black"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        android:scrollbarThumbHorizontal="@android:color/background_light"
+        android:scrollbarThumbVertical="@android:color/background_light"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioLogin" />
+
+    <ImageView
+        android:id="@+id/ivShowHidePass"
+        android:layout_width="42dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_show_password_24dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/txtClaveLogin"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="213dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="76dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtClaveLogin"
+        app:layout_constraintVertical_bias="0.165">
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:background="@android:color/holo_red_dark"
+            android:backgroundTintMode="src_over"
+            android:breakStrategy="high_quality"
+            android:bufferType="normal"
+            android:capitalize="sentences"
+            android:drawableTintMode="screen"
+            android:text="Ingresar"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRegistroLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:autoText="false"
+            android:linksClickable="true"
+            android:longClickable="true"
+            android:text="Registrarme"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
