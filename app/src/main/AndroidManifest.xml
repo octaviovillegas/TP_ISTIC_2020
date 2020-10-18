@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.proyecto2020">
+    package="com.example.tp_istic_2020">
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,7 @@
         <activity android:name=".OkRegistro"></activity>
         <activity android:name=".ActividadRegistro" />
         <activity android:name=".ActividadMenu" />
+        <activity android:name=".ActividadLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Proyecto2020.iml" filepath="$PROJECT_DIR$/.idea/modules/Proyecto2020.iml" group="Proyecto2020" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Proyecto2020/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TP_ISTIC_2020.iml" filepath="$PROJECT_DIR$/.idea/modules/TP_ISTIC_2020.iml" group="TP_ISTIC_2020" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="TP_ISTIC_2020/app" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.proyecto2020
+package com.example.tp_istic_2020
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val btnEntrar : Button =findViewById<Button>(R.id.btnEntrar)
         btnEntrar.setOnClickListener {
-            val intent: Intent = Intent(this, ActividadMenu ::class.java)
+            val intent: Intent = Intent(this, ActividadLogin ::class.java)
             startActivity(intent)
             finish()
         }

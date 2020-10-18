@@ -5,89 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2196F3"
-    tools:context=".ActividadMenu">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="162dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="25dp"
-        android:text="Clave:"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtClave"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="44dp"
-        android:text="Ingresar"
-        app:layout_constraintBottom_toTopOf="@+id/btnInvitado"
-        app:layout_constraintEnd_toStartOf="@+id/btnRegistro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClave" />
-
-    <Button
-        android:id="@+id/btnInvitado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="89dp"
-        android:text="Ingresar como invitado"
+        android:layout_marginBottom="245dp"
+        android:backgroundTint="#171717"
+        android:text="Entrar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btnIngresar"
-        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:id="@+id/textView3"
+        android:layout_width="333dp"
         android:layout_height="0dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="37dp"
-        android:text="Usuario:"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="29dp"
+        android:text="Bienvenidos a la aplicación"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtUsuario"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
+        android:textDirection="firstStrongRtl"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txtClave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="113dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnIngresar"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="196dp"
+        android:text="WE-GO"
+        android:textAlignment="center"
+        android:textColor="#E60808"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <EditText
-        android:id="@+id/txtUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="51dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnIngresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnIngresar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

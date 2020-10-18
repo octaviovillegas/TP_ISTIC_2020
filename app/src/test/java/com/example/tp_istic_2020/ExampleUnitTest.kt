@@ -1,4 +1,4 @@
-package com.example.proyecto2020
+package com.example.tp_istic_2020
 
 import org.junit.Test
 
