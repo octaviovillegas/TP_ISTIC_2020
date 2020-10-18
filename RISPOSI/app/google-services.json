@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "428281566491",
-    "firebase_url": "https://ferretexapp.firebaseio.com",
-    "project_id": "ferretexapp",
-    "storage_bucket": "ferretexapp.appspot.com"
+    "project_number": "115793675303",
+    "firebase_url": "https://ferretex-18f39.firebaseio.com",
+    "project_id": "ferretex-18f39",
+    "storage_bucket": "ferretex-18f39.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:428281566491:android:97aeac2e93aaa6ce042fbe",
+        "mobilesdk_app_id": "1:115793675303:android:b988629b196d8e5650fa02",
         "android_client_info": {
           "package_name": "com.example.ferretexapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "428281566491-39c9fd2r1bn8ejagj10hkco5uorq1cmo.apps.googleusercontent.com",
+          "client_id": "115793675303-jipitk16kuf4kjiqpim1is9vvueik25o.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.ferretexapp",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "428281566491-2s7oubo89c6nnp0fu8b7vgr28p573sbs.apps.googleusercontent.com",
+          "client_id": "115793675303-ihqhhe7rt72vep05lm8jg03p0ljtif6r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBVm-TSAZS3MEYMmUtwMC8BW9VNeF2E8yM"
+          "current_key": "AIzaSyBm4ZQSOwDwFTeuNJ3xDpqI4mJCJIfe6kE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "428281566491-2s7oubo89c6nnp0fu8b7vgr28p573sbs.apps.googleusercontent.com",
+              "client_id": "115793675303-ihqhhe7rt72vep05lm8jg03p0ljtif6r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -69,6 +69,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/buenard"
@@ -96,7 +97,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="ACEPTAR" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/inicioSesion"
@@ -104,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="70dp"
-            android:text="ACEPTAR"
+            android:text="REGISTRAR"
             android:transitionName="buttonSignInTrans" />
 
         <TextView

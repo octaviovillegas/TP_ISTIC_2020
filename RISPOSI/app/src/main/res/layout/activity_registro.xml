@@ -106,7 +106,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/inicioSesion"
+            android:id="@+id/inicioRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -117,7 +117,7 @@
 
 
         <Button
-            android:id="@+id/btnNuevoUsuario2"
+            android:id="@+id/btnVolverLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="INGRESAR"
