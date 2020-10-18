@@ -134,20 +134,20 @@
         app:layout_constraintVertical_bias="0.17">
 
         <Button
-            android:id="@+id/btnNumSec"
+            android:id="@+id/btnMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_red_dark"
-            android:text="Numero Secreto"
+            android:text="Menu"
             android:textColor="@android:color/background_light"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnContador"
+            android:id="@+id/btnSobreApp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_red_dark"
-            android:text="Contador"
+            android:text="Sobre la App"
             android:textColor="@android:color/background_light"
             android:textStyle="bold" />
     </LinearLayout>

@@ -16,7 +16,7 @@
         android:id="@+id/txtUsuarioLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@android:color/background_light"
         android:editable="true"
         android:ems="10"
@@ -71,11 +71,11 @@
         android:id="@+id/imageView"
         android:layout_width="213dp"
         android:layout_height="150dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="32dp"
         android:tint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@android:drawable/ic_lock_lock" />
 
     <LinearLayout
@@ -120,5 +120,21 @@
             android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="D.Inver Calculos"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
