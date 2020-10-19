@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private val AUTH_REQUEST_CODE = 2000
     private var user : FirebaseUser? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun updateUI(currentUser: FirebaseUser?) {
+    private fun updateUI(currentUser: FirebaseUser?){
         if (currentUser != null)
         {
             var user = auth.currentUser
@@ -49,14 +49,13 @@ class MainActivity : AppCompatActivity() {
                 val name = user.displayName
                 val email = user.email
             }
-            ToastMessage("Bienvenido ${user?.email.toString()}!")
+            ToastMessage("Bienvenido ${user?.displayName.toString()}!")
             startActivity(Intent(this,MenuPrincipal::class.java))
             finish()
         }
     }
 
-    private fun logon()
-    {
+    private fun logon(){
         var email = this.txtEmailLogIn.text.toString().trim()
         var pass = this.txtPass.text.toString().trim()
         auth.signInWithEmailAndPassword(email,pass)
@@ -71,8 +70,7 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-    private fun validateForm() : Boolean
-    {
+    private fun validateForm() : Boolean{
         var email = this.txtEmailLogIn.text.toString().trim()
         var pass = this.txtPass.text.toString().trim()
         var flag = true
@@ -101,15 +99,14 @@ class MainActivity : AppCompatActivity() {
         return flag
     }
 
-    public override fun onStart() {
+    public override fun onStart(){
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }
 
-    private fun ToastMessage(message: String)
-    {
+    private fun ToastMessage(message: String){
         Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
     }
 }

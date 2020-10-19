@@ -5,23 +5,15 @@ import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
 import android.view.View
-import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.DBReference
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.TAG
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.ToastMessage
-import com.example.listadecompras.datamodels.User
+import com.example.listadecompras.DataModels.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.UserProfileChangeRequest
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_registro.*
 
 class Registro : AppCompatActivity() {
 
@@ -55,6 +47,7 @@ class Registro : AppCompatActivity() {
         txtTelefono = findViewById(R.id.txtTelefono)
 
     }
+
     fun register(view: View){
         createAccount()
     }
@@ -72,7 +65,7 @@ class Registro : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
             auth.createUserWithEmailAndPassword(emailToFile,passToFile)
                 .addOnCompleteListener(this){
-                    task->
+                    task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
@@ -112,9 +105,7 @@ class Registro : AppCompatActivity() {
             }
     }
 
-
-    private fun userData(name: String, user: String, email: String, phone: String)
-    {
+    private fun userData(name: String, user: String, email: String, phone: String){
         try {
             val dbRef = DBReference()
             val key = dbRef.child("users").push().key
@@ -129,8 +120,7 @@ class Registro : AppCompatActivity() {
         }
     }
 
-    private fun validateForm(name: String, user: String, pass: String, passConfirm: String, email: String, phone: String) : Boolean
-    {
+    private fun validateForm(name: String, user: String, pass: String, passConfirm: String, email: String, phone: String) : Boolean{
         var flag = true
         when {
             name.isEmpty() -> {
@@ -183,8 +173,7 @@ class Registro : AppCompatActivity() {
         return flag
     }
 
-    private fun messageHandler(exceptionMessage: String?)
-    {
+    private fun messageHandler(exceptionMessage: String?){
         when (registerResult) {
             SUCCESS -> {
                 ToastMessage("Registro exitoso!",this)
@@ -200,7 +189,7 @@ class Registro : AppCompatActivity() {
         }
     }
 
-    public override fun onStart() {
+    public override fun onStart(){
         super.onStart()
         val currentUser = auth.currentUser
         updateUI(currentUser)

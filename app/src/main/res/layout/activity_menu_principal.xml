@@ -7,47 +7,69 @@
     android:background="@drawable/background"
     tools:context=".MenuPrincipal">
 
-    <Button
-        android:id="@+id/btnNumeroSecreto"
-        android:layout_width="185dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#05386B"
-        android:fontFamily="@font/advent_pro_semibold"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnNumeroSecreto"
-        android:textColor="#ECECEC"
-        android:textColorHighlight="#05386B"
-        android:textColorHint="#05386B"
-        android:textColorLink="#05386B"
-        app:layout_constraintBottom_toTopOf="@+id/btnAboutMe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnContador"
-        app:layout_constraintVertical_bias="0.479" />
 
     <Button
-        android:id="@+id/btnContador"
+        android:id="@+id/btnComenzarCompra"
         android:layout_width="187dp"
         android:layout_height="60dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="#05386B"
         android:fontFamily="@font/advent_pro_semibold"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/btnContador"
+        android:text="@string/btnComezarCompra"
         android:textAlignment="center"
         android:textColor="#ECECEC"
         android:textColorHighlight="#05386B"
         android:textColorHint="#05386B"
         android:textColorLink="#05386B"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
+        android:onClick="goToCargaProducto"
+        />
+
+    <Button
+        android:id="@+id/btnConsultarProducto"
+        android:layout_width="187dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnConsultarProducto"
+        android:textAlignment="center"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComenzarCompra" />
+
+    <Button
+        android:id="@+id/btnConsultarCompras"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#05386B"
+        android:fontFamily="@font/advent_pro_semibold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btnConsultarCompras"
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#05386B"
+        android:textColorHint="#05386B"
+        android:textColorLink="#05386B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultarProducto" />
+
 
     <Button
         android:id="@+id/btnAboutMe"
         android:layout_width="186dp"
         android:layout_height="60dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#05386B"
         android:fontFamily="@font/advent_pro_semibold"
         android:gravity="center_vertical|center_horizontal"
@@ -60,8 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultarCompras"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:onClick="Logout"

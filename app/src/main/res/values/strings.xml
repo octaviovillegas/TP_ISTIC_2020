@@ -3,11 +3,11 @@
     <string name="btnLogin">Login</string>
     <string name="btnSignUp">Registrate</string>
     <string name="btnVolver">Volver</string>
-    <string name="btnComezar">Jugar</string>
+    <string name="btnComezarCompra">Nueva lista de compras</string>
     <string name="btnAdivinar">Adivinar</string>
     <string name="btnContar">Contar</string>
-    <string name="btnNumeroSecreto">» Numero Secreto</string>
-    <string name="btnContador">Contador «</string>
+    <string name="btnConsultarCompras">» Consultar Compras</string>
+    <string name="btnConsultarProducto">Consultar producto «</string>
     <string name="btnSobreMi">Sobre Mi</string>
     <string name="txtNombre">Ezequiel Rosso</string>
     <string name="txtGithub">https://github.com/henchit0/Istic-Android-ejercicios</string>

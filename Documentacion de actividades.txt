@@ -21,10 +21,10 @@ Vamos a poder registrarnos, guardando los datos en Firebase Authentication.
 
 Recibe datos del usuario:
 	-Nombre
-	-Apellido
 	-Username
 	-Password
 	-Email
+	-Telefono
 
 No recibe datos de otra actividad
 

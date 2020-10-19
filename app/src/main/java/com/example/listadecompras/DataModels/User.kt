@@ -1,4 +1,4 @@
-package com.example.listadecompras.datamodels
+package com.example.listadecompras.DataModels
 
 import com.google.firebase.database.Exclude
 import com.google.firebase.database.IgnoreExtraProperties
