@@ -20,13 +20,14 @@ class ActividadLogin : AppCompatActivity() {
         val btnIr : Button =findViewById<Button>(R.id.btnIr)
         val lblUsuario : EditText =findViewById<EditText>(R.id.lblUsuario)
         val lblPass : TextView =findViewById<TextView>(R.id.lblPass)
-
-        btnRegistrar.setOnClickListener {
-            val intent2: Intent = Intent(this, ActividadRegistro ::class.java)
-            startActivity(intent2)
+        val btnInvitado : Button =findViewById<Button>(R.id.btnInvitado)
+        btnInvitado.setOnClickListener {
+            val intent: Intent = Intent(this, ActividadMenu ::class.java)
+            startActivity(intent)
             finish()
-
         }
+
+
         btnIr.setOnClickListener {
             if (lblUsuario.text.toString().isEmpty() or lblPass.text.toString().isEmpty())
             {

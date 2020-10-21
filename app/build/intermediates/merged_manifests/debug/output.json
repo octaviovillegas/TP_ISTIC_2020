@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.example.tp_istic_2020",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "app-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.example.tp_istic_2020",
+        "split": "",
+        "minSdkVersion": "24"
+      }
+    }
+  ]
+}

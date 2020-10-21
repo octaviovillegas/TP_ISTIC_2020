@@ -2,8 +2,21 @@
 2-funcionalidad principal
 3-si recibe datos de que actividades
 4-si envia datos a que acividades envia esos datos
-Actividad inicial:permitir ingresar o registrarse
-Actividad RegistroMascota:Registrar usuarios para que puedan usar la aplicacion, no recibe datos de ninguna actividad ni tmapoco envia a otra actividad
-Actividad LoginMascota: Permite el ingreso a la app
-Actividad Paseadores: Muestra el listado de paseadores/cuidadores disponibles, envia datos a actividad detalles una vez que se selecciona el item
-Actividad detallesPaseadores: Muestra las especificaciones del paseador seleccionado,recibe datos de la actividad paseadores
+**************Idea general de la applicacion**************
+Mi propuesta para esta aplicacion es para los dueños de mascotas.
+Para que tengan organizada en un listado las cosas de su mascota. Tanto como prendas que tienen, sacarle fotos, contar con un mapa por alguna emergencia(por ejemplo ir a un veterinario de urgencia) o tambien todo lo que tenga que ver con el tema de mascotas.
+**************				    **************
+Actividad inicial:permitir el ingreso a la app,pantalla de inicio lleva a la actividadLogin
+
+ActividadLogin:Opcion de ingresar si esta registrado, de registrarse o de entrar como invitado,no recibe datos
+
+ActividadMenu:Permite elegir entre diferentes opciones(se esta viendo que hacer),una es ubicacion,envia el ok que lleva a la actividad gps
+
+Actividad Gps:Recibe de menu el ok para buscar una direccion y esta actividad te lleva al mapa del gps con la direccion buscada
+
+
+Actividad Registro:Registro de usuario que no esta logiado
+
+ActividadOkRegistro: Funcion de registro exitoso, te lleva a la ActividaLogin para poder ingresar a la app
+
+

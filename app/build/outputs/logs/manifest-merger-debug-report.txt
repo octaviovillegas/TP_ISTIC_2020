@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e65d32e283675070d8a549e97da10b7\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\284a2a218f7f6f43d29c2ab8e18ab1ed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\c8059d760c519082e9e1ba7696fe7cb2\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9946d3e5b71c1d22b6ed0234058606a4\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02970b4ed63a7e4c8fac246850101806\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d89f5ebf8b568de855e5c904c0dd1a36\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3ec108f2860a9f60bc7864ce9886cfe9\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5a72348c5931a3728e1fbff4c1fc8fcc\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34a78877b19be9b2385f74c6884a5c83\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\4758bd8d280125927d04f0616d0e9bd1\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e0bc914ab68d073ea7fa6d73f6db120\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5ce33a2b59e728956b1c5e11f2fa2a8c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02798deba80efca9ba86f44198fca25b\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\05523579f0a67aa331a02def998c1e30\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7fd215c27609b5ee5564ac876b27f977\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d2787d4b71a473c2e246b08e233993a0\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34d48c4308e9a53c56122ca2ce28a1f9\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3b0b05070bc9286d52a6b3c810b8c821\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\aab15b69fca1ffde3f55c4793eabe4f8\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7d01e9386d69a672da8ac3ffe9c7d5f1\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-26:12
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:5:5-24:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02798deba80efca9ba86f44198fca25b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02798deba80efca9ba86f44198fca25b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.tp_istic_2020.ActividadGps
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:9-59
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:19-47
+activity#com.example.tp_istic_2020.OkRegistro
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:9-48
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:19-45
+activity#com.example.tp_istic_2020.ActividadRegistro
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:9-55
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:19-52
+activity#com.example.tp_istic_2020.ActividadMenu
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:9-51
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:19-48
+activity#com.example.tp_istic_2020.ActividadLogin
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:9-52
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:19-49
+activity#com.example.tp_istic_2020.MainActivity
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:27-74
+uses-sdk
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e65d32e283675070d8a549e97da10b7\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e65d32e283675070d8a549e97da10b7\jetified-core-ktx-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\284a2a218f7f6f43d29c2ab8e18ab1ed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\284a2a218f7f6f43d29c2ab8e18ab1ed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\c8059d760c519082e9e1ba7696fe7cb2\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\c8059d760c519082e9e1ba7696fe7cb2\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9946d3e5b71c1d22b6ed0234058606a4\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9946d3e5b71c1d22b6ed0234058606a4\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02970b4ed63a7e4c8fac246850101806\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02970b4ed63a7e4c8fac246850101806\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d89f5ebf8b568de855e5c904c0dd1a36\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d89f5ebf8b568de855e5c904c0dd1a36\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3ec108f2860a9f60bc7864ce9886cfe9\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3ec108f2860a9f60bc7864ce9886cfe9\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5a72348c5931a3728e1fbff4c1fc8fcc\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5a72348c5931a3728e1fbff4c1fc8fcc\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34a78877b19be9b2385f74c6884a5c83\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34a78877b19be9b2385f74c6884a5c83\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\4758bd8d280125927d04f0616d0e9bd1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\4758bd8d280125927d04f0616d0e9bd1\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e0bc914ab68d073ea7fa6d73f6db120\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e0bc914ab68d073ea7fa6d73f6db120\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5ce33a2b59e728956b1c5e11f2fa2a8c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\5ce33a2b59e728956b1c5e11f2fa2a8c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02798deba80efca9ba86f44198fca25b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\02798deba80efca9ba86f44198fca25b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\05523579f0a67aa331a02def998c1e30\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\05523579f0a67aa331a02def998c1e30\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7fd215c27609b5ee5564ac876b27f977\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7fd215c27609b5ee5564ac876b27f977\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d2787d4b71a473c2e246b08e233993a0\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\d2787d4b71a473c2e246b08e233993a0\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34d48c4308e9a53c56122ca2ce28a1f9\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\34d48c4308e9a53c56122ca2ce28a1f9\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3b0b05070bc9286d52a6b3c810b8c821\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3b0b05070bc9286d52a6b3c810b8c821\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\aab15b69fca1ffde3f55c4793eabe4f8\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\aab15b69fca1ffde3f55c4793eabe4f8\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7d01e9386d69a672da8ac3ffe9c7d5f1\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7d01e9386d69a672da8ac3ffe9c7d5f1\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
