@@ -17,7 +17,7 @@
         android:transitionName="logoImageTrans" />
 
     <TextView
-        android:id="@+id/bienvenidoLabel"
+        android:id="@+id/bienvenidoLabelLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -28,7 +28,7 @@
         android:transitionName="textTrans" />
 
     <TextView
-        android:id="@+id/continuarLabel"
+        android:id="@+id/continuarLabelLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/buenard"
@@ -69,7 +69,6 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/buenard"
@@ -109,7 +108,7 @@
             android:transitionName="buttonSignInTrans" />
 
         <TextView
-            android:id="@+id/nuevoUsuario"
+            android:id="@+id/nuevoUsuarioLogin"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
