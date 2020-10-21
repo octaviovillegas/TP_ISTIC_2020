@@ -74,20 +74,25 @@ class Registro : AppCompatActivity() {
 //=====================================================================================
     }
     fun registrar(view:View){
+        Log.w("Grabar Arriba","gg arriba")
+        Toast.makeText(this,"Entro en la aplicación",Toast.LENGTH_LONG).show()
         setup()
-        Log.w("Grabar","gg")
+        Log.w("Grabar Abajo","gg abajo")
     }
     //Firebase Autentication
     //Setup
     //Funcion para Registrarse
     private fun setup() {
+        Log.w("Error 4", "4")
         var name: String = nameEditText.text.toString()
         var email: String = emailEditText.text.toString()
         var password: String = passwordEditText.text.toString()
         var confirmpassword: String = confirmPasswordEditText.text.toString()
         if (email!="" && password!="") {
+            Toast.makeText(this,"dentro del if",Toast.LENGTH_LONG).show()
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
+                    Log.w("Error Autenticaction", "Autentication")
                     if (task.isSuccessful) {
                         val user: FirebaseUser? = auth.currentUser
                         Log.d("dbref", "Referencia a Base de Datos")
@@ -106,9 +111,11 @@ class Registro : AppCompatActivity() {
     }
 
     private fun grabar(name:String,email:String){
+        Log.w("Key Try", "Error fuera del Try")
         try {
             val dbref = DbReference()
             val key = dbref.child("Usuarios").push().key
+            Log.w("Key","esta ${key}")
             val userObject = User(name, email)
             val postValues = userObject.toMap()
             val childUpdates = HashMap<String,Any>()
@@ -116,6 +123,7 @@ class Registro : AppCompatActivity() {
             dbref.updateChildren(childUpdates)
         }catch (ex:Throwable)
         {
+            Log.w("Key Catch", "Error")
             Toast.makeText(this,"Error${ex.message}",Toast.LENGTH_LONG).show()
         }
     }

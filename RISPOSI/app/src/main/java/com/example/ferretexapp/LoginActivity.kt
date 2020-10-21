@@ -73,10 +73,12 @@ class LoginActivity : AppCompatActivity() {
     //Funciones para Autenticar el Logueo
     private fun setup(){
         //var name: String = nameEditText.text.toString()
-        var email: String = emailEditText.text.toString()
-        var password: String = passwordEditText.text.toString()
+        var email: String = emailEditTextLogin.text.toString()
+        var password: String = passwordEditTextLogin.text.toString()
         //var confirmpassword: String = confirmPasswordEditText.text.toString()
         if (email!="" && password!="") {
+            Log.w("if", "Dentro if")
+            Toast.makeText(this,"Dentro del if",Toast.LENGTH_LONG).show()
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
@@ -85,6 +87,7 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(intent2)
                     } else {
                         Log.w("Error", "${task.exception?.message}")
+                        Toast.makeText(this,"Incorrecto",Toast.LENGTH_LONG).show()
                     }
                 }
         }

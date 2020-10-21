@@ -53,6 +53,7 @@
             android:transitionName="emailInputTextTrans">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditTextLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/buenard" />
@@ -69,6 +70,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditTextLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/buenard"
