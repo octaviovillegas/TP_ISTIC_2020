@@ -1,2 +1,22 @@
-Actividad menu:
-en esta actividad se muestran los botones para ir a la actividad donde esta e listado de botones y el boton de servicios para ver los servicios
+Esquema de la aplicación Lubri App:
+El cliente solicita una aplciación que muestre los productos a la venta (arrancamotores, aceite de motores, etc) y que registre los servicios hechos a los autos delos clientes, para que después de 6 meses tenga la opción de enviar un recordatorio.
+Actividades que tendrá la aplicación:
+
+1) Actividad menu:
+Su funcionalidad es mostrar los botones para logearse como cliente o como empleado:
+Los botones son dos: Cliente (va a la actividad Cliente , que tiene los servicios que hace el taller en un botón  y los productos disponibles para que el cliente compre en el botón Nuestros productos.
+Envía datos a la actividdad Cliente o Login.
+
+
+2) Actividad Clientes : Su función es la de dirigir al cliente a las act. Productos o act. Servicios según el botón que apriete.
+Recibe datos de la act. CLiente
+
+3) Actividad Productos: recibe a los clientes que le envía la act. Clientes y muestra el stock de cada producto a la venta. guarda los datos del producto que recibe de Firebase.
+
+4) Actividad Servicios: su funcionalidad es mostrar la lista de los servicios que hace el taller, no envía datos a ninguna actividad
+
+5) Actividad Login: permite registrarse solo a los empleados segun una clave que solo ellos conocen: Si la caleve ingresada es la correcta envía a la act. 6
+
+6) Actividad 6: recibe a los empleados registrados y muestra botons para ahcer el ABL de los productos, ver los service hechos, los próximos y agregar un nuevo turno.
+
+
