@@ -11,6 +11,7 @@ import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_quien_soy.*
+import java.io.IOException
 
 class QuienSoy : AppCompatActivity() {
 
@@ -25,19 +26,18 @@ class QuienSoy : AppCompatActivity() {
         }else {
             claseFunciones.ttoas("Bienvenido $usrlogin",this)
         }
-/*
-        val btnContador = findViewById<Button>(R.id.btnContador)
-        btnContador.setOnClickListener {
-            val ContadorIntent = Intent(this, Contador::class.java)
-            startActivity(ContadorIntent)
+
+        val btnMenu = findViewById<Button>(R.id.btnMenu)
+        btnMenu.setOnClickListener {
+            val MenuIntent = Intent(this, Menu::class.java)
+            startActivity(MenuIntent)
         }
 
-        val btnNumSec = findViewById<Button>(R.id.btnNumSec)
-        btnNumSec.setOnClickListener {
-            val NumeSecretIntent = Intent(this, NumeroSecreto::class.java)
-            startActivity(NumeSecretIntent)
+        val btnSobreApp = findViewById<Button>(R.id.btnSobreApp)
+        btnSobreApp.setOnClickListener {
+            fSobreLaApp()
         }
-*/
+
         lblLegajo.setOnClickListener {
             claseFunciones.ttoas("Numero de Legajo",this)
         }
@@ -71,5 +71,26 @@ class QuienSoy : AppCompatActivity() {
         }
         val btnBorrarDialog = btnsalir.create()
         btnBorrarDialog.show()
+    }
+
+    private fun fSobreLaApp()//Funcion sobre la app
+    {
+        try {
+            val btnBorrarDialogBuilder = AlertDialog.Builder(this@QuienSoy) //Dialogo para sobre la app
+            btnBorrarDialogBuilder.setTitle("Sobre la App")
+            btnBorrarDialogBuilder.setIcon(R.mipmap.ic_launcher)
+            btnBorrarDialogBuilder.setMessage("Aplicacion dedicada a calculos de inversion. No encontrara recomendaciones." +
+                    "Es usted quien debe analizar y tomar sus deciciones de inversion.")
+            btnBorrarDialogBuilder.setCancelable(false)
+
+            btnBorrarDialogBuilder.setNegativeButton("Entiendo") { _, _ ->
+                Toast.makeText(this, "Gracias por entender..",Toast.LENGTH_SHORT).show()
+            }
+            val btnBorrarDialog = btnBorrarDialogBuilder.create()
+            btnBorrarDialog.show()
+
+        }catch (e: IOException) {
+            claseFunciones.ttoas("Error",this)
+        }
     }
 }
