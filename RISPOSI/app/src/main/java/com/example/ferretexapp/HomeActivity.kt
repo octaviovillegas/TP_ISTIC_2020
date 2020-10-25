@@ -1,5 +1,6 @@
 package com.example.ferretexapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.ferretexapp.Client.ClientHome
 import org.w3c.dom.Text
 
 class HomeActivity : AppCompatActivity() {
@@ -32,6 +34,17 @@ class HomeActivity : AppCompatActivity() {
         btnDueno.animation=animacionParaArriba
         btnCliente.animation=animacionParaArriba
 //===============================================================================================
+
+        btnCliente.setOnClickListener(){
+            val intentClient = Intent(this, ClientHome::class.java)
+                    startActivity(intentClient)
+        }
+        /*
+        btnDueno.setOnClickListener(){
+            val intentDueno = Intent(this, DuenoHome::class.java)
+            startActivity(intentDueno)
+        }
+        */
 
 
     }

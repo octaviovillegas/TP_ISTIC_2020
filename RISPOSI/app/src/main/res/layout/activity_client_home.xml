@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Client.ClientHome">
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgViewHomeClient"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pavoreal"
+        android:transitionName="logoImageTransHome" />
+
+    <TextView
+        android:id="@+id/txtPerfilClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/buenard"
+        android:text="Ferre-Tex"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="txtPerfilTrans" />
+
+    <TextView
+        android:id="@+id/txtSeleccionPerfilClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/buenard"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComprar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/borde_redondo"
+            android:text="COMPRAR"
+
+            android:textAllCaps="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="buttonSignInTrans"
+            app:backgroundTint="@colobackground" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApis"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/borde_redondo"
+            android:text="CONSULTAS"
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="buttonSignInTrans"
+            app:backgroundTint="@colorbackground" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/borde_redondo"
+            android:radius="30px"
+            android:text="HISTORIAL"
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="buttonSignInTrans"
+            app:backgroundTint="@colorbackground" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnValoracion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/borde_redondo"
+            android:text="VALORACION"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="buttonSignInTrans"
+            app:backgroundTint="@colorbackground" />
+    </LinearLayout>
+
+</LinearLayout>

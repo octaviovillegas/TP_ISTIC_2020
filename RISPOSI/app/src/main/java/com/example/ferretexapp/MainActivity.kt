@@ -11,6 +11,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ferretexapp.Client.ClientHome
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         //Función Hnadler para hacer el post de las animaciones y definimos el tiempo que dura el Splash Screen
         Handler().postDelayed({
-            val intentSplashScreen = Intent(this@MainActivity, LoginActivity::class.java)
+            val intentSplashScreen = Intent(this@MainActivity, HomeActivity::class.java)
             startActivity(intentSplashScreen)
 
         }, 4000)
