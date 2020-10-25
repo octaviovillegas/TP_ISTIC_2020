@@ -19,11 +19,11 @@ class Menu : AppCompatActivity() {
 
         val custom_list = CListAdapter(this,custom_list_data)
 
-        custom_list_data.add(CList(R.drawable.arroba,"Calculos","This is custom date"))
-        custom_list_data.add(CList(R.drawable.arroba,"VDolar","This is custom date"))
-        custom_list_data.add(CList(R.drawable.arroba,"VBitcoin","This is custom date"))
-        custom_list_data.add(CList(R.drawable.arroba,"MisClaves","This is custom date"))
-        custom_list_data.add(CList(R.drawable.arroba,"LTrading","This is custom date"))
+        custom_list_data.add(CList(R.drawable.calculos,"Calculos","Realice sus calculos de inversion"))
+        custom_list_data.add(CList(R.drawable.dollars,"Dollar","Consulte el valor del dollar en tiempo real"))
+        custom_list_data.add(CList(R.drawable.btc,"Bitcoin","Consulte el valor del Bitcoin en tiempo real"))
+        custom_list_data.add(CList(R.drawable.claves,"Mis Claves","Mantenga segura sus claves"))
+        custom_list_data.add(CList(R.drawable.link,"Links de trading","guarde sus webs favoritas"))
 
         listView.adapter = custom_list
 

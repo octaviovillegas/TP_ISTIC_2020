@@ -46,7 +46,9 @@ class MainActivity : AppCompatActivity() {
 
         val botonIngresar = findViewById<Button>(R.id.btnIngresar) //Declaracion para boton ingresar
         botonIngresar.setOnClickListener{//Boton ingresar
-            loginArchivo()
+            //loginArchivo()
+            val menuIntent = Intent(this, QuienSoy::class.java)
+            startActivity(menuIntent)
         }
 
         ivShowHidePass.setOnClickListener {
