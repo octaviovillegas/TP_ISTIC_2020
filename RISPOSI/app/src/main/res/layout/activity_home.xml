@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="188dp"
-        android:layout_height="58dp"
-        android:text="PRUEBA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgViewHome"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pavoreal"
+        android:transitionName="logoImageTransHome" />
+
+    <TextView
+        android:id="@+id/txtPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/buenard"
+        android:text="Perfil de Usuario"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="txtPerfilTrans" />
+
+    <TextView
+        android:id="@+id/txtSeleccionPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/buenard"
+        android:text="Seleccione su perfil correcto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDueno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="DUEÑO"
+            android:transitionName="buttonSignInTrans"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCliente"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="CLIENTE"
+            android:transitionName="buttonSignInTrans"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+Focus Group Meetings 
+
+Responsable : Risposi, Sergio
+
+Mejoras
+
+1- Más filtros del lado cliente y del lado dueño.
+
+2- Push Notification para recibir la Valoración de los productos.
+
+3- Más posibilidades de pago en la pantalla de venta del negocio.

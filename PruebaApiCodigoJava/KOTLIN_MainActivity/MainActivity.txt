@@ -1,0 +1,59 @@
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.example.androidretrofitapi.models.Producto
+import kotlinx.android.synthetic.main.activity_main.*
+import retrofit2.Call
+
+class MainActivity : AppCompatActivity() {
+    var edtCodigo: EditText? = null
+    var tvNombre: TextView? = null
+    var tvDescripcion: TextView? = null
+    var imgProducto: TextView? = null
+    var btnBuscar: Button? = null
+    protected fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        edtCodigo = findViewById(R.id.edtCodigo)
+        tvNombre = findViewById(R.id.tvNombre)
+        tvDescripcion = findViewByID(R.id.tvDescripcion)
+        tvPrecio = findViewById(R.id.tvPrecio)
+        btnBuscar = findViewById(R.id.bntBuscar)
+        btnBuscar.setOnclickListener(object : OnclickListener() {
+            fun onClick(v: View?) {
+                find(edtCodigo.getText().toString())
+            }
+        })
+    }
+
+    private fun find(codigo: String) {
+        val retrofit: Retrofit = Builder().baseUrl("http://192.168.0.205:8081/")
+            .addConverterFactory(GsonConverterFactory.create()).build()
+        val productoAPI: ProductoAPI = retrofit.create(ProductoAPI::class.java)
+        var callproductoAPI: Call<Producto?>
+        find(codigo)
+        call.enqueue(object : Callback<Producto?>() {
+            fun onResponse(
+                call: Call<Producto?>?,
+                response: Response<Producto?>
+            ) {
+                try {
+                    if (response.isSuccessful()) {
+                        val p: Producto = response.body()
+                        val URL_IMG =
+                            "http://192.168.0.205:8081/img/" + p.getPro_codigo().toString() + ".jpg"
+                        tvNombre.setText(p.getPro_nombre())
+                        tvDescripcion.setText(p.getPro_precio().toString())
+                        Glide.with(getApplication()).load(URL_IMG).into(imgProducto)
+                    }
+                } catch (ex: Exception) {
+                    Toast.makeText(this@MainActivity, ex.message, Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            fun onFailure(call: Call<Producto?>?, t: Throwable?) {
+                Toast.makeText(this@MainActivity, "Error de conexión", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+}

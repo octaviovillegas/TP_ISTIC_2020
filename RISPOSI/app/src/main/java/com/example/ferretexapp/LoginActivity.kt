@@ -85,9 +85,10 @@ class LoginActivity : AppCompatActivity() {
                         val user: FirebaseUser? = auth.currentUser
                         val intent2 = Intent(this, HomeActivity::class.java)
                         startActivity(intent2)
+                        Toast.makeText(this,"Logueado a Ferre-Tex",Toast.LENGTH_LONG).show()
                     } else {
                         Log.w("Error", "${task.exception?.message}")
-                        Toast.makeText(this,"Incorrecto",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"Logueo Incorrecto",Toast.LENGTH_LONG).show()
                     }
                 }
         }

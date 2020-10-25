@@ -1,0 +1,57 @@
+    public class MainActivity extends AppCompatActivity {
+    EditText edtCodigo;
+    TextView tvNombre;
+    TextView tvDescripcion;
+    TextView imgProducto;
+    Button btnBuscar;
+
+    @Override
+        protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        edtCodigo=findViewById(R.id.edtCodigo);
+        tvNombre=findViewById(R.id.tvNombre);
+        tvDescripcion=findViewByID(R.id.tvDescripcion);
+        tvPrecio=findViewById(R.id.tvPrecio);
+        btnBuscar=findViewById(R.id.bntBuscar);
+
+        btnBuscar.setOnclickListener(new View.OnclickListener(){
+        @Override
+        public void onClick(View v) {
+            find(edtCodigo.getText().toString())
+        }
+    });
+
+    }
+
+    private void find(String codigo){
+        Retrofit retrofit=new Retrofit.Builder().baseUrl("http://192.168.0.205:8081/")
+            .addConverterFactory(GsonConverterFactory.create()).build();
+
+        ProductoAPI productoAPI=retrofit.create(ProductoAPI.class);
+        Call<Producto> callproductoAPI.find(codigo);
+        call.enqueue(new Callback<Producto>(){
+            @Override
+            public void onResponse(Call<Producto> call, Response<Producto>response){
+                try{
+                    if(response.isSuccessful()){
+                        Producto p = response.body();
+                        String URL_IMG="http://192.168.0.205:8081/img/"+p.getPro_codigo()+".jpg";
+                        tvNombre.setText(p.getPro_nombre());
+                        tvDescripcion.setText(p.getPro_precio().toString());
+                        Glide.with(getApplication()).load(URL_IMG).into(imgProducto);
+                    }
+                }catch (Exception ex){
+                    Toast.makeText(MainActivity.this, ex.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+
+        }
+            @Override
+            public void onFailure(Call<Producto> call, Throwable t){
+                Toast.makeText(MainActivity.this, "Error de conexión", Toast.LENGTH_SHORT).show();
+
+            }
+    });
+    }
+
+}

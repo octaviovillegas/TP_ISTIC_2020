@@ -1,0 +1,4 @@
+interface ProductoAPI {
+    @GET("api/productos/{id}")
+    public Call<productos> find(@Path("id")String id);
+}
