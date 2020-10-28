@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Publicaciones_Mas_Datos">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_del_proyecto_final" />
+
+    <TextView
+        android:id="@+id/lbl_titulo_pub_usu"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="81dp"
+        android:gravity="center"
+        android:text="TITULO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView_publicacion"
+        android:layout_width="176dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_titulo_pub_usu"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="187dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_publicacion">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFC107"
+            android:gravity="center|left"
+            android:text="CATEGORIA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_categoria_pub_usu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="171dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_publicacion">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFC107"
+            android:gravity="center|left"
+            android:text="TIPO"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_tipo_pub_usu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="378dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFC107"
+            android:gravity="center|left"
+            android:text="DESCRIPCION"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_descripcion_pub_usu"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="169dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#FFC107"
+            android:gravity="center|left"
+            android:text="LOCALIDAD"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_localidad_pub_usu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="169dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#FFC107"
+            android:gravity="center|left"
+            android:text="COD POS"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lbl_codpos_pub_usu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_imageButton"
+        android:layout_width="203dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="60dp"
+        android:background="#06C135"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/llamar4" />
+
+    <ImageButton
+        android:id="@+id/btn_volver_PublicMasDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#F61807"
+        android:tint="#070707"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

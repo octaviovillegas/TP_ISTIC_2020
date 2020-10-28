@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyecto_nosayudamosentretodos_nuez">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Publicaciones_Mas_Datos"></activity>
+        <activity android:name=".Publicaciones_Usuarios" />
+        <activity android:name=".Listado_Publicaciones_Usuarios" />
+        <activity android:name=".Modificar_Articulo" />
+        <activity android:name=".Articulo_mas_datos" />
+        <activity android:name=".Listado_Usuarios" />
+        <activity android:name=".adapador_lsv_simple_publicacion" />
+        <activity android:name=".Mis_Articulos" />
+        <activity android:name=".Subir_Publicacion" />
+        <activity android:name=".Perfil_Usuario" />
+        <activity android:name=".Registro_Usuario" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

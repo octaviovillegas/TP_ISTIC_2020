@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articulo_mas_datos">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_del_proyecto_final" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="324dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:text="Ingrese Codigo para Modificar/Borrar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_borrar_modificar_pub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_modificar_publicacion"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_borrar_publicacion"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#F44336"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_modificar_publicacion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/lbl_borrar_modificar_pub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ingrese Codigo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modificar_publicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_titulo_detalle"
+        android:layout_width="219dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="85dp"
+        android:background="#8FEAF6"
+        android:gravity="center"
+        android:text="TITULO"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="102dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_titulo_detalle"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="CATEGORIA" />
+
+        <TextView
+            android:id="@+id/lbl_categoria_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="LOCALIDAD" />
+
+        <TextView
+            android:id="@+id/lbl_localidad_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="359dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:text="DESCRIPCION" />
+
+        <TextView
+            android:id="@+id/lbl_descripcion_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="COD POS" />
+
+        <TextView
+            android:id="@+id/lbl_codigoPost_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="TIPO" />
+
+        <TextView
+            android:id="@+id/lbl_tipo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="TELEFONO" />
+
+        <TextView
+            android:id="@+id/lbl_telefono_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FEAF6"
+            android:gravity="center"
+            android:text="CODIGO" />
+
+        <TextView
+            android:id="@+id/lbl_id_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_volver_articulosMasdatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F61807"
+        android:tint="#0C0C0C"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
