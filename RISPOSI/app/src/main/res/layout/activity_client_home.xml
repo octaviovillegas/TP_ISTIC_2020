@@ -54,8 +54,8 @@
             android:id="@+id/btnComprar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/borde_redondo"
             android:text="COMPRAR"
 
@@ -64,7 +64,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:transitionName="buttonSignInTrans"
-            app:backgroundTint="@colobackground" />
+            />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnApis"
@@ -80,7 +80,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:transitionName="buttonSignInTrans"
-            app:backgroundTint="@colorbackground" />
+            />
 
 
         <com.google.android.material.button.MaterialButton
@@ -98,7 +98,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:transitionName="buttonSignInTrans"
-            app:backgroundTint="@colorbackground" />
+             />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnValoracion"
@@ -113,7 +113,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:transitionName="buttonSignInTrans"
-            app:backgroundTint="@colorbackground" />
+             />
     </LinearLayout>
 
 </LinearLayout>

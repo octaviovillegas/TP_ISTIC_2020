@@ -68,6 +68,8 @@ class Registro : AppCompatActivity() {
         }
         */
         btnVolverLogin.setOnClickListener(){
+            //val nameUsuario = nameEditText.text.toString()
+            //intent.putExtra("nameUsuario", nameUsuario)
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

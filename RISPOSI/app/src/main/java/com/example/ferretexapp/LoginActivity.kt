@@ -67,6 +67,11 @@ class LoginActivity : AppCompatActivity() {
         }
         btnLogin.setOnClickListener() {
             setup()
+            //intent.getStringExtra("nameUsuario",nameUsuario)
+            val intent2 = Intent(this, HomeActivity::class.java)
+            startActivity(intent2)
+
+
         }
     }
 //=================================================================================================

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TiempoEspera"></activity>
+        <activity android:name=".Owner.View.OwnerHome"></activity>
+        <activity android:name=".Client.View.ProductoList" />
+        <activity android:name=".Client.Controller.ProductoActivity" />
+        <activity android:name=".TiempoEspera" />
         <activity android:name=".Client.ClientHome" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Registro" />
