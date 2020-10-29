@@ -13,6 +13,7 @@ class ProductoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_producto)
 
         val producto = intent.getSerializableExtra("producto") as Producto
+
         txtNameProduct.text=producto.nombre
         txtDescripcionProducto.text=producto.descripcion
         txtPrecioProducto.text=producto.precio.toString()

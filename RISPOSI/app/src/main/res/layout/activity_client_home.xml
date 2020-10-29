@@ -57,14 +57,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:background="@drawable/borde_redondo"
-            android:text="COMPRAR"
 
+            android:text="COMPRAR"
             android:textAllCaps="true"
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:transitionName="buttonSignInTrans"
-            />
+            android:transitionName="buttonSignInTrans" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnApis"
@@ -79,8 +78,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:transitionName="buttonSignInTrans"
-            />
+            android:transitionName="buttonSignInTrans" />
 
 
         <com.google.android.material.button.MaterialButton
@@ -97,8 +95,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:transitionName="buttonSignInTrans"
-             />
+            android:transitionName="buttonSignInTrans" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnValoracion"
@@ -112,8 +109,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:transitionName="buttonSignInTrans"
-             />
+            android:transitionName="buttonSignInTrans" />
     </LinearLayout>
 
 </LinearLayout>
