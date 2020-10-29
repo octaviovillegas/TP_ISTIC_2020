@@ -8,7 +8,8 @@ data class User(
     var name: String? = "",
     var user: String? = "",
     var email: String? = "",
-    var phone: String? = ""
+    var phone: String? = "",
+    var uId: String? = ""
 ) {
     // [START post_to_map]
     @Exclude
@@ -17,7 +18,8 @@ data class User(
             "name" to name,
             "user" to user,
             "email" to email,
-            "phone" to phone
+            "phone" to phone,
+            "uId" to uId
         )
     }
     // [END post_to_map]

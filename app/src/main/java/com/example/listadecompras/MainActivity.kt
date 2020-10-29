@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 val name = user.displayName
                 val email = user.email
             }
-            ToastMessage("Bienvenido ${user?.displayName.toString()}!")
+            ToastMessage("Bienvenido ${user?.email.toString()}!")
             startActivity(Intent(this,MenuPrincipal::class.java))
             finish()
         }

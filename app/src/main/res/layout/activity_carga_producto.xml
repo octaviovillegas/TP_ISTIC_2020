@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CargaProducto">
+    tools:context=".CargaProducto"
+    android:background="#edf5e1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
 
     <EditText
         android:id="@+id/carga_prod_name"
@@ -14,7 +25,7 @@
         android:hint="Nombre del producto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         />
 
     <EditText
@@ -80,22 +91,30 @@
         app:layout_constraintBottom_toBottomOf="@id/carga_prod_img_photo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintHorizontal_weight="@android:integer/config_mediumAnimTime"
         app:layout_constraintStart_toEndOf="@id/carga_prod_img_photo"
         app:layout_constraintTop_toBottomOf="@id/carga_prod_lugar_compra"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/carga_prod_txt_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Cantidad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/carga_prod_btn_save"
+        app:layout_constraintBottom_toTopOf="@+id/carga_prod_btn_save" />
 
     <Button
         android:id="@+id/carga_prod_btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginBottom="40dp"
         android:text="Cargar producto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="@android:integer/config_mediumAnimTime"
-        />
-
+        android:onClick="cargarProducto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

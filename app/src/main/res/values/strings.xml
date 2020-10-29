@@ -17,4 +17,10 @@
     <string name="txtMsjAyuda2">• El numero secreto va de 1 a 50</string>
     <string name="txtMsjAyuda3">• Tienes 5 intentos para adivinar el numero</string>
     <string name="txtMsjAyudaContador">• Presiona el boton cada vez que quieras contar</string>
+    <string name="title_activity_about_me">AboutMe</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>

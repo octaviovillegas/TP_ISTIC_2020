@@ -69,6 +69,7 @@ En esta actividad comenzaremos a agregar productos con los datos elegidos que pu
 	-Lugar de compra--------(obligatorio)
 	-Foto
 	-Cantidad
+	-Contenido Neto
 	-Promocion de compra
 
 Recibe datos de sesion de la actividad Login.

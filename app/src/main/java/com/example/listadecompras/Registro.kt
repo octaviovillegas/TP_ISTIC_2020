@@ -109,7 +109,7 @@ class Registro : AppCompatActivity() {
         try {
             val dbRef = DBReference()
             val key = dbRef.child("users").push().key
-            val userObj = User(name, user, email, phone)
+            val userObj = User(name, user, email, phone,key)
             val postValues = userObj.toMap()
             val childUpdates = HashMap<String, Any>()
             childUpdates["/users/$key"] = postValues
