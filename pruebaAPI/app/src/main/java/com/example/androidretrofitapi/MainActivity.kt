@@ -8,9 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.androidretrofitapi.Interfaces.ProductoAPI
 import com.example.androidretrofitapi.models.Producto
+import com.google.gson.internal.GsonBuildConfig
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
+import retrofit2.Converter
 import retrofit2.Response
 import retrofit2.Retrofit
 
@@ -34,6 +36,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun find(codigo: String) {
+        val retrofit = Retrofit.Builder().baseUrl("https://localhost:44348")
+            .addConverterFactory(GsonConverterFactory.create()).build()
+
+        val productoAPI: ProductoAPI = retrofit.create(ProductoAPI::class.java)
+        var callproductoAPI: Call<Producto?>
+        val Callback<Producto>(){
+
+        }
+        /*
         val retrofit: Retrofit = GestureDescription.Builder().baseUrl("http://192.168.0.205:8081/")
             .addConverterFactory(GsonConverterFactory.create()).build()
         val productoAPI: ProductoAPI = retrofit.create(ProductoAPI::class.java)
@@ -61,6 +72,6 @@ class MainActivity : AppCompatActivity() {
             fun onFailure(call: Call<Producto?>?, t: Throwable?) {
                 Toast.makeText(this@MainActivity, "Error de conexión", Toast.LENGTH_SHORT).show()
             }
-        })
+        })*/
     }
 }

@@ -8,7 +8,7 @@ import retrofit2.http.Path
 
 
 internal interface ProductoAPI {
-    @GET("api/productos/{id}")
-    fun find(@Path("id") id: String): Call<Producto>
+    @GET("api/Productos/{id}")
+    fun find(@Path("id") id: String): Call
 }
 
