@@ -31,11 +31,28 @@ class Menu : AppCompatActivity() {
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             Toast.makeText(this@Menu, "Item Clicked:- $id", Toast.LENGTH_SHORT).show()
 
-            if (position == 1)
+            if (position == 0)
+            {
+                val intent = Intent(this, MenuDeCalculos::class.java)
+                startActivity(intent)
+            }else if (position == 1)
             {
                 val intent = Intent(this, ActividadDollar::class.java)
                 startActivity(intent)
+            } else if (position == 2)
+            {
+                val intent = Intent(this, ActividadBitcoin::class.java)
+                startActivity(intent)
+            }else if (position == 3)
+            {
+                val intent = Intent(this, MisClaves::class.java)
+                startActivity(intent)
+            }else if (position == 4)
+            {
+                val intent = Intent(this, LinksTrader::class.java)
+                startActivity(intent)
             }
+
         }
     }
 }
