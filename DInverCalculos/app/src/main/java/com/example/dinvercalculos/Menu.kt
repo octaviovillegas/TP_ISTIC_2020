@@ -1,5 +1,6 @@
 package com.example.dinvercalculos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Adapter
@@ -29,6 +30,12 @@ class Menu : AppCompatActivity() {
 
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             Toast.makeText(this@Menu, "Item Clicked:- $id", Toast.LENGTH_SHORT).show()
+
+            if (position == 1)
+            {
+                val intent = Intent(this, ActividadDollar::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
