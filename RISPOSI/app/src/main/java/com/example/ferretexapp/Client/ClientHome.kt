@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.ferretexapp.Client.ApiConsulta.view.ListadoClima
 import com.example.ferretexapp.Client.View.ProductoList
 import com.example.ferretexapp.R
 
@@ -44,6 +45,11 @@ class ClientHome : AppCompatActivity() {
         btnComprar.setOnClickListener(){
             val intentCompras = Intent(this, ProductoList::class.java)
                     startActivity(intentCompras)
+        }
+
+        btnApis.setOnClickListener(){
+            val intentApis = Intent(this,ListadoClima::class.java)
+            startActivity(intentApis)
         }
 
 

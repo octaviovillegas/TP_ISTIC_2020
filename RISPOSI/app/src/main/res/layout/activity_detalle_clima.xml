@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBandera"
+            android:layout_width="134dp"
+            android:layout_height="192dp"
+            app:srcCompat="@drawable/clima" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTimezone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiempo" />
+
+            <TextView
+                android:id="@+id/txtLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitud" />
+
+            <TextView
+                android:id="@+id/txtLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitud" />
+
+            <TextView
+                android:id="@+id/txtTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardarClima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+</LinearLayout>

@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         //Función Hnadler para hacer el post de las animaciones y definimos el tiempo que dura el Splash Screen
         Handler().postDelayed({
-            val intentSplashScreen = Intent(this@MainActivity, HomeActivity::class.java)
+            val intentSplashScreen = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intentSplashScreen)
 
         }, 4000)

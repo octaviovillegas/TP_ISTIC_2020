@@ -25,7 +25,7 @@
             android:layout_margin="16dp"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/bree_serif"
-            android:text="HAGA CLICK Y ESPERE EL INGRESO"
+            android:text="MUCHAS GRACIAS POR USAR LA APP"
             android:textAlignment="center"
             android:textSize="20sp" />
 

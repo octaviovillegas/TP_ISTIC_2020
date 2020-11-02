@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Owner.BDProductos.ViewModelOwner"></activity>
+        <activity android:name=".Client.ApiConsulta.view.DetalleClima"></activity>
+        <activity android:name=".Client.ApiConsulta.view.ListadoClima" />
+        <activity android:name=".Owner.BDProductos.ViewModelOwner" />
         <activity android:name=".Owner.View.OwnerHome" />
         <activity android:name=".Client.View.ProductoList" />
         <activity android:name=".Client.Controller.ProductoActivity" />
