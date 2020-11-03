@@ -4,6 +4,8 @@ import java.io.Serializable
 
 class Articulo (id:Int,titulo:String,categoria:String,tipo:String,descripcion:String,localidad:String,codiPos:String,telefono:String/*,imagen:Int*/) : Serializable  {
 
+
+
     var id:Int
     var titulo:String
     var categoria:String
@@ -12,7 +14,7 @@ class Articulo (id:Int,titulo:String,categoria:String,tipo:String,descripcion:St
     var localidad:String
     var codiPos:String
     var telefono:String
-   // var imagen: Int
+    //var imagen: Int
 
 
 
@@ -26,7 +28,7 @@ class Articulo (id:Int,titulo:String,categoria:String,tipo:String,descripcion:St
         this.localidad=localidad
         this.codiPos=codiPos
         this.telefono=telefono
-       // this.imagen=imagen
+        //this.imagen=imagen
 
     }
 }

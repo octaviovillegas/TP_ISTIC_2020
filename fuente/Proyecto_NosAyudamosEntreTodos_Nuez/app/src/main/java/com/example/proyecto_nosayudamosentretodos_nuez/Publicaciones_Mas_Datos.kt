@@ -23,6 +23,8 @@ class Publicaciones_Mas_Datos : AppCompatActivity() {
 
         val UsuPublicaciones = intent.getSerializableExtra("UsuPublicaciones") as Articulo
 
+        var id_pub_imagen_masDatos = UsuPublicaciones.id
+
         lbl_titulo_pub_usu.text = UsuPublicaciones.titulo
         lbl_categoria_pub_usu.text = UsuPublicaciones.categoria
         lbl_tipo_pub_usu.text = UsuPublicaciones.tipo
@@ -30,6 +32,22 @@ class Publicaciones_Mas_Datos : AppCompatActivity() {
         lbl_localidad_pub_usu.text = UsuPublicaciones.localidad
         lbl_codpos_pub_usu.text  = UsuPublicaciones.codiPos
         var num_tel = UsuPublicaciones.telefono
+
+        if (id_pub_imagen_masDatos == 1) {
+            imageView_publicacion.setImageResource(R.drawable.imagen_heladera_app)
+        }
+        if (id_pub_imagen_masDatos == 2) {
+            imageView_publicacion.setImageResource(R.drawable.cocina_imagen_app)
+        }
+        if (id_pub_imagen_masDatos == 3) {
+            imageView_publicacion.setImageResource(R.drawable.imagen_heladera_app)
+        }
+        if (id_pub_imagen_masDatos == 4) {
+            imageView_publicacion.setImageResource(R.drawable.imagen_cama_app)
+        }
+        if (id_pub_imagen_masDatos == 5) {
+            imageView_publicacion.setImageResource(R.drawable.imagen_tv2_app)
+        }
 
 
         //}catch (e:Throwable)
