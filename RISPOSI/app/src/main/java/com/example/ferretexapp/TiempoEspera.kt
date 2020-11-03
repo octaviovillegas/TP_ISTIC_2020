@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
+import android.widget.Button
 import android.widget.TextView
 import androidx.core.view.isVisible
 import com.airbnb.lottie.LottieAnimationView
@@ -30,8 +31,13 @@ class TiempoEspera : AppCompatActivity() {
 //======================================================
             //Aplicando funcion
             val tvIngreso = findViewById<TextView>(R.id.tvIngreso)
+            val btnPantallaVolverInicio = findViewById<Button>(R.id.btnPantallaVolverInicio)
             val animacion1 = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba)
+            val animacion2 = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_abajo)
+
             tvIngreso.animation = animacion1
+            btnPantallaVolverInicio.animation=animacion2
+
             val Paso = true
 
             var like = false
@@ -56,6 +62,11 @@ class TiempoEspera : AppCompatActivity() {
                 //if(likeImageView.animationlister)
             }
 
+        btnPantallaVolverInicio.setOnClickListener(){
+            val intentVolverInicio = Intent(this,LoginActivity::class.java)
+            startActivity(intentVolverInicio)
+        }
+
 //Condicion para pasar de pantalla
 
             Handler().postDelayed({
@@ -67,6 +78,8 @@ class TiempoEspera : AppCompatActivity() {
                    }
                 }
         }, 4000)
+
+
 
 
     }

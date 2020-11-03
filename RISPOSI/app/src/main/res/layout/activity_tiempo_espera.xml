@@ -26,6 +26,7 @@
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/bree_serif"
             android:text="MUCHAS GRACIAS POR USAR LA APP"
+
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -36,6 +37,25 @@
             android:layout_margin="16dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/twitter_like" />
+
+        <Button
+            android:id="@+id/btnPantallaVolverInicio"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borde_redondo"
+            android:insetLeft="16dp"
+            android:insetTop="16dp"
+            android:insetRight="16dp"
+            android:insetBottom="16dp"
+            android:text="VOLVER AL INICIO" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

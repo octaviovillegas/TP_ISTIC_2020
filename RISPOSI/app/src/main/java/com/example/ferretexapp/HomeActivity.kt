@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.ferretexapp.Client.ClientHome
+import com.example.ferretexapp.Owner.View.OwnerHome
 import org.w3c.dom.Text
 
 class HomeActivity : AppCompatActivity() {
@@ -39,12 +40,12 @@ class HomeActivity : AppCompatActivity() {
             val intentClient = Intent(this, ClientHome::class.java)
                     startActivity(intentClient)
         }
-        /*
+
         btnDueno.setOnClickListener(){
-            val intentDueno = Intent(this, DuenoHome::class.java)
+            val intentDueno = Intent(this, OwnerHome::class.java)
             startActivity(intentDueno)
         }
-        */
+
 
 
     }
