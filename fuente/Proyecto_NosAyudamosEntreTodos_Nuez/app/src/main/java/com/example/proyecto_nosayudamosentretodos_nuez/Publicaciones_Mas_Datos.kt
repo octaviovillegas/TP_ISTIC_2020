@@ -40,7 +40,7 @@ class Publicaciones_Mas_Datos : AppCompatActivity() {
             imageView_publicacion.setImageResource(R.drawable.cocina_imagen_app)
         }
         if (id_pub_imagen_masDatos == 3) {
-            imageView_publicacion.setImageResource(R.drawable.imagen_heladera_app)
+            imageView_publicacion.setImageResource(R.drawable.imagen_mesa_app)
         }
         if (id_pub_imagen_masDatos == 4) {
             imageView_publicacion.setImageResource(R.drawable.imagen_cama_app)

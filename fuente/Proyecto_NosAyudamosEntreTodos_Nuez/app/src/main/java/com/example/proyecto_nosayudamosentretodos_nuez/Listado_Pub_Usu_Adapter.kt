@@ -24,7 +24,7 @@ class Listado_Pub_Usu_Adapter (val mContext: Context, val listPublicaciones:List
             layout.imageView_lsv_simple.setImageResource(R.drawable.cocina_imagen_app)
         }
         if (id_pub_imagen == 3) {
-            layout.imageView_lsv_simple.setImageResource(R.drawable.imagen_heladera_app)
+            layout.imageView_lsv_simple.setImageResource(R.drawable.imagen_mesa_app)
         }
         if (id_pub_imagen == 4) {
             layout.imageView_lsv_simple.setImageResource(R.drawable.imagen_cama_app)

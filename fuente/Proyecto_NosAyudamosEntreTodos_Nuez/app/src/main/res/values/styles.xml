@@ -12,4 +12,8 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
+    <style name="AppTheme2" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/imagen_fondo_app4</item>
+    </style>
+
 </resources>

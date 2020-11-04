@@ -83,7 +83,7 @@ class Publicaciones_Usuarios : AppCompatActivity() {
 
                 buscar_por_Localidad()
 
-                lbl_buscar_localidad.setText(" ")
+                lbl_buscar_localidad.setText("")
 
             }
         }
