@@ -12,9 +12,10 @@ se debe completar el documento donde se detalla la siguiente información sobre 
 1_quienSoy.kt
  _registro.kt
  _login.kt
- _main.kt
- _lectorQR.kt
  _listView.kt
- _detalleABM.kt
+ _nuevoProducto(alta).kt
+ _lectorQR.kt
+ _detalleProducto(baja-modificacion).kt
+ 
 
-2_3_4_"quienSoy.ky" presenta al desarrollador y sus redes sociales,mediante btnContinuar sigue en la "login.kt" donde si esta registrado accede al "main.kt" sino debe acceder previamente a registrarse en firebase para poder utilizar la app. En la "main.kt" dos botones dan las opciones de cargar manualmente los productos mediante el acceso a "listView.kt" donde hay un boton para agregar producto, que dirige al "detalleABM.kt" y alli se puede agregar nombre, precio, descripcion, imagen y codigo del producto a la base de datos y que sera visualizado en el listView. La otra opcion que nos permite es ir a "lectorQR.kt" y escanear el codigo del envase del producto para ser pasado directamente al editText correspondiente al codigo de producto ya sea para su carga como para su busqueda en la base de datos para en "detalleABM.kt" poder modificar, dar de alta, de baja o simplemente ver sus detalles.
+2_3_4_"quienSoy.ky" presenta al desarrollador y sus redes sociales, mediante btnContinuar sigue en la "login.kt" donde si esta registrado accede a la app, sino debe acceder previamente mediante btnRegistrarse a "registro.kt" y hacer la autenticacion en firebase para poder utilizar la app. Una vez logueado se accede al listado de productos "listView.kt" donde hay un boton para agregar productos nuevos, que dirige a "nuevoProducto.kt" y alli se puede agregar nombre, precio, descripcion, imagen y codigo de barras del producto a la base de datos SQLite y que sera visualizado en el listView. La otra opcion que nos permite es ir a "lectorQR.kt" y escanear el codigo del envase del producto para ser pasado directamente al editText correspondiente al codigo de barras del producto para su carga. haciendo click sobre el producto en el listView nos dirige a "detalleProducto.kt" poder modificar, dar de baja o simplemente ver los detalles del producto seleccionado.
