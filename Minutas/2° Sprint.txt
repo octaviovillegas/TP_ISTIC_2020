@@ -1,0 +1,7 @@
+2° Sprint 14 de Octubre
+Se debe tener el login con las siguientes características:
+1- al menos un botón que nos permita ingresar sin necesidad de registrarnos
+2-la posibilidad de registrarnos como usuarios
+3-la navegación entre las actividades detallada en la "Documentación de actividades
+
+Tareas 1-2-3 realizadas en tiempo y forma de manera exitosa.

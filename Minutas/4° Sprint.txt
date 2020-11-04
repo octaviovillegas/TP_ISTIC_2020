@@ -1,0 +1,5 @@
+4° Sprint 28 de Octubre
+#-los informes pueden estar en formato de tabla o listado de datos o en forma de gráficos estadísticos.
+#los datos mostrados son de interacción de los usuarios o preferencias o acciones realidad o datos almacenados por el usuario.
+
+Se presentan los datos en un listado donde el usuario puede interactuar con ellos dando de alta o baja un producto seleccionado, tambien modificar uno existente.

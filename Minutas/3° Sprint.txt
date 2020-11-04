@@ -1,0 +1,7 @@
+3° Sprint 21 de octubre
+Se deben tener las Altas, Bajas, Modificaciones y listados.
+1- Se debe poder dar el alta con validación de datos.
+2-las Bajas en donde sea necesario.
+3-las modificaciones de entidades necesarias.
+
+Tareas 1-2-3 realizadas en tiempo y forma de manera exitosa.
