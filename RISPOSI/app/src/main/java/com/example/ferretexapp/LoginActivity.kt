@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.iid.internal.FirebaseInstanceIdInternal
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_registro.*
 
@@ -67,6 +69,7 @@ class LoginActivity : AppCompatActivity() {
         }
         btnLogin.setOnClickListener() {
             setup()
+            //notification()
             //intent.getStringExtra("nameUsuario",nameUsuario)
             val intent2 = Intent(this, HomeActivity::class.java)
             startActivity(intent2)
@@ -116,4 +119,20 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this,"Error${ex.message}", Toast.LENGTH_LONG).show()
         }
     }
+//Le agrego un token para que solamente las notificaciones lleguen a mi app que tiene el token pero dice que esta deprecated
+/*    private fun notification(){
+        FirebaseInstanceIdInternal.getInstance().instanceId.addOnCompleteListener{
+            it.result?.token?.let {
+                print("Este es el token del dispositivo: ${it}")
+            }
+        }
+
+        //Recuperar información
+        val valoracion=intent.getStringExtra("valoracion")
+        valoracion?.let{
+            print("La valoración del cliente es de: ${it}")
+            }
+    }
+
+*/
 }

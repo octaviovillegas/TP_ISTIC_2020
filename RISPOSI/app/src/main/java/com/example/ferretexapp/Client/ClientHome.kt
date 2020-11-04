@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.ferretexapp.Client.ApiConsulta.view.ListadoClima
 import com.example.ferretexapp.Client.View.ProductoList
+import com.example.ferretexapp.Client.pushnotification.HomeNotification
 import com.example.ferretexapp.R
 
 class ClientHome : AppCompatActivity() {
@@ -50,6 +51,11 @@ class ClientHome : AppCompatActivity() {
         btnApis.setOnClickListener(){
             val intentApis = Intent(this,ListadoClima::class.java)
             startActivity(intentApis)
+        }
+
+        btnValoracion.setOnClickListener(){
+            val intentValoracion = Intent(this, HomeNotification::class.java)
+            startActivity(intentValoracion)
         }
 
 
