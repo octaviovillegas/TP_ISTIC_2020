@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/markp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="MI PERFIL"
+            android:textSize="35sp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:id="@+id/ppic"
+            android:layout_margin="15dp"
+            android:layout_below="@id/markp"
+            android:layout_height="150dp"
+    />
+
+    <TextView
+            android:id="@+id/dpname"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/markp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/ppic"
+            android:text="Nombre"
+            android:textSize="40dp" />
+
+    <TextView
+            android:id="@+id/pnts"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ppic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="PUNTOS: "
+            android:textSize="40dp" />
+
+    <Button
+            android:id="@+id/changedp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/pnts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="#00cf00"
+            android:text="Cambiar Foto de Perfil"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+</RelativeLayout>

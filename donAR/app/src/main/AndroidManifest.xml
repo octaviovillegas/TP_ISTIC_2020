@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.food_locator">
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="false"
+            android:icon="@drawable/logo"
+            android:label="donAR App"
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".MainActivity"
+                android:label="donAR App"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".SplashActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Uploadfood">
+        </activity>
+
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.example.food_locator"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".SucessActivity">
+        </activity>
+        <activity android:name=".SignUpActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".FeedsActivity">
+        </activity>
+        <activity android:name=".MyProfile">
+        </activity>
+        <activity android:name=".AboutUsActivity">
+        </activity>
+    </application>
+
+</manifest>

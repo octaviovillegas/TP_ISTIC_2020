@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#cceecc"
+        android:id="@+id/contenerHolder"
+>
+<de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_margin="15dp"
+        android:id="@+id/feedpic"
+/>
+
+    <TextView
+            android:id="@+id/feedType"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/feedpic"
+            android:text="Donacion"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    <TextView
+            android:layout_width="230dp"
+            android:layout_height="78dp"
+            android:textSize="20sp"
+            android:layout_below="@id/feedType"
+            android:id="@+id/feedinfo"
+            android:layout_alignLeft="@id/feedType"/>
+
+    <TextView
+            android:id="@+id/feedLoc"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/feedpic"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ubicación" />
+
+    <TextView
+            android:id="@+id/feedname"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/feedLoc"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Autor" />
+</RelativeLayout>
+</LinearLayout>

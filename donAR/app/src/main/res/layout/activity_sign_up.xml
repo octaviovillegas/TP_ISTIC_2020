@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="REGISTRARSE"
+            android:textColor="#303030"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    <EditText
+            android:layout_width="250dp"
+            android:hint="Nombre y Apellido"
+            android:layout_height="50dp"
+            android:layout_below="@id/signUp"
+            android:id="@+id/nameTf"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_ta"
+            android:padding="5dp" />
+
+
+    <EditText
+
+            android:id="@+id/emailTf"
+            android:layout_below="@+id/nameTf"
+            android:hint="Correo Electrónico"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_ta"
+            android:padding="5dp"
+
+
+
+            />
+
+
+
+    <EditText
+            android:id="@+id/pWordTf"
+            android:layout_below="@+id/emailTf"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_ta"
+            android:padding="5dp"
+
+            />
+
+    <EditText
+            android:id="@+id/cpWordTf"
+            android:layout_below="@+id/pWordTf"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_ta"
+            android:padding="5dp"
+
+            />
+
+    <EditText
+            android:id="@+id/mnoTf"
+            android:layout_below="@+id/cpWordTf"
+            android:hint="Celular"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_ta"
+            android:padding="5dp"
+
+
+            />
+
+    <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mnoTf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:background="#00cf00"
+            android:text="Enviar"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+</RelativeLayout>
