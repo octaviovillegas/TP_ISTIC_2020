@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Application Lujita</string>
+    <string name="prefs_file">com.example.applicationlujita.PREFERENCE_FILE_KEY</string>
+    <string name="facebook_app_id">360631311773602</string>
+    <string name="fb_login_protocol_scheme">fb360631311773602</string>
+
+
+</resources>
