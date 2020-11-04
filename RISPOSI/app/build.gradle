@@ -7,6 +7,12 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
+// Para solucionar este problema --> Error: Invoke-customs are only supported starting with Android O (--min-api 26)
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     defaultConfig {
         applicationId "com.example.ferretexapp"
         minSdkVersion 24
