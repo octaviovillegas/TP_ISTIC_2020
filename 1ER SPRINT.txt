@@ -1,0 +1,14 @@
+REGISTRO-FIREBASE(EMAIL-GOOGLE)...permite registrar email (envia datos a firebase)
+
+REGISTRO-CRUD EN FIREBASE(CLOUD FIRESTORE)...vista de email registrado y crea base de datos en firebase(crud)(envia datos a base de datos cloud de firebase)
+
+OPERACION-BOTONES CON DISTINTAS OPCIONES...diferentes funcionalidades
+     
+LECTOR DE CODIGO DE BARRA...permite escanear codigos de barras y mostrar en codigo escaneado
+     
+    CONSULTAR PRODUCTOS...GRIDVIEW (detalla del producto)
+     
+    AGREGAR PRODUCTO...(agregar fotos de la galleria-ABM-listado)
+     
+    CONSULTAR DESCUENTOS...sin funcionalidad(emulado)
+
