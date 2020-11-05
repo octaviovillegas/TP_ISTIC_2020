@@ -4,7 +4,8 @@
 4-si envia datos a que acividades envia esos datos
 **************Idea general de la applicacion**************
 Mi propuesta para esta aplicacion es para los dueños de mascotas.
-Para que tengan organizada en un listado las cosas de su mascota. Tanto como prendas que tienen, sacarle fotos, contar con un mapa por alguna emergencia(por ejemplo ir a un veterinario de urgencia) o tambien todo lo que tenga que ver con el tema de mascotas.
+Para que tengan organizada en un listado las cosas de su mascota. Tanto como prendas que tienen, sacarle fotos, 
+contar con un mapa por alguna emergencia(por ejemplo ir a un veterinario de urgencia) o tambien todo lo que tenga que ver con el tema de mascotas.
 **************				    **************
 Actividad inicial:permitir el ingreso a la app,pantalla de inicio lleva a la actividadLogin
 

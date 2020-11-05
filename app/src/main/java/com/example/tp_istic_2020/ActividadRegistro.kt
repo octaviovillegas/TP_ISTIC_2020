@@ -20,7 +20,7 @@ class ActividadRegistro : AppCompatActivity() {
         val lblPass : TextView =findViewById<TextView>(R.id.lblPass)
         val btn_resgitro : Button =findViewById<Button>(R.id.btn_registro)
 
-        btn_registro.setOnClickListener {
+        btn_resgitro.setOnClickListener {
             if (lblNombre.text.toString().isEmpty() or lblApellido.text.toString().isEmpty() or lblMail.text.toString().isEmpty() or lblPass.text.toString().isEmpty() )
             {
 

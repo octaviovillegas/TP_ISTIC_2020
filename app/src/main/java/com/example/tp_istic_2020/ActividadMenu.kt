@@ -15,5 +15,10 @@ class ActividadMenu : AppCompatActivity() {
             startActivity(intent)
             finish()
     }
+        btnListado.setOnClickListener {
+            val intent: Intent = Intent(this, Listado ::class.java)
+            startActivity(intent)
+            finish()
+        }
 }
 }

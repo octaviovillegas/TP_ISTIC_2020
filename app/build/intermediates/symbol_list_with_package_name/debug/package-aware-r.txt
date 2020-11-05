@@ -790,6 +790,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable golden
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -804,6 +805,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable perro
+drawable siberiano
+drawable terrier
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -892,10 +896,13 @@ id btnEntrar
 id btnGps
 id btnInvitado
 id btnIr
+id btnListado
 id btnMapa
 id btnOk
+id btnPreguntas
 id btnRegistrar
 id btn_registro
+id btn_volver_menu
 id buttonPanel
 id cache_measures
 id center
@@ -917,6 +924,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id detalles_item
 id dialog_button
 id dimensions
 id direct
@@ -953,6 +961,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imagen
 id info
 id invisible
 id italic
@@ -970,11 +980,14 @@ id line3
 id linear
 id listMode
 id list_item
+id lista
 id message
 id middle
 id motion_base
 id multiply
 id never
+id nombre
+id nombre_item
 id none
 id normal
 id notification_background
@@ -1123,9 +1136,12 @@ layout activity_actividad_gps
 layout activity_actividad_login
 layout activity_actividad_menu
 layout activity_actividad_registro
+layout activity_item
+layout activity_listado
 layout activity_main
 layout activity_ok_registro
 layout custom_dialog
+layout item
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

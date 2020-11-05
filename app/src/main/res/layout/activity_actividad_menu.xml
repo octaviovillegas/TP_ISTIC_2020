@@ -8,11 +8,11 @@
     tools:context=".ActividadMenu">
 
     <Button
-        android:id="@+id/btnGps"
+        android:id="@+id/btnPreguntas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#171717"
-        android:text="Buscar Ubicación"
+        android:text="Preguntas frecuentes"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -20,4 +20,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:backgroundTint="#171717"
+        android:text="Listado"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPreguntas" />
+
+    <Button
+        android:id="@+id/btnGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#171717"
+        android:text="Buscar Ubicación"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPreguntas"
+        app:layout_constraintStart_toStartOf="@+id/btnPreguntas" />
 </androidx.constraintlayout.widget.ConstraintLayout>

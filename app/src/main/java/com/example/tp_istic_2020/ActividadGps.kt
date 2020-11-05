@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_actividad_gps.*
+import kotlinx.android.synthetic.main.activity_actividad_menu.*
 
 class ActividadGps : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,12 @@ class ActividadGps : AppCompatActivity() {
             val btnMapaIntent=Intent(Intent.ACTION_VIEW,UriIntent)
             btnMapaIntent.setPackage("com.google.android.apps.maps")
             startActivity(btnMapaIntent)
+
+        }
+        btn_volver_menu.setOnClickListener {
+            val intent: Intent = Intent(this, ActividadMenu ::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }

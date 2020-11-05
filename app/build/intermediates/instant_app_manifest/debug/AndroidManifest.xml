@@ -20,6 +20,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.tp_istic_2020.ItemActivity" />
+        <activity android:name="com.example.tp_istic_2020.Listado" />
         <activity android:name="com.example.tp_istic_2020.ActividadGps" />
         <activity android:name="com.example.tp_istic_2020.OkRegistro" />
         <activity android:name="com.example.tp_istic_2020.ActividadRegistro" />

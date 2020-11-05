@@ -26,6 +26,11 @@ class ActividadLogin : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        btnRegistrar.setOnClickListener {
+            val intent: Intent = Intent(this, ActividadRegistro ::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
         btnIr.setOnClickListener {
