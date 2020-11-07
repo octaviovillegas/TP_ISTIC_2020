@@ -21,7 +21,7 @@ class ActividadBitcoin : AppCompatActivity() {
         val datosJSONObject = JSONObject(datos)
         //val datosArrayJson = JSONArray(datos);
 
-        for (i in 0..7) {
+        for (i in 0..100) {
             //var btc = datosArrayJson.getJSONObject(i)
             //Log.d("Cotizacion BTC", btc.getString("casa"))
             //arrayDenombreDeBTC.add(btc.getString("casa"))
