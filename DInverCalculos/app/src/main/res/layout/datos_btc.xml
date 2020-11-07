@@ -20,31 +20,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPrecioBTC" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreBTC" />
 
     <TextView
         android:id="@+id/txtPrecioBTC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="48dp"
         android:text="Variacion"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPrecioBTC"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreBTC" />
 
     <TextView
         android:id="@+id/txtNombreBTC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="177dp"
+        android:layout_marginTop="16dp"
         android:text="NombreCripto"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"

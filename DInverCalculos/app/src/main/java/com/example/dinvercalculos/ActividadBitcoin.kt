@@ -25,7 +25,9 @@ class ActividadBitcoin : AppCompatActivity() {
             //var btc = datosArrayJson.getJSONObject(i)
             //Log.d("Cotizacion BTC", btc.getString("casa"))
             //arrayDenombreDeBTC.add(btc.getString("casa"))
-            if((i == 0) || (i ==1) || (i ==3) || (i ==4)){
+            if((i == 0) || (i ==1) || (i ==2) || (i ==3) || (i ==6) || (i ==7) || (i ==9) ||
+                (i ==11) || (i ==12) || (i ==15) || (i ==22) || (i ==23) || (i ==26) || (i ==29)
+                || (i ==34) || (i ==76) ) {
                 arrayDeobjetosDeBTC.add(
                     ClaseBTC(
                         datosJSONObject.getJSONArray("data").getJSONObject(i).getString("name"),
