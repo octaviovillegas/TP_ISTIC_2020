@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleProducto"
+    android:background="#edf5e1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="Nombre del articulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+    <ImageView
+        android:id="@+id/img_producto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_nombre"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_producto"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_marca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_descripcion"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_cont_neto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contenido Neto"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_marca"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_lugar_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lugar de compra"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_cont_neto"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_cantidad"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Canti"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/detalle_producto_precio"
+        app:layout_constraintEnd_toStartOf="@+id/detalle_producto_precio_total"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_lugar_compra"/>
+
+    <TextView
+        android:id="@+id/detalle_producto_precio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Precio"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/detalle_producto_cantidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_lugar_compra" />
+
+    <TextView
+        android:id="@+id/detalle_producto_precio_total"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detalle_producto_lugar_compra"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

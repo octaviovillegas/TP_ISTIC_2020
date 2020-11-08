@@ -8,12 +8,15 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.DBReference
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.TAG
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.ToastMessage
 import com.example.listadecompras.DataModels.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.firestore.FirebaseFirestore
+
 
 class Registro : AppCompatActivity() {
 
@@ -25,6 +28,8 @@ class Registro : AppCompatActivity() {
     private lateinit var txtEmail: TextView
     private lateinit var txtNombre: TextView
     private lateinit var txtTelefono: TextView
+    private lateinit var db: FirebaseFirestore
+    private var user: FirebaseUser? = null
     private val SUCCESS = 2000
     private val FAIL = 999
     private var EMAIL_EXIST = "The email address is already in use by another account."
@@ -36,6 +41,9 @@ class Registro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
 
         auth = FirebaseAuth.getInstance()
+        user = auth.currentUser
+        db = FirebaseFirestore.getInstance()
+
 
         progressBar = findViewById(R.id.progressBar)
 
@@ -53,26 +61,26 @@ class Registro : AppCompatActivity() {
     }
 
     private fun createAccount(){
-        var userToFile:String = txtUsuario.text.toString().trim()
-        var passToFile:String = txtPassword.text.toString().trim()
-        var confirmPassToFile:String = txtConfirmPass.text.toString().trim()
-        var emailToFile:String = txtEmail.text.toString().trim()
-        var telefonoToFile:String = txtTelefono.text.toString().trim()
-        var nombreToFile:String = txtNombre.text.toString().trim()
+        val userToFile:String = txtUsuario.text.toString().trim()
+        val passToFile:String = txtPassword.text.toString().trim()
+        val confirmPassToFile:String = txtConfirmPass.text.toString().trim()
+        val emailToFile:String = txtEmail.text.toString().trim()
+        val telefonoToFile:String = txtTelefono.text.toString().trim()
+        val nombreToFile:String = txtNombre.text.toString().trim()
 
-        if (validateForm(nombreToFile, userToFile, passToFile, confirmPassToFile, emailToFile, telefonoToFile))
-        {
+        if (validateForm(nombreToFile, userToFile, passToFile, confirmPassToFile, emailToFile, telefonoToFile)){
+
             progressBar.visibility = View.VISIBLE
-            auth.createUserWithEmailAndPassword(emailToFile,passToFile)
-                .addOnCompleteListener(this){
-                    task ->
+            auth.createUserWithEmailAndPassword(emailToFile, passToFile)
+                .addOnCompleteListener(this){ task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
                         val user:FirebaseUser? = auth.currentUser
                         verifyEmail(user)
-                        userData(nombreToFile,userToFile,emailToFile,telefonoToFile)
+                        userData(nombreToFile, userToFile, emailToFile, telefonoToFile)
                         updateUI(user)
+                        saveUserCloudFirestore(nombreToFile, userToFile, emailToFile, telefonoToFile, user?.uid)
                         registerResult = SUCCESS
                         messageHandler(registerResult.toString())
                         action()
@@ -84,23 +92,36 @@ class Registro : AppCompatActivity() {
                         updateUI(null)
                         progressBar.visibility = View.GONE
                     }
-                }
+            }
         }
     }
+
+    private fun saveUserCloudFirestore(name: String, userNick: String, email: String, phone: String, userid: String?){
+        val userObj = User(name, userNick, email, phone, userid)
+        db.collection("users")
+            .add(userObj)
+            .addOnSuccessListener { documentReference ->
+                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
+            }
+    }
+
     private fun action(){
         var loginIntent = Intent(this, MainActivity::class.java)
         startActivity(loginIntent)
+        finish()
     }
 
-    private fun verifyEmail(user:FirebaseUser?){
+    private fun verifyEmail(user: FirebaseUser?){
         user?.sendEmailVerification()
-            ?.addOnCompleteListener(this){
-                task->
+            ?.addOnCompleteListener(this){ task->
                 if(task.isComplete){
-                    ToastMessage("Correo de verificacion enviado",this)
+                    ToastMessage("Correo de verificacion enviado", this)
                 }
                 else{
-                    ToastMessage("Error al enviar correo de verificacion",this)
+                    ToastMessage("Error al enviar correo de verificacion", this)
                 }
             }
     }
@@ -109,18 +130,25 @@ class Registro : AppCompatActivity() {
         try {
             val dbRef = DBReference()
             val key = dbRef.child("users").push().key
-            val userObj = User(name, user, email, phone,key)
+            val userObj = User(name, user, email, phone, key)
             val postValues = userObj.toMap()
             val childUpdates = HashMap<String, Any>()
             childUpdates["/users/$key"] = postValues
             dbRef.updateChildren(childUpdates)
         }
         catch (ex: Throwable) {
-            ToastMessage("Error: ${ex.message}",this)
+            ToastMessage("Error: ${ex.message}", this)
         }
     }
 
-    private fun validateForm(name: String, user: String, pass: String, passConfirm: String, email: String, phone: String) : Boolean{
+    private fun validateForm(
+        name: String,
+        user: String,
+        pass: String,
+        passConfirm: String,
+        email: String,
+        phone: String
+    ) : Boolean{
         var flag = true
         when {
             name.isEmpty() -> {
@@ -176,29 +204,27 @@ class Registro : AppCompatActivity() {
     private fun messageHandler(exceptionMessage: String?){
         when (registerResult) {
             SUCCESS -> {
-                ToastMessage("Registro exitoso!",this)
+                ToastMessage("Registro exitoso!", this)
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             FAIL -> {
-                if (exceptionMessage == EMAIL_EXIST){
-                    ToastMessage("El mail ya esta registrado",this)
+                if (exceptionMessage == EMAIL_EXIST) {
+                    ToastMessage("El mail ya esta registrado", this)
                 }
-                ToastMessage("Registro fallido!",this)
+                ToastMessage("Registro fallido!", this)
             }
         }
     }
 
-    public override fun onStart(){
-        super.onStart()
-        val currentUser = auth.currentUser
-        updateUI(currentUser)
-    }
-
     private fun updateUI(currentUser: FirebaseUser?) {
-        if (currentUser != null)
-        {
-            var user = auth.currentUser
+        if (currentUser != null) {
+            var user = auth?.currentUser
+            user?.let {
+                val name = user.displayName
+                val email = user.email
+                val uid = user.uid
+            }
         }
     }
 }

@@ -1,25 +1,32 @@
 package com.example.listadecompras.Common_Functions
 
 import android.content.Context
+import android.content.Intent
 import android.widget.Toast
+import com.example.listadecompras.MenuPrincipal
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class CommonFunctions {
-    private lateinit var auth: FirebaseAuth
 
     companion object{
+
+        private lateinit var auth: FirebaseAuth
+
         fun ToastMessage(message: String,context: Context){
             Toast.makeText(context,"${message}", Toast.LENGTH_LONG).show()
         }
+
         fun DBReference() : DatabaseReference
         {
             val dbRef =  FirebaseDatabase.getInstance().reference
             return dbRef
         }
+
         fun getUserProfile() {
             // [START get_user_profile]
             val user = Firebase.auth.currentUser
@@ -39,6 +46,7 @@ class CommonFunctions {
             }
             // [END get_user_profile]
         }
+
         const val TAG = "MessagingService"
     }
 }

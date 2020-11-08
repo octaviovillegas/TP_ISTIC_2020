@@ -7,8 +7,10 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.ToastMessage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +19,13 @@ class MainActivity : AppCompatActivity() {
     private val AUTH_REQUEST_CODE = 2000
     private var user : FirebaseUser? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         auth = FirebaseAuth.getInstance()
+
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnSignUp = findViewById<Button>(R.id.btnSignUp)
@@ -49,8 +53,9 @@ class MainActivity : AppCompatActivity() {
                 val name = user.displayName
                 val email = user.email
             }
-            ToastMessage("Bienvenido ${user?.email.toString()}!")
-            startActivity(Intent(this,MenuPrincipal::class.java))
+            ToastMessage("Bienvenido ${user?.email.toString()}!",this)
+            var menuPrincipalIntent = Intent(this,MenuPrincipal::class.java)
+            startActivity(menuPrincipalIntent)
             finish()
         }
     }
@@ -64,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
-                    ToastMessage("Mail no registrado")
+                    ToastMessage("Mail no registrado",this)
                     updateUI(null)
                 }
             }
@@ -106,7 +111,4 @@ class MainActivity : AppCompatActivity() {
         updateUI(currentUser)
     }
 
-    private fun ToastMessage(message: String){
-        Toast.makeText(this,"${message}", Toast.LENGTH_LONG).show()
-    }
 }
