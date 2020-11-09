@@ -20,16 +20,16 @@ class Menu : AppCompatActivity() {
 
         val custom_list = CListAdapter(this,custom_list_data)
 
-        custom_list_data.add(CList(R.drawable.calculos,"Calculos","Realice sus calculos de inversion"))
-        custom_list_data.add(CList(R.drawable.dollars,"Dollar","Consulte el valor del dollar en tiempo real"))
-        custom_list_data.add(CList(R.drawable.btc,"Bitcoin","Consulte el valor del Bitcoin en tiempo real"))
-        custom_list_data.add(CList(R.drawable.claves,"Mis Claves","Mantenga segura sus claves"))
-        custom_list_data.add(CList(R.drawable.link,"Links de trading","guarde sus webs favoritas"))
+        custom_list_data.add(CList(R.drawable.calculos,"Calculos","Calculos de inversion"))
+        custom_list_data.add(CList(R.drawable.dollars,"Dollar","Valor del dollar"))
+        custom_list_data.add(CList(R.drawable.btc,"Bitcoin","Valor del BTC y critos"))
+        custom_list_data.add(CList(R.drawable.claves,"Mis Claves","Sus claves"))
+        custom_list_data.add(CList(R.drawable.link,"Links de trading","Sus webs favoritas"))
 
         listView.adapter = custom_list
 
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this@Menu, "Item Clicked:- $id", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@Menu, "Cargando... ", Toast.LENGTH_SHORT).show()
 
             if (position == 0)
             {
