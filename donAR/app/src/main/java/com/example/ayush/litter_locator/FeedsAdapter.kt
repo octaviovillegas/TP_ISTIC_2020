@@ -43,6 +43,7 @@ class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFee
         p0.info_get?.setText(iFeed?.get(p1))
         p0.name_get?.setText(nFeed?.get(p1))
         p0.loc_get?.setText(lFeed?.get(p1))
+
            }
 
     class FeeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

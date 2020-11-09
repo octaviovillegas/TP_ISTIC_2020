@@ -63,5 +63,27 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:text="Autor" />
+
+    <Button
+            android:id="@+id/btn_recibirdonacion"
+            android:layout_width="164dp"
+            android:layout_height="36dp"
+
+            android:layout_below="@+id/feedinfo"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="113dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/feedname"
+            android:layout_toRightOf="@+id/feedname"
+            android:layout_weight="1"
+            android:text="Recibir Donacion"
+            android:textColor="@color/colorAccent"></Button>
 </RelativeLayout>
 </LinearLayout>

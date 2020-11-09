@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView
 import android.widget.Toast
 import java.util.*
 
+
+
+
 class FeedsActivity : AppCompatActivity() {
 
 
@@ -24,6 +27,9 @@ class FeedsActivity : AppCompatActivity() {
 //        Datahelper.car.Hinfo = naviconList
 //        Datahelper.car.Hname = naviconList
 //        Datahelper.car.Huri = naviconList
+
+
+
 
 
 
@@ -44,4 +50,5 @@ class FeedsActivity : AppCompatActivity() {
         recycle?.adapter = adpt
 
     }
+
 }

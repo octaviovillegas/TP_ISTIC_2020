@@ -178,6 +178,22 @@ object transdb{
         db.insert(transdb.Table_pic,null,contentValues)
         Datahelper.car.ttr = "true2"
     }
+    fun updateData(typefoodData: String?, infoData: String?, locData: String?, UriData: String?, nameData: String?):Long
+    {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put(transdb.C_TYPE_food,typefoodData)
+        values.put(transdb.C_INFO,infoData)
+        values.put(transdb.C_LOC,locData)
+        values.put(transdb.C_URI,UriData)
+        values.put(transdb.C_FNAME,nameData)
+
+        return db.update(transdb.TABLE_NAME, values, "${transdb.C_FNAME}=?",arrayOf(nameData)).toLong()
+
+
+    }
+
+
 
 fun storePics(na :String?,ur :String?){
     val db = this.writableDatabase
