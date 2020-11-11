@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "478997251108",
+    "firebase_url": "https://pultrnsfertapp.firebaseio.com",
+    "project_id": "pultrnsfertapp",
+    "storage_bucket": "pultrnsfertapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478997251108:android:df1633cf5d867b62b944b1",
+        "android_client_info": {
+          "package_name": "com.example.parcial_julissa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478997251108-g6fk9ke2l36hs7j029n7ii1ee33iskvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSUwsfj7d8tms4ycoGTEvN9qHF1Kdit68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478997251108-g6fk9ke2l36hs7j029n7ii1ee33iskvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
