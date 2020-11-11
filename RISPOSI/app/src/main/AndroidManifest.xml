@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Client.pushnotification.HomeNotification"></activity>
+        <activity android:name=".Client.Historial.controller.HistorialActivity"></activity>
+        <activity android:name=".Client.Historial.model.Historial" />
+        <activity android:name=".Client.Historial.view.ListadoHistorial" />
+        <activity android:name=".Client.pushnotification.HomeNotification" />
         <activity android:name=".Client.ApiConsulta.view.DetalleClima" />
         <activity android:name=".Client.ApiConsulta.view.ListadoClima" />
         <activity android:name=".Owner.BDProductos.ViewModelOwner" />
@@ -38,30 +41,28 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-        <!--Manera simple de recibir mensajes en primera plana
+        <!--
+Manera simple de recibir mensajes en primera plana
                 <service
                     android:name=".MyFirebaseMessagingService"
                     android:exported="false">
                     <intent-filter>
                         <action android:name="com.google.firebase.MESSAGING_EVENT" />
                     </intent-filter>
-                </service>-->
-
+                </service>
+        -->
         <service
             android:name=".FirebaseService"
             android:permission="com.google.android.c2dm.permission.SEND">
-
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </service>
-                <!--
+        <!--
          Set custom default icon. This is used when no icon is set for incoming notification messages.
              See README(https://goo.gl/l4GJaQ) for more.
-                -->
+        -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_stat_ic_notification" />

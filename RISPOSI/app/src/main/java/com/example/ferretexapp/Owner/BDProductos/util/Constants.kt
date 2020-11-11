@@ -7,6 +7,8 @@ class Constants {
     //Mientras probamos con la ruta de localhost
     companion object{
         //const val BASE_URL = "https://localhost/192.168.0.205:44348"
+        //Mockeado
         const val BASE_URL = "https://jsonplaceholder.typicode.com"
+        //const val BASE_URL = "https://localhost:44348"
     }
 }

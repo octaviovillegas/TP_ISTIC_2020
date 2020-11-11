@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.ferretexapp.Client.ApiConsulta.view.ListadoClima
+import com.example.ferretexapp.Client.Historial.view.ListadoHistorial
 import com.example.ferretexapp.Client.View.ProductoList
 import com.example.ferretexapp.Client.pushnotification.HomeNotification
 import com.example.ferretexapp.R
@@ -56,6 +57,11 @@ class ClientHome : AppCompatActivity() {
         btnValoracion.setOnClickListener(){
             val intentValoracion = Intent(this, HomeNotification::class.java)
             startActivity(intentValoracion)
+        }
+
+        btnHistorial.setOnClickListener(){
+            val intentHistorial = Intent (this, ListadoHistorial::class.java)
+            startActivity(intentHistorial)
         }
 
 

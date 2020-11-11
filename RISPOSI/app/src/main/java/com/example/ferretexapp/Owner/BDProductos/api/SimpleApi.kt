@@ -8,10 +8,10 @@ interface SimpleApi {
     //Colocar bien el End Point
 
     //El correcto
-    //@GET("api/Productos/{id}")
+    //@GET("/api/Productos/{id}")
 
     //Prueba
-    @GET("posts/1")
+    @GET("/posts/1")
 
     suspend fun getPost(): Post
 }

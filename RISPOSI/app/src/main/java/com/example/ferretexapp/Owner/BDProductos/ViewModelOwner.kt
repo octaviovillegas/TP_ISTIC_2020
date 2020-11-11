@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.ferretexapp.Owner.BDProductos.repository.Repository
 import com.example.ferretexapp.R
 import com.example.ferretexapp.TiempoEspera
+import kotlinx.android.synthetic.main.activity_view_model_owner.*
 
 class ViewModelOwner : AppCompatActivity() {
     private lateinit var viewModel:MainViewModel
@@ -23,12 +24,12 @@ class ViewModelOwner : AppCompatActivity() {
         viewModel = ViewModelProvider(this, viewModelFactory).get(MainViewModel::class.java)
         viewModel.getPost()
         viewModel.myResponse.observe(this, Observer { response ->
-            Log.d("Response",response.userId.toString())
+            Log.d("Response", response.userId.toString())
             Log.d("Response", response.id.toString())
             Log.d("Response",response.title)
             Log.d("Response",response.body)
         })
-
+/*
         val btnBuscar = findViewById<Button>(R.id.btnBuscar)
         val edtCodigo=findViewById<EditText>(R.id.edtCodigo)
         val tvNombre=findViewById<TextView>(R.id.tvNombre)
@@ -44,7 +45,8 @@ class ViewModelOwner : AppCompatActivity() {
             })
         }
 
-
+*/
+        val btnBuscar = findViewById<Button>(R.id.btnBuscar)
         btnPantallaFinalOwner.setOnClickListener(){
             val PasarPantallaFinalOwner = Intent(this, TiempoEspera::class.java)
             startActivity(PasarPantallaFinalOwner)
