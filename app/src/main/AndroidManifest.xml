@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ItemActivity"></activity>
+        <activity android:name=".modificarInf"></activity>
+        <activity android:name=".borradoInf" />
+        <activity android:name=".altaInf" />
+        <activity android:name=".listadoInf" />
+        <activity android:name=".menuCRUD" />
+        <activity android:name=".ItemActivity" />
         <activity android:name=".Listado" />
         <activity android:name=".ActividadGps" />
         <activity android:name=".OkRegistro" />

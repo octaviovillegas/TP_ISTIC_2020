@@ -20,5 +20,10 @@ class ActividadMenu : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        btnDos.setOnClickListener {
+            val intent: Intent = Intent(this, menuCRUD ::class.java)
+            startActivity(intent)
+            finish()
+        }
 }
 }

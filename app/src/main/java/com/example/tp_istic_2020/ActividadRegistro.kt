@@ -1,5 +1,6 @@
 package com.example.tp_istic_2020
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,12 +16,12 @@ class ActividadRegistro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividad_registro)
         val lblNombre : TextView =findViewById<Button>(R.id.lblNombre)
-        val lblApellido : TextView =findViewById<TextView>(R.id.lblApellido)
-        val lblMail : TextView =findViewById<TextView>(R.id.lblMail)
-        val lblPass : TextView =findViewById<TextView>(R.id.lblPass)
-        val btn_resgitro : Button =findViewById<Button>(R.id.btn_registro)
+        val lblApellido :TextView =findViewById<TextView>(R.id.lblApellido)
+        val lblMail :TextView =findViewById<TextView>(R.id.lblMail)
+        val lblPass :TextView =findViewById<TextView>(R.id.lblPass)
+        val btnRegistrarUsuario :Button =findViewById<Button>(R.id.btnRegistrarUsuario)
 
-        btn_resgitro.setOnClickListener {
+        btnRegistrarUsuario.setOnClickListener {
             if (lblNombre.text.toString().isEmpty() or lblApellido.text.toString().isEmpty() or lblMail.text.toString().isEmpty() or lblPass.text.toString().isEmpty() )
             {
 
@@ -30,10 +31,10 @@ class ActividadRegistro : AppCompatActivity() {
             {
 
                 altaDeUsuario(
-                    lblNombre.text.toString(),
-                    lblApellido.text.toString(),
-                    lblMail.text.toString(),
-                    lblPass.text.toString()
+                        lblNombre.text.toString(),
+                        lblApellido.text.toString(),
+                        lblMail.text.toString(),
+                        lblPass.text.toString()
                 )
                 val intent: Intent = Intent(this, OkRegistro ::class.java)
                 startActivity(intent)
@@ -48,13 +49,12 @@ class ActividadRegistro : AppCompatActivity() {
     {
 
         try {
-            val archivo = OutputStreamWriter(openFileOutput("registros.txt", MODE_APPEND))
+            val archivo = OutputStreamWriter(openFileOutput("registros.txt", Activity.MODE_APPEND))
             archivo.write(nombre + "=>" + apellido+"=>"+mail+"=>" +clave +"\n")
             archivo.flush()
             archivo.close()
         } catch (e: IOException) {
 
         }
-    
     }
 }

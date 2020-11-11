@@ -7,6 +7,22 @@
     android:background="#2196F3"
     tools:context=".ActividadRegistro">
 
+    <Button
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="39dp"
+        android:background="#101010"
+        android:fontFamily="sans-serif"
+        android:text="Registrarme"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/lblPass"
+        app:layout_constraintTop_toBottomOf="@+id/lblPass" />
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -38,22 +54,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblApellido" />
-
-    <Button
-        android:id="@+id/btn_registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="39dp"
-        android:background="#101010"
-        android:fontFamily="sans-serif"
-        android:text="Registrarme"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/lblPass"
-        app:layout_constraintTop_toBottomOf="@+id/lblPass" />
 
     <TextView
         android:id="@+id/textView13"

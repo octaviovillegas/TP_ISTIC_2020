@@ -51,15 +51,13 @@
         android:id="@+id/btnIr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="57dp"
         android:backgroundTint="#171717"
         android:text="Ingresar"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnRegistrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPass" />
 
@@ -67,13 +65,13 @@
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
         android:backgroundTint="#090909"
         android:text="Registrarme"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnIr"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnIr" />
 
     <EditText

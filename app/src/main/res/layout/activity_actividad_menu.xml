@@ -8,6 +8,20 @@
     tools:context=".ActividadMenu">
 
     <Button
+        android:id="@+id/btnDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="117dp"
+        android:backgroundTint="#171717"
+        android:text="xxxx"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnPreguntas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,22 +39,21 @@
         android:id="@+id/btnListado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#171717"
         android:text="Listado"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPreguntas" />
+        app:layout_constraintBottom_toTopOf="@+id/btnDos"
+        app:layout_constraintStart_toStartOf="@+id/btnDos" />
 
     <Button
         android:id="@+id/btnGps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#171717"
         android:text="Buscar Ubicación"
         android:textAlignment="center"

@@ -11,11 +11,12 @@ Actividad inicial:permitir el ingreso a la app,pantalla de inicio lleva a la act
 
 ActividadLogin:Opcion de ingresar si esta registrado, de registrarse o de entrar como invitado,no recibe datos
 
-ActividadMenu:Permite elegir entre diferentes opciones(se esta viendo que hacer),una es ubicacion,envia el ok que lleva a la actividad gps
+ActividadMenu:Permite elegir entre diferentes opciones(ubicacion,preguntas frecuentes,listado).
 
 Actividad Gps:Recibe de menu el ok para buscar una direccion y esta actividad te lleva al mapa del gps con la direccion buscada
 
-
+Item:Contiene el nombre de las variables
+ItemActivity: 
 Actividad Registro:Registro de usuario que no esta logiado
 
 ActividadOkRegistro: Funcion de registro exitoso, te lleva a la ActividaLogin para poder ingresar a la app

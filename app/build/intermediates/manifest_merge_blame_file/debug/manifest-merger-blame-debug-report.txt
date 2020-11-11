@@ -11,7 +11,7 @@
 9-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:5:5-26:19
+11-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:5:5-30:19
 12        android:allowBackup="true"
 12-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,41 +29,53 @@
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
 21-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity android:name="com.example.tp_istic_2020.ItemActivity" />
-22-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:9-59
-22-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:19-47
-23        <activity android:name="com.example.tp_istic_2020.Listado" />
+22        <activity android:name="com.example.tp_istic_2020.borradoInf" />
+22-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:9-57
+22-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:19-45
+23        <activity android:name="com.example.tp_istic_2020.altaInf" />
 23-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:9-45
 23-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:19-42
-24        <activity android:name="com.example.tp_istic_2020.ActividadGps" />
-24-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:9-50
-24-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:19-47
-25        <activity android:name="com.example.tp_istic_2020.OkRegistro" />
-25-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:9-48
-25-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:19-45
-26        <activity android:name="com.example.tp_istic_2020.ActividadRegistro" />
-26-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:9-55
-26-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:19-52
-27        <activity android:name="com.example.tp_istic_2020.ActividadMenu" />
-27-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:9-51
-27-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:19-48
-28        <activity android:name="com.example.tp_istic_2020.ActividadLogin" />
-28-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:9-52
-28-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:19-49
-29        <activity android:name="com.example.tp_istic_2020.MainActivity" >
-29-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:9-25:20
-29-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:19-47
-30            <intent-filter>
-30-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:13-24:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:17-69
-31-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:17-77
-33-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:27-74
-34            </intent-filter>
-35        </activity>
-36    </application>
-37
-38</manifest>
+24        <activity android:name="com.example.tp_istic_2020.listadoInf" />
+24-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:9-48
+24-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:19-45
+25        <activity android:name="com.example.tp_istic_2020.menuCRUD" />
+25-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:9-46
+25-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:19-43
+26        <activity android:name="com.example.tp_istic_2020.ItemActivity" />
+26-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:9-50
+26-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:19-47
+27        <activity android:name="com.example.tp_istic_2020.Listado" />
+27-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:9-45
+27-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:19-42
+28        <activity android:name="com.example.tp_istic_2020.ActividadGps" />
+28-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:9-50
+28-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:19-47
+29        <activity android:name="com.example.tp_istic_2020.OkRegistro" />
+29-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:9-48
+29-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:19-45
+30        <activity android:name="com.example.tp_istic_2020.ActividadRegistro" />
+30-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:9-55
+30-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:19-52
+31        <activity android:name="com.example.tp_istic_2020.ActividadMenu" />
+31-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:9-51
+31-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:19-48
+32        <activity android:name="com.example.tp_istic_2020.ActividadLogin" />
+32-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:9-52
+32-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:19-49
+33        <activity android:name="com.example.tp_istic_2020.MainActivity" >
+33-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:9-29:20
+33-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:19-47
+34            <intent-filter>
+34-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:24:13-28:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:17-69
+35-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:17-77
+37-->C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:27-74
+38            </intent-filter>
+39        </activity>
+40    </application>
+41
+42</manifest>
