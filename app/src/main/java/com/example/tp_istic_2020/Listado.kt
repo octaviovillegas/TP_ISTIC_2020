@@ -12,10 +12,10 @@ class Listado : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listado)
         val busqueda=findViewById<SearchView>(R.id.busqueda) as SearchView
-        val item=Item("Lazzie","Sin desparacitar",R.drawable.perro)
-        val item2=Item("Homero","Darle medicamento Lun-Mierc-Viernes 1 por dia durante 3 semanas",R.drawable.terrier)
-        val item3=Item("Lucky","Llevar al veterinario 10/11 a las 11hs",R.drawable.golden)
-        val item4=Item("Acqua","Coordinar con paseador para empezar una rutina",R.drawable.siberiano)
+        val item=Item("Lazzie","",R.drawable.perro)
+        val item2=Item("Homero","",R.drawable.terrier)
+        val item3=Item("Lucky","",R.drawable.golden)
+        val item4=Item("Acqua","",R.drawable.siberiano)
         val listaItems=listOf(item,item2,item3,item4)
        val adapter=ItemAdapter(this,android.R.layout.simple_list_item_1
        ,listaItems

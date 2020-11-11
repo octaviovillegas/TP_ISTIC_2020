@@ -25,5 +25,10 @@ class ActividadMenu : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        btnPreguntas.setOnClickListener {
+            val intent: Intent = Intent(this, ActividadPreguntas ::class.java)
+            startActivity(intent)
+            finish()
+        }
 }
 }

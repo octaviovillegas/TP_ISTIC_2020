@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\9e65d32e283675070d8a549e97da10b7\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\284a2a218f7f6f43d29c2ab8e18ab1ed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -26,25 +26,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\mauri\.gradle\ca
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\3b0b05070bc9286d52a6b3c810b8c821\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\aab15b69fca1ffde3f55c4793eabe4f8\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\7d01e9386d69a672da8ac3ffe9c7d5f1\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:5:5-32:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\83285e8944747cc08ad1ef8f52eb5867\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.3.2] C:\Users\mauri\.gradle\caches\transforms-2\files-2.1\19991b063bf2e578ffd39acc6e271bed\core-1.3.2\AndroidManifest.xml:24:5-89
@@ -65,64 +65,72 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ma
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.tp_istic_2020.ActividadPreguntas
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:9-65
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:19-53
+activity#com.example.tp_istic_2020.modificarInf
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:9-50
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.example.tp_istic_2020.borradoInf
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:9-57
-	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:12:19-45
-activity#com.example.tp_istic_2020.altaInf
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:9-45
-	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:13:19-42
-activity#com.example.tp_istic_2020.listadoInf
 ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:9-48
 	android:name
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:14:19-45
+activity#com.example.tp_istic_2020.altaInf
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:9-45
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:19-42
+activity#com.example.tp_istic_2020.listadoInf
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:9-48
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:19-45
 activity#com.example.tp_istic_2020.menuCRUD
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:9-46
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:9-46
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:15:19-43
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:19-43
 activity#com.example.tp_istic_2020.ItemActivity
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:9-50
-	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:16:19-47
-activity#com.example.tp_istic_2020.Listado
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:9-45
-	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:17:19-42
-activity#com.example.tp_istic_2020.ActividadGps
 ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:9-50
 	android:name
 		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:18:19-47
+activity#com.example.tp_istic_2020.Listado
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:9-45
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:19-42
+activity#com.example.tp_istic_2020.ActividadGps
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:9-50
+	android:name
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:19-47
 activity#com.example.tp_istic_2020.OkRegistro
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:9-48
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:9-48
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:19:19-45
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:19-45
 activity#com.example.tp_istic_2020.ActividadRegistro
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:9-55
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:9-55
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:20:19-52
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:19-52
 activity#com.example.tp_istic_2020.ActividadMenu
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:9-51
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:9-51
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:21:19-48
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:19-48
 activity#com.example.tp_istic_2020.ActividadLogin
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:9-52
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:24:9-52
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:24:19-49
 activity#com.example.tp_istic_2020.MainActivity
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:9-29:20
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mauri\Desktop\GanuProyecto2020\TP_ISTIC_2020\app\src\main\AndroidManifest.xml

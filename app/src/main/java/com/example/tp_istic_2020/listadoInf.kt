@@ -31,7 +31,7 @@ class listadoInf : AppCompatActivity() {
 
                     val informe: String = fila.getString(0)
                     val nombre: String = fila.getString(1)
-                    listado.add("item: "+informe+" "+ "nombre: "+nombre+" \n")
+                    listado.add("item: "+informe+" "+ "numero: "+nombre+" \n")
                 } while (fila.moveToNext())
             } else{
                 Toast.makeText(this, "Lista de items vacias",  Toast.LENGTH_SHORT).show()

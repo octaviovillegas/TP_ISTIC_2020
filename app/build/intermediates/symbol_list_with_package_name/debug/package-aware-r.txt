@@ -897,6 +897,8 @@ id btnAtras
 id btnAtras2
 id btnAtras3
 id btnAtras4
+id btnAtras5
+id btnAtras6
 id btnBorrar
 id btnDos
 id btnEntrar
@@ -1089,6 +1091,12 @@ id textView13
 id textView15
 id textView2
 id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id time
 id title
 id titleDividerNoCustom
@@ -1152,6 +1160,7 @@ layout abc_tooltip
 layout activity_actividad_gps
 layout activity_actividad_login
 layout activity_actividad_menu
+layout activity_actividad_preguntas
 layout activity_actividad_registro
 layout activity_alta_inf
 layout activity_borrado_inf
@@ -1160,6 +1169,7 @@ layout activity_listado
 layout activity_listado_inf
 layout activity_main
 layout activity_menu_c_r_u_d
+layout activity_modificar_inf
 layout activity_ok_registro
 layout custom_dialog
 layout item

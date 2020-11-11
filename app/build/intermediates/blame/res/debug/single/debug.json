@@ -12,6 +12,10 @@
         "source": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\src\\main\\res\\layout\\activity_actividad_menu.xml"
     },
     {
+        "merged": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_actividad_preguntas.xml.flat",
+        "source": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\src\\main\\res\\layout\\activity_actividad_preguntas.xml"
+    },
+    {
         "merged": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_listado.xml.flat",
         "source": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\src\\main\\res\\layout\\activity_listado.xml"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_modificar_inf.xml.flat",
+        "source": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\src\\main\\res\\layout\\activity_modificar_inf.xml"
     },
     {
         "merged": "C:\\Users\\mauri\\Desktop\\GanuProyecto2020\\TP_ISTIC_2020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="117dp"
         android:backgroundTint="#171717"
-        android:text="xxxx"
+        android:text="Operaciones"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
