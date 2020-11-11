@@ -1,0 +1,6 @@
+5° Sprint 4 de Noviembre
+1- aplicación con las funcionalidades principales funcionando.
+2- video con la presentación de la funcionalidad
+3- documentación de la aplicación
+
+Funcionalidades logradas, 
