@@ -1,13 +1,9 @@
 package com.example.proyecto_nosayudamosentretodos_nuez
 
-import android.Manifest
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import kotlinx.android.synthetic.main.activity_publicaciones__mas__datos.*
 
 class Publicaciones_Mas_Datos : AppCompatActivity() {
@@ -55,7 +51,7 @@ class Publicaciones_Mas_Datos : AppCompatActivity() {
        //     Toast.makeText(this, "Error:  ${e.message}",  Toast.LENGTH_SHORT).show()
        // }
 
-        btn_imageButton.setOnClickListener {
+        btn_imageButton_llamar.setOnClickListener {
 
             val llamar = Intent (Intent.ACTION_DIAL)
 
@@ -74,6 +70,17 @@ class Publicaciones_Mas_Datos : AppCompatActivity() {
             finish()
 
         }
+
+
+        btn_imageButton_ubicacion.setOnClickListener {
+
+            val UriIntent= Uri.parse("geo:0,0?q=${lbl_localidad_pub_usu.text}")
+            val abrir_mapa=Intent(Intent.ACTION_VIEW,UriIntent)
+            abrir_mapa.setPackage("com.google.android.apps.maps")
+            startActivity(abrir_mapa)
+
+        }
+
 
     }
 

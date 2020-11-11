@@ -59,7 +59,7 @@ class Registro_Usuario : AppCompatActivity() {
             retorno=miUsuario.GuardarEnSqLite(this)
 
             val intent2: Intent = Intent(this, MainActivity::class.java)
-
+            Toast.makeText(this, "Usuario registrado con exito", Toast.LENGTH_SHORT).show()
             startActivity(intent2)
 
             finish()

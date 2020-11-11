@@ -73,10 +73,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Usuario y/o contraseña incorecto ", Toast.LENGTH_LONG)
                         .show()
                 }
-                //else{
-                 //   Toast.makeText(this, "NO ESTAS REGISTRADO? REGISTRATE!!! ", Toast.LENGTH_LONG)
-                  //      .show()
-               // }
+
+            }else{
+                Toast.makeText(this, "no estas registrado? REGISTRATE!!!! ", Toast.LENGTH_LONG)
+                    .show()
             }
             bd.close()
 

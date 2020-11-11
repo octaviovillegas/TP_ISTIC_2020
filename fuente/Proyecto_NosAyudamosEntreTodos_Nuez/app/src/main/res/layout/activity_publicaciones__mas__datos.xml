@@ -128,6 +128,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout12"
         android:layout_width="169dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
@@ -154,6 +155,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout13"
         android:layout_width="169dp"
         android:layout_height="70dp"
         android:layout_marginTop="12dp"
@@ -180,17 +182,16 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/btn_imageButton"
-        android:layout_width="203dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="60dp"
+        android:id="@+id/btn_imageButton_llamar"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="64dp"
         android:background="#06C135"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
         app:srcCompat="@drawable/llamar4" />
 
     <ImageButton
@@ -206,5 +207,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageButton
+        android:id="@+id/btn_imageButton_ubicacion"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#122488"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:srcCompat="@drawable/boton_ubicacion_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
