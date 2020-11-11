@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="5dp"
+tools:context=".ResumenActivity">
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/gracias"
+    android:layout_width="match_parent"
+    android:layout_height="695dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:text="La tranferencia se hizo exitosamente PulAppTransfert"
+    android:transitionName="buttonSignInTrans" />
+</LinearLayout>

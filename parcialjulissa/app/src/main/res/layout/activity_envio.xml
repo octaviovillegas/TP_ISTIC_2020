@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="5dp"
+tools:context=".EnvioActivity">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/numDelEnvioTextField"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Alias, CBU, Movil o Correo">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numDelEnvioEdiitText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/cuantoTextField"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Cuanto dinero quieres enviar">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cuantoEdiitText"
+        android:layout_width="match_parent"
+        android:layout_height="74dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/btnEnvios"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:text="Enviar Dinero"
+    android:transitionName="newUserTrans" />
+</LinearLayout>
