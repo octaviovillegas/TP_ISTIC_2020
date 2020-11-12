@@ -3,4 +3,4 @@
 2- video con la presentación de la funcionalidad
 3- documentación de la aplicación
 
-Funcionalidades logradas, 
+Funcionalidades logradas y video realizado.
