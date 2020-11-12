@@ -31,8 +31,8 @@ class AdaptadorLsvBitcoin (var contexto: Context, listado: ArrayList<ClaseBTC>) 
         val unBTC =getItem(position)as ClaseBTC
 
         holder?.nombre?.text=unBTC.nombre
-        holder?.simbolo?.text=unBTC.simbolo
-        holder?.precio?.text=unBTC.precio.toString()
+        holder?.simbolo?.text= "Simbolo: " + unBTC.simbolo
+        holder?.precio?.text= "Precio: " + unBTC.precio.toString()
 
 
         return vista!!
