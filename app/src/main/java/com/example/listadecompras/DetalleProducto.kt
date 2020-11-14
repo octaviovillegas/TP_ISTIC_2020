@@ -8,6 +8,7 @@ import android.widget.ListView
 import android.widget.TextView
 import com.example.listadecompras.DataModels.Product
 import org.w3c.dom.Text
+import java.util.*
 
 class DetalleProducto : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class DetalleProducto : AppCompatActivity() {
         setContentView(R.layout.activity_detalle_producto)
 
         val detalleProducto: Product = intent.getSerializableExtra("detalleProducto") as Product
-
+        
         detalle_prod_name = findViewById(R.id.detalle_producto_nombre)
         detalle_prod_price = findViewById(R.id.detalle_producto_precio)
         detalle_prod_brand = findViewById(R.id.detalle_producto_marca)

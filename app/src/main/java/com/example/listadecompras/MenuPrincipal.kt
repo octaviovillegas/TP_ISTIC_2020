@@ -13,6 +13,7 @@ class MenuPrincipal : AppCompatActivity() {
 
     private lateinit var logOut: ImageView
     private lateinit var nuevaLstCompra: Button
+    private lateinit var btnConsultarProducto: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,5 +34,15 @@ class MenuPrincipal : AppCompatActivity() {
     fun goToCargaProducto(view: View){
         val intentCargaProducto = Intent(this,CargaProducto::class.java)
         startActivity(intentCargaProducto)
+    }
+
+    fun goToSearchProduct(view: View){
+        val intentBuscarProducto = Intent(this,BuscarProductoLista::class.java)
+        startActivity(intentBuscarProducto)
+    }
+
+    fun goToAboutMe(view: View){
+        val intentAboutMe = Intent(this,AboutMe::class.java)
+        startActivity(intentAboutMe)
     }
 }

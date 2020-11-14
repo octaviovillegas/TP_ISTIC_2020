@@ -45,7 +45,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnComenzarCompra" />
+        app:layout_constraintTop_toBottomOf="@+id/btnComenzarCompra"
+        android:onClick="goToSearchProduct"/>
 
     <Button
         android:id="@+id/btnConsultarCompras"
@@ -83,7 +84,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConsultarCompras"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="goToAboutMe"/>
 
     <ImageView
         android:onClick="Logout"
