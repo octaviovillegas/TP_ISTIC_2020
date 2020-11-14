@@ -31,9 +31,9 @@ class AdaptadorLsvDollar(var contexto: Context, listado: ArrayList<ClaseDollar>)
         val unDollar =getItem(position)as ClaseDollar
 
         holder?.nombre?.text=unDollar.nombre
-        holder?.pVenta ?.text="P.Venta: " + unDollar.pVenta
-        holder?.pCompra?.text="P.Compra: " + unDollar.pCompra
-        holder?.pVariacion?.text="Variacion Diaria: " + unDollar.pVariacion + "%"
+        holder?.pVenta ?.text="Venta: $ " + unDollar.pVenta
+        holder?.pCompra?.text="Compra: $ " + unDollar.pCompra
+        holder?.pVariacion?.text="Variacion: " + unDollar.pVariacion + "%"
 
 
         return vista!!

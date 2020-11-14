@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LinksTrader"></activity>
+        <activity android:name=".Calculos"></activity>
         <activity android:name=".MisClaves" />
         <activity android:name=".ActividadBitcoin" />
         <activity android:name=".MercadoInteligente" />

@@ -32,7 +32,7 @@ class AdaptadorLsvBitcoin (var contexto: Context, listado: ArrayList<ClaseBTC>) 
 
         holder?.nombre?.text=unBTC.nombre
         holder?.simbolo?.text= "Simbolo: " + unBTC.simbolo
-        holder?.precio?.text= "Precio: " + unBTC.precio.toString()
+        holder?.precio?.text= "Precio: $ " + (Math.round(unBTC.precio * 100.0) / 100.0).toString()
 
 
         return vista!!

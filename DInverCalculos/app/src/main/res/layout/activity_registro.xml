@@ -116,8 +116,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"
-            android:background="#C62828"
             android:text="Registrar"
+            android:background="@drawable/custom_button"
             android:textColor="@android:color/background_light"
             android:textSize="14sp"
             android:textStyle="bold" />

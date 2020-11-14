@@ -21,10 +21,10 @@ class Menu : AppCompatActivity() {
         val custom_list = CListAdapter(this,custom_list_data)
 
         custom_list_data.add(CList(R.drawable.calculos,"Calculos","Calculos de inversion"))
+        custom_list_data.add(CList(R.drawable.link,"Mercado","Mercado Inteligente"))
         custom_list_data.add(CList(R.drawable.dollars,"Dollar","Valor del dollar"))
         custom_list_data.add(CList(R.drawable.btc,"Bitcoin","Valor del BTC y critos"))
         custom_list_data.add(CList(R.drawable.claves,"Mis Claves","Sus claves"))
-        custom_list_data.add(CList(R.drawable.link,"Links de trading","Sus webs favoritas"))
 
         listView.adapter = custom_list
 
@@ -33,23 +33,23 @@ class Menu : AppCompatActivity() {
 
             if (position == 0)
             {
-                val intent = Intent(this, MercadoInteligente::class.java)
+                val intent = Intent(this, Calculos::class.java)
                 startActivity(intent)
             }else if (position == 1)
             {
-                val intent = Intent(this, ActividadDollar::class.java)
+                val intent = Intent(this, MercadoInteligente::class.java)
                 startActivity(intent)
             } else if (position == 2)
             {
-                val intent = Intent(this, ActividadBitcoin::class.java)
+                val intent = Intent(this, ActividadDollar::class.java)
                 startActivity(intent)
             }else if (position == 3)
             {
-                val intent = Intent(this, MisClaves::class.java)
+                val intent = Intent(this, ActividadBitcoin::class.java)
                 startActivity(intent)
             }else if (position == 4)
             {
-                val intent = Intent(this, LinksTrader::class.java)
+                val intent = Intent(this, MisClaves::class.java)
                 startActivity(intent)
             }
 
