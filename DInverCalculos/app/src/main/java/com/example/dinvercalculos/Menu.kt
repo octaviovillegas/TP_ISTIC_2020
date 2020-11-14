@@ -33,7 +33,7 @@ class Menu : AppCompatActivity() {
 
             if (position == 0)
             {
-                val intent = Intent(this, MenuDeCalculos::class.java)
+                val intent = Intent(this, MercadoInteligente::class.java)
                 startActivity(intent)
             }else if (position == 1)
             {

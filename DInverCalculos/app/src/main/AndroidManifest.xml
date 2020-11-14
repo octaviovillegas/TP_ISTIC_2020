@@ -15,7 +15,7 @@
         <activity android:name=".LinksTrader"></activity>
         <activity android:name=".MisClaves" />
         <activity android:name=".ActividadBitcoin" />
-        <activity android:name=".MenuDeCalculos" />
+        <activity android:name=".MercadoInteligente" />
         <activity android:name=".ActividadDollar" />
         <activity android:name=".Menu" />
         <activity android:name=".QuienSoy" />
