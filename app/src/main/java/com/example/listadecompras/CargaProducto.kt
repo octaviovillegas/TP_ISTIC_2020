@@ -11,6 +11,7 @@ import android.widget.TextView
 import com.example.listadecompras.Common_Functions.CommonFunctions
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.TAG
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.getUserProfile
+import com.example.listadecompras.Common_Functions.DataBaseFunctions.Companion.saveProductCloudFirestore
 import com.example.listadecompras.DataModels.Product
 import com.example.listadecompras.DataModels.User
 import com.google.firebase.auth.FirebaseAuth
@@ -50,13 +51,13 @@ class CargaProducto : AppCompatActivity() {
         updateUI(auth?.currentUser)
         user = auth?.currentUser
 
-        var name: String? = carga_prod_name.text.toString()
-        var price: String? = carga_prod_price.text.toString()
-        var brand: String? = carga_prod_brand.text.toString()
-        var contNeto: String? = carga_prod_cont_neto.text.toString()
-        var buyPlace: String? = carga_prod_lugar_compra.text.toString()
+        var name: String = carga_prod_name.text.toString()
+        var price: String = carga_prod_price.text.toString()
+        var brand: String = carga_prod_brand.text.toString()
+        var contNeto: String = carga_prod_cont_neto.text.toString()
+        var buyPlace: String = carga_prod_lugar_compra.text.toString()
         //var photo: String? = carga_prod_img_photo.text.toString()
-        var photo = null
+        var photo = ""
         var count: Int = carga_prod_txt_count.text.toString().toInt()
 
         try {
@@ -69,6 +70,7 @@ class CargaProducto : AppCompatActivity() {
             childUpdates["/listadoCompraPorUsers/${user?.uid}/$key"] = postValues
             childUpdates["/productos/$key"] = postValues
             dbRef.updateChildren(childUpdates)
+            saveProductCloudFirestore(productObj,user?.email)
         }
         catch (ex: Throwable) {
             Log.d(TAG,"Error: ${ex.message}")

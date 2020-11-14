@@ -9,9 +9,12 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
+import com.example.listadecompras.Common_Functions.CommonFunctions
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.DBReference
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.TAG
 import com.example.listadecompras.Common_Functions.CommonFunctions.Companion.ToastMessage
+import com.example.listadecompras.Common_Functions.DataBaseFunctions.Companion.saveUserCloudFirestore
+import com.example.listadecompras.Common_Functions.DataBaseFunctions.Companion.saveUserRealtimeDatabase
 import com.example.listadecompras.DataModels.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -78,7 +81,7 @@ class Registro : AppCompatActivity() {
                         Log.d(TAG, "createUserWithEmail:success")
                         val user:FirebaseUser? = auth.currentUser
                         verifyEmail(user)
-                        userData(nombreToFile, userToFile, emailToFile, telefonoToFile)
+                        saveUserRealtimeDatabase(nombreToFile, userToFile, emailToFile, telefonoToFile,this)
                         updateUI(user)
                         saveUserCloudFirestore(nombreToFile, userToFile, emailToFile, telefonoToFile, user?.uid)
                         registerResult = SUCCESS
@@ -96,15 +99,15 @@ class Registro : AppCompatActivity() {
         }
     }
 
-    private fun saveUserCloudFirestore(name: String, userNick: String, email: String, phone: String, userid: String?){
-        val userObj = User(name, userNick, email, phone, userid)
-        db.collection("users")
-            .add(userObj)
-            .addOnSuccessListener { documentReference ->
-                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
-            }
-            .addOnFailureListener { e ->
-                Log.w(TAG, "Error adding document", e)
+    private fun verifyEmail(user: FirebaseUser?){
+        user?.sendEmailVerification()
+            ?.addOnCompleteListener(this){ task->
+                if(task.isComplete){
+                    CommonFunctions.ToastMessage("Correo de verificacion enviado", this)
+                }
+                else{
+                    CommonFunctions.ToastMessage("Error al enviar correo de verificacion", this)
+                }
             }
     }
 
@@ -112,33 +115,6 @@ class Registro : AppCompatActivity() {
         var loginIntent = Intent(this, MainActivity::class.java)
         startActivity(loginIntent)
         finish()
-    }
-
-    private fun verifyEmail(user: FirebaseUser?){
-        user?.sendEmailVerification()
-            ?.addOnCompleteListener(this){ task->
-                if(task.isComplete){
-                    ToastMessage("Correo de verificacion enviado", this)
-                }
-                else{
-                    ToastMessage("Error al enviar correo de verificacion", this)
-                }
-            }
-    }
-
-    private fun userData(name: String, user: String, email: String, phone: String){
-        try {
-            val dbRef = DBReference()
-            val key = dbRef.child("users").push().key
-            val userObj = User(name, user, email, phone, key)
-            val postValues = userObj.toMap()
-            val childUpdates = HashMap<String, Any>()
-            childUpdates["/users/$key"] = postValues
-            dbRef.updateChildren(childUpdates)
-        }
-        catch (ex: Throwable) {
-            ToastMessage("Error: ${ex.message}", this)
-        }
     }
 
     private fun validateForm(
