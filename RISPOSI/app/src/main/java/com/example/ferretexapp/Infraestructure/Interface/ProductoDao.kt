@@ -2,7 +2,7 @@ package com.example.ferretexapp.Infraestructure.Interface
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.ferretexapp.Client.Models.Producto
+import com.example.ferretexapp.Infraestructure.Model.Producto
 
 
 //Para acceder a los datos dao(Data access objet)
@@ -15,7 +15,7 @@ interface ProductoDao {
     fun get(id: Int): LiveData<Producto>
 
     @Insert
-    fun insertAll(vararg producto: com.example.ferretexapp.Infraestructure.Model.Producto)
+    fun insertAll(vararg producto: Producto)
 
     @Update
     fun update(producto: Producto)

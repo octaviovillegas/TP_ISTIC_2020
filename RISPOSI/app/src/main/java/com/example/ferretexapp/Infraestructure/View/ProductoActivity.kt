@@ -1,7 +1,6 @@
 package com.example.ferretexapp.Infraestructure.View
 
 import android.content.Intent
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,7 +13,6 @@ import com.example.ferretexapp.R
 import kotlinx.android.synthetic.main.activity_producto2.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
 class ProductoActivity : AppCompatActivity() {

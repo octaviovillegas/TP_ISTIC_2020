@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.ferretexapp.Client.View.ProductoList
+import com.example.ferretexapp.Infraestructure.Prinpal
 import com.example.ferretexapp.Owner.BDProductos.ViewModelOwner
 import com.example.ferretexapp.R
 
@@ -41,7 +42,7 @@ class OwnerHome : AppCompatActivity() {
 
 
         btnProductos.setOnClickListener(){
-            val intentProductos = Intent(this, ViewModelOwner::class.java)
+            val intentProductos = Intent(this, Prinpal::class.java)
             startActivity(intentProductos)
         }
     }
