@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Client.Historial.controller.HistorialActivity"></activity>
+        <activity android:name=".Infraestructure.Prinpal"></activity>
+        <activity android:name=".Infraestructure.View.NuevoProducto" />
+        <activity android:name=".Infraestructure.View.ProductoActivity" />
+        <activity android:name=".Client.Historial.controller.HistorialActivity" />
         <activity android:name=".Client.Historial.model.Historial" />
         <activity android:name=".Client.Historial.view.ListadoHistorial" />
         <activity android:name=".Client.pushnotification.HomeNotification" />
