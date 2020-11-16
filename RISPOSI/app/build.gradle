@@ -88,4 +88,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
     def anko_version = "0.10.8"
+
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
 }

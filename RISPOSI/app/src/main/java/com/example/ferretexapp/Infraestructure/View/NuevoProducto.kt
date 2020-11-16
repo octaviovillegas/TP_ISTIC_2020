@@ -2,14 +2,15 @@ package com.example.ferretexapp.Infraestructure.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ferretexapp.Infraestructure.AppDatabase
+import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
 import com.example.ferretexapp.Infraestructure.Model.Producto
 import com.example.ferretexapp.R
 import kotlinx.android.synthetic.main.activity_nuevo_producto.*
+import org.jetbrains.anko.doAsync
 
 class NuevoProducto : AppCompatActivity() {
 
-    private val  db = AppDatabase.getDatabase(this)
+    private val  db = DatabaseSqlLite.getDatabase(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
