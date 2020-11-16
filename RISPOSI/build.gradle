@@ -12,6 +12,9 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:4.3.4'
 
+        //lifecycle implementado para solucionar el problema que aparece con SQL Lite
+        def lifecycle_version = "2.2.0"
+        def arch_version = "2.1.0"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

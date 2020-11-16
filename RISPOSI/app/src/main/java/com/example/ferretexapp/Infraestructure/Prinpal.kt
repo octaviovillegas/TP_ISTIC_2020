@@ -13,16 +13,18 @@ import java.util.Observer
 
 class Prinpal : AppCompatActivity() {
 
-    private var listaProductos = emptyList<Producto>()
+    //private var listaProductos = emptyList<Producto>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_prinpal)
 
+        var listaProductos = emptyList<Producto>()
         val db = DatabaseSqlLite.getDatabase(this)
 
-        db.productosDao().getAll().observe(this, Observer {
+        db.productosDao().getAll().observe(this, androidx.lifecycle.Observer {
             listaProductos = it
+
             val adapter = ProductosAdapter(this, listaProductos)
 
             lista.adapter = adapter
@@ -30,7 +32,7 @@ class Prinpal : AppCompatActivity() {
 
         lista.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(this, ProductoActivity::class.java)
-            intent.putExtra("producto", listaProductos[position])
+            intent.putExtra("id", listaProductos[position].idProducto)
             startActivity(intent)
         }
 

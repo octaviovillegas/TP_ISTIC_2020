@@ -8,6 +8,7 @@ data class Producto(
     val nombre:String,
     val precio: Double,
     val descripcion: String,
+    val imagen: Int,
     @PrimaryKey(autoGenerate = true)
-    val uid: Int = 0
+    var idProducto: Int = 0
 ): Serializable
