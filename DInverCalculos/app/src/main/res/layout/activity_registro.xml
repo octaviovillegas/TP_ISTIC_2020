@@ -101,25 +101,30 @@
         app:layout_constraintTop_toBottomOf="@+id/txtRegistroClave" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRegistroRepClave"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.32">
 
         <Button
             android:id="@+id/btnRegistrarme"
-            android:layout_width="wrap_content"
+            android:layout_width="183dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:text="Registrar"
             android:background="@drawable/custom_button"
-            android:textColor="@android:color/background_light"
-            android:textSize="14sp"
+            android:backgroundTintMode="src_over"
+            android:breakStrategy="high_quality"
+            android:bufferType="normal"
+            android:capitalize="sentences"
+            android:drawableTintMode="screen"
+            android:text="Registrar"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 

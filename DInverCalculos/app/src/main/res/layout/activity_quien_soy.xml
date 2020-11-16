@@ -15,7 +15,9 @@
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/archivo_black"
+        android:gravity="center"
         android:text="Dionel Marmori"
+        android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +142,8 @@
             android:background="@drawable/custom_button"
             android:text="Menu"
             android:textColor="@android:color/background_light"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
         <Button
             android:id="@+id/btnSobreApp"
