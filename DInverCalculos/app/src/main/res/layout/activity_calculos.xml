@@ -7,6 +7,133 @@
     android:background="@drawable/fondo1"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".LinksTrader">
+    tools:context=".Calculos">
+
+    <Button
+        android:id="@+id/btnSrpead"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Spread"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texCalc" />
+
+    <Button
+        android:id="@+id/btnPips"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="Pips"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSrpead"
+        app:layout_constraintTop_toBottomOf="@+id/texCalc" />
+
+    <Button
+        android:id="@+id/btnComisiones"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Comisiones"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCalculoPorcentaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSrpead" />
+
+    <Button
+        android:id="@+id/btnCalculoPorcentaje"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="Calculo %"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnComisiones"
+        app:layout_constraintTop_toBottomOf="@+id/btnPips" />
+
+    <Button
+        android:id="@+id/btnStopLoss"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:text="StopLoss"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnTakeProfit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComisiones" />
+
+    <Button
+        android:id="@+id/btnTakeProfit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="Take Profit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStopLoss"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculoPorcentaje" />
+
+    <Button
+        android:id="@+id/btnGanancia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button"
+        android:text="Ganancia"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopLoss" />
+
+    <TextView
+        android:id="@+id/texCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:text="Calculos"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
