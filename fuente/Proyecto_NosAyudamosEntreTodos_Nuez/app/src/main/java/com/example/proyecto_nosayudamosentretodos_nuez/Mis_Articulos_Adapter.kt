@@ -14,10 +14,18 @@ class Mis_Articulos_Adapter(val mContext:Context,val listPublicaciones:List<Arti
         val layout = LayoutInflater.from(mContext).inflate(R.layout.articulo_listado_simple,parent,false)
 
         val publicacion = listPublicaciones[position]
+        val id_mi_articulo = publicacion.id
         layout.lbl_titulo_lsv_simple.text= publicacion.titulo
         layout.lbl_localidad_lsv_simple.text= publicacion.localidad
         //layout.lbl_id_lsv_simple.text= publicacion.id.toString()
         //layout.imageView_publicacion.setImageResource(publicacion.imagen)
+
+        if (id_mi_articulo == 1) {
+            layout.imageView_lsv_simple.setImageResource(R.drawable.control_xbox)
+        }
+        if ( id_mi_articulo == 2) {
+            layout.imageView_lsv_simple.setImageResource(R.drawable.pelota)
+        }
 
 
         return layout

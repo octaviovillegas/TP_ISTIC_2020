@@ -16,6 +16,7 @@ class Articulo_mas_datos : AppCompatActivity() {
         try {
             val MiArticulo = intent.getSerializableExtra("MiArticulo") as Articulo
 
+            var id_mi_articulo = MiArticulo.id
             lbl_titulo_detalle.text =  MiArticulo.titulo
             lbl_categoria_detalle.text = MiArticulo.categoria
             lbl_tipo_detalle.text = MiArticulo.tipo
@@ -24,6 +25,13 @@ class Articulo_mas_datos : AppCompatActivity() {
             lbl_codigoPost_detalle.text = MiArticulo.codiPos
             lbl_telefono_detalle.text = MiArticulo.telefono
             lbl_id_detalle.text = MiArticulo.id.toString() // agregue el toString por las dudas
+
+            if (id_mi_articulo == 1) {
+                imageView11.setImageResource(R.drawable.control_xbox)
+            }
+            if (id_mi_articulo == 2) {
+                imageView11.setImageResource(R.drawable.pelota)
+            }
 
         }catch (e:Throwable)
         {

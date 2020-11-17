@@ -210,8 +210,8 @@
 
     <ImageButton
         android:id="@+id/btn_imageButton_ubicacion"
-        android:layout_width="139dp"
-        android:layout_height="49dp"
+        android:layout_width="142dp"
+        android:layout_height="55dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="64dp"

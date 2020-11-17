@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_subir__publicacion.*
+import java.io.File
 
 class Subir_Publicacion : AppCompatActivity() {
 
@@ -81,6 +82,7 @@ class Subir_Publicacion : AppCompatActivity() {
         }
 
     }
+
 
     fun usar_Camara(){
 
