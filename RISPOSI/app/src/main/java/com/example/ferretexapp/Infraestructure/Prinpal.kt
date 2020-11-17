@@ -9,7 +9,7 @@ import com.example.ferretexapp.Infraestructure.View.NuevoProducto
 import com.example.ferretexapp.Infraestructure.View.ProductoActivity
 import com.example.ferretexapp.R
 import kotlinx.android.synthetic.main.activity_prinpal.*
-import java.util.Observer
+import androidx.lifecycle.Observer
 
 class Prinpal : AppCompatActivity() {
 
@@ -22,7 +22,7 @@ class Prinpal : AppCompatActivity() {
         var listaProductos = emptyList<Producto>()
         val db = DatabaseSqlLite.getDatabase(this)
 
-        db.productosDao().getAll().observe(this, androidx.lifecycle.Observer {
+        db.productosDao().getAll().observe(this, Observer{
             listaProductos = it
 
             val adapter = ProductosAdapter(this, listaProductos)
@@ -43,3 +43,4 @@ class Prinpal : AppCompatActivity() {
     }
 
 }
+

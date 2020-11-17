@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.ferretexapp.Client.Models.Producto
+import com.example.ferretexapp.Infraestructure.Model.Producto
 import com.example.ferretexapp.Infraestructure.Interface.ProductoDao
 
 @Database(entities = [Producto::class], version = 1)
