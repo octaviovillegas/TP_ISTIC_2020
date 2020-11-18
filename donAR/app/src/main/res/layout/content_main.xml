@@ -11,7 +11,7 @@
     >
 
         <Button
-                android:id="@+id/rTrash"
+                android:id="@+id/rFood"
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:backgroundTint="@color/colorPrimary"
@@ -26,7 +26,7 @@
                 android:id="@+id/bFeeds"
                 android:layout_width="200dp"
                 android:layout_height="60dp"
-                android:layout_below="@id/rTrash"
+                android:layout_below="@id/rFood"
                 android:backgroundTint="@color/colorPrimary"
                 android:padding="7dp"
                 android:text="Donaciones"

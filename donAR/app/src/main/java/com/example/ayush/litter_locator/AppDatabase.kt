@@ -1,5 +1,6 @@
 package com.example.food_locator
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ContentValues
 import android.content.Context
@@ -25,7 +26,17 @@ import java.lang.Exception
 
 
 
-class AppDatabase:SQLiteOpenHelper  {
+class AppDatabase(
+    context: Context?,
+    name: String?,
+    factory: SQLiteDatabase.CursorFactory?,
+    version: Int
+) : SQLiteOpenHelper(
+    context,
+    name,
+    factory,
+    version
+) {
 
 object transdb{
     val DB_NAME = "DataOfApp"
@@ -46,6 +57,7 @@ object transdb{
     var abc:ArrayList<String> = arrayListOf()
 }
     var fA:Activity?=null
+    @SuppressLint("SQLiteString")
     override fun onCreate(sqliteDatabase: SQLiteDatabase?) {
         sqliteDatabase?.execSQL("CREATE TABLE "+ transdb.TABLE_NAME +"( "+transdb.C_TYPE_food+" STRING,"+
                 transdb.C_INFO + " STRING,"+transdb.C_LOC+" STRING,"+ transdb.C_URI + " STRING,"+transdb.C_FNAME+" STRING);")
@@ -62,13 +74,6 @@ object transdb{
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-
-    constructor(context: Context?, name: String?, factory: SQLiteDatabase.CursorFactory?, version: Int) : super(
-        context,
-        name,
-        factory,
-        version
-    )
 
 
     fun queryLogin(na: String,pas: String){

@@ -107,7 +107,7 @@ class Uploadfood : AppCompatActivity() {
                 mint= Intent(this@Uploadfood,SucessActivity::class.java)
                 startActivity(mint)
             }else{
-                Toast.makeText(this@Uploadfood,"Uplaod Picture Of food",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Uploadfood,"Suba la imagen",Toast.LENGTH_SHORT).show()
             }
         })
         addPhoto?.setOnClickListener({
@@ -181,7 +181,7 @@ class Uploadfood : AppCompatActivity() {
                     createImageFile()
                 } catch (ex: IOException) {
                     // Error occurred while creating the File
-                    Toast.makeText(this@Uploadfood, "Problem is here", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Uploadfood, "El problema está aquí", Toast.LENGTH_SHORT).show()
                     this.finish()
                     null
                 }
@@ -216,7 +216,7 @@ class Uploadfood : AppCompatActivity() {
         if (requestCode == REQUEST_TAKE_PHOTO) {
             if (cameraUri != null){
                 food_photo?.setImageURI(cameraUri)
-                Toast.makeText(this@Uploadfood,"Image Uploaded Sucessfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Uploadfood,"Imagen Subida Correctamente", Toast.LENGTH_SHORT).show()
                 mLocation?.visibility = View.VISIBLE
                 submit?.visibility = View.VISIBLE
                 addPhoto?.visibility = View.VISIBLE
@@ -229,7 +229,7 @@ class Uploadfood : AppCompatActivity() {
                 val contentURI = InUri.data
                 tran.picUri = contentURI
                 try {
-                    Toast.makeText(this@Uploadfood, "Image Uploaded Saved!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Uploadfood, "Imagen Subida Correctamente!", Toast.LENGTH_SHORT).show()
                     food_photo?.setImageURI(contentURI)
                     mLocation?.visibility = View.VISIBLE
                     submit?.visibility = View.VISIBLE
@@ -237,7 +237,7 @@ class Uploadfood : AppCompatActivity() {
                     addPhotoimg?.visibility = View.INVISIBLE
                 } catch (e: IOException) {
                     e.printStackTrace()
-                    Toast.makeText(this@Uploadfood, "Failed!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Uploadfood, "Intento fallido!", Toast.LENGTH_SHORT).show()
                 }
 
             }

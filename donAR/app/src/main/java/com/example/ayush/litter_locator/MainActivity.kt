@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity() {
     var naviconList: ArrayList<String> = arrayListOf()
-    var reportTrash : Button?= null
+    var reportFood : Button?= null
     var pbtn:Button?=null
     var mActivity:Activity? = null
     var feeds:Button?=null
@@ -62,8 +62,8 @@ class MainActivity : AppCompatActivity() {
         nav_dr_lay.adapter = navAdapter
         nav_dr_lay.setHasFixedSize(true)
 
-        reportTrash = findViewById(R.id.rTrash)
-        reportTrash?.setOnClickListener({
+        reportFood = findViewById(R.id.rFood)
+        reportFood?.setOnClickListener({
             var intent: Intent? =null
             intent = Intent(this@MainActivity,Uploadfood::class.java)
             startActivity(intent)

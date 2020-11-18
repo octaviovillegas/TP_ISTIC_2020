@@ -1,13 +1,20 @@
 package com.example.food_locator
 
+import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
+import android.support.v4.content.ContextCompat
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+
+
 
 class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFeed:ArrayList<String>,iconFeed:ArrayList<String>,LocFeed:ArrayList<String>)
     :RecyclerView.Adapter<FeedsAdapter.FeeViewHolder>() {
@@ -22,7 +29,11 @@ class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFee
         this.pFeed = iconFeed
         this.tFeed = typeFeed
         this.lFeed = LocFeed
+
+
     }
+
+
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): FeeViewHolder {
 
@@ -46,6 +57,7 @@ class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFee
 
            }
 
+
     class FeeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var icon_get:ImageView?=null
         var type_get:TextView?=null
@@ -61,5 +73,10 @@ class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFee
             info_get = itemView.findViewById(R.id.feedinfo)
             container = itemView.findViewById(R.id.contenerHolder)
         }
+
+
     }
+
+
 }
+
