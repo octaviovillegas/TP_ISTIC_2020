@@ -1,5 +1,6 @@
 package com.example.listadecompras
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -24,8 +25,14 @@ class BuscarProductoLista : AppCompatActivity() {
         buscar_producto_txt_search = findViewById(R.id.buscar_producto_txt_search)
         lstProductView = findViewById(R.id.buscar_producto_lst_prod)
 
-        val adaptadorSimple = AdapterSearchProductList(this, arrayProd)
+        val adaptadorSimple = AdapterProductList(this, arrayProd)
         lstProductView.adapter = adaptadorSimple
+
+        lstProductView.setOnItemClickListener { parent, view, position, id ->
+            var detalleProductIntent = Intent(this, DetalleProducto::class.java)
+            detalleProductIntent.putExtra("detalleProducto", arrayProd[position])
+            startActivity(detalleProductIntent)
+        }
 //        buscar_producto_txt_search.addTextChangedListener(object : TextWatcher {
 //
 //            override fun afterTextChanged(s: Editable) {
@@ -41,6 +48,7 @@ class BuscarProductoLista : AppCompatActivity() {
 //            }
 //        })
 
+
     }
 
     fun inicializar() :ArrayList<Product>
@@ -48,15 +56,29 @@ class BuscarProductoLista : AppCompatActivity() {
         var arrayProducts: ArrayList<Product> = ArrayList()
 
         for (i in 1..10){
-            arrayProducts.add(
-                Product(
-                    "Coca",
-                    "150",
-                    "",
-                    "Coca Cola",
-                    "2.25Lts",
-                    "Coto",
-                    3))
+            if (i % 2 == 0){
+                arrayProducts.add(
+                    Product(
+                        "Coca",
+                        "150",
+                        "",
+                        "Coca Cola",
+                        "2.25Lts",
+                        "Coto",
+                        3))
+            }
+            else
+            {
+                arrayProducts.add(
+                    Product(
+                        "Fernet",
+                        "750",
+                        "",
+                        "Branca",
+                        "1 Lt",
+                        "Coto",
+                        2))
+            }
         }
         return arrayProducts
     }
