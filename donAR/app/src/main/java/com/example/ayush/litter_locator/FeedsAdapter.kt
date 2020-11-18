@@ -15,7 +15,6 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 
 
-
 class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFeed:ArrayList<String>,iconFeed:ArrayList<String>,LocFeed:ArrayList<String>)
     :RecyclerView.Adapter<FeedsAdapter.FeeViewHolder>() {
     var nFeed:ArrayList<String>?=null
@@ -36,6 +35,8 @@ class FeedsAdapter(nameFeed:ArrayList<String>,infoFeed:ArrayList<String>,typeFee
 
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): FeeViewHolder {
+
+
 
         var itemView =   LayoutInflater.from(p0.context)
            .inflate(R.layout.feeds_adapter,p0,false)

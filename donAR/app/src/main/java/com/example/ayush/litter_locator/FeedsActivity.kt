@@ -16,9 +16,10 @@ import java.util.*
 class FeedsActivity : AppCompatActivity() {
 
 
+
     var iconList: IntArray = intArrayOf(R.drawable.navigation_aboutus, R.drawable.logout)
     var naviconList: ArrayList<String> = arrayListOf()
-
+    //var recibeFood: Button? = null
     var dbfood: AppDatabase = AppDatabase(this, "nombre", null, 1)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +54,15 @@ class FeedsActivity : AppCompatActivity() {
         recycle?.itemAnimator = DefaultItemAnimator()
         recycle?.adapter = adpt
 
+       // recibeFood = findViewById(R.id.btn_recibirdonacion)
+       // recibeFood?.setOnClickListener {
+           // var intent1: Intent? = null
+          //  intent = Intent(this@FeedsActivity, SucessActivity::class.java)
+           // ContextCompat.startActivity(intent1)
+
+      //  }
+
     }
-
-
 }
+
+

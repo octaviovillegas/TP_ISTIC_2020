@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".Uploadfood">
         </activity>
+        <activity android:name=".AceptarDona">
+        </activity>
 
         <provider
                 android:name="android.support.v4.content.FileProvider"
@@ -58,6 +60,7 @@
         </activity>
         <activity android:name=".AboutUsActivity">
         </activity>
+
     </application>
 
 </manifest>
