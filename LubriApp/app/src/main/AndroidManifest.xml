@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProductoActivity"></activity>
+        <activity android:name=".ConfirmarTurno"></activity>
+        <activity android:name=".SacarTurno" />
+        <activity android:name=".ProductoActivity" />
         <activity android:name=".Cambios" />
         <activity android:name=".Login" />
         <activity android:name=".Servicios" />

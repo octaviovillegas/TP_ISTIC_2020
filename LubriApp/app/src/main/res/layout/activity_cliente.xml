@@ -22,27 +22,27 @@
 
     <Button
         android:id="@+id/BtnProduc"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="5dp"
         android:text="Nuestros productos"
-        app:layout_constraintBottom_toTopOf="@+id/BtnServ"
+        app:layout_constraintBottom_toTopOf="@+id/BtnTurno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/BtnServ"
-        android:layout_width="wrap_content"
+        android:id="@+id/BtnTurno"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="40dp"
-        android:text="Nuestros servicios"
+        android:text="Pedir un turno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,9 +56,9 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Si querés sacar un turno para algún servicio, comunicate con Ale al 11 2883-2479 "
+        android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnServ" />
+        app:layout_constraintTop_toBottomOf="@+id/BtnTurno" />
 </androidx.constraintlayout.widget.ConstraintLayout>
