@@ -66,8 +66,8 @@
 
     <ImageView
         android:id="@+id/imageSelectIv"
-        android:layout_width="152dp"
-        android:layout_height="112dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         app:layout_constraintBottom_toTopOf="@+id/guardar_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

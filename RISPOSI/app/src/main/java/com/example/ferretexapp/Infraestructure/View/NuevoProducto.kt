@@ -1,5 +1,8 @@
 package com.example.ferretexapp.Infraestructure.View
 
+import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
@@ -14,6 +17,7 @@ import kotlinx.coroutines.launch
 class NuevoProducto : AppCompatActivity() {
 
     private val SELECT_ACTIVITY = 50
+    private var imageUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +30,9 @@ class NuevoProducto : AppCompatActivity() {
             precio_et.setText(producto.precio.toString())
             descripcion_et.setText(producto.descripcion)
             idProducto = producto.idProducto
+
+            val imageUri = ImageController.getImageUri(this,idProducto.toLong())
+            imageSelectIv.setImageURI(imageUri)
         }
         val db = DatabaseSqlLite.getDatabase(this)
 
@@ -40,11 +47,24 @@ class NuevoProducto : AppCompatActivity() {
             if (idProducto != null) {
                 CoroutineScope(Dispatchers.IO).launch {
                     db.productosDao().update(producto)
+
+                    imageUri?.let {
+                        val intent = Intent()
+                        intent.data=it
+                        setResult(Activity.RESULT_OK, intent)
+                        ImageController.saveImage(this@NuevoProducto, idProducto.toLong(),it)
+                    }
+
                     this@NuevoProducto.finish()
                 }
             } else {
                 CoroutineScope(Dispatchers.IO).launch {
-                    db.productosDao().insertAll(producto)
+                    val id = db.productosDao().insertAll(producto)[0]
+
+                    imageUri?.let {
+                        ImageController.saveImage(this@NuevoProducto, id,it)
+                    }
+
                     this@NuevoProducto.finish()
                 }
 
@@ -56,14 +76,18 @@ class NuevoProducto : AppCompatActivity() {
 
         }
     }
-/*
+//Accion para que cargue la imagen cuando la seleccionamos
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when{
+                requestCode==SELECT_ACTIVITY && resultCode == Activity.RESULT_OK -> {
+                    imageUri = data!!.data
 
+                    imageSelectIv.setImageURI(imageUri)
+                }
         }
     }
-*/
+
 }
 
 

@@ -15,7 +15,7 @@ interface ProductoDao {
     fun get(id: Int): LiveData<Producto>
 
     @Insert
-    fun insertAll(vararg producto: Producto)
+    fun insertAll(vararg producto: Producto):List<Long>
 
     @Update
     fun update(producto: Producto)

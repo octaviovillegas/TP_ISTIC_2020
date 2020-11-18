@@ -1,5 +1,6 @@
 package com.example.ferretexapp.Infraestructure.View
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,18 +9,21 @@ import android.view.MenuItem
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
+import com.example.ferretexapp.Infraestructure.Model.ImageController
 import com.example.ferretexapp.Infraestructure.Model.Producto
 import com.example.ferretexapp.R
 import kotlinx.android.synthetic.main.activity_producto2.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.jetbrains.anko.startActivityForResult
 
 class ProductoActivity : AppCompatActivity() {
 
     private lateinit var database: DatabaseSqlLite
     private lateinit var producto: Producto
     private lateinit var productoLiveData: LiveData<Producto>
+    private val EDIT_ACTIVITY = 49
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +31,9 @@ class ProductoActivity : AppCompatActivity() {
 
         database = DatabaseSqlLite.getDatabase(this)
         val idProducto = intent.getIntExtra("id",0 )
+
+        val imageUri = ImageController.getImageUri(this, idProducto.toLong())
+        imagen.setImageURI(imageUri)
 
         productoLiveData = database.productosDao().get(idProducto)
 
@@ -52,6 +59,8 @@ class ProductoActivity : AppCompatActivity() {
             R.id.edit_item -> {
                 val intent = Intent(this, NuevoProducto::class.java)
                 intent.putExtra("producto", producto)
+                startActivityForResult(intent, EDIT_ACTIVITY)
+
             }
 
             R.id.delete_item -> {
@@ -59,6 +68,8 @@ class ProductoActivity : AppCompatActivity() {
 
                 CoroutineScope(Dispatchers.IO).launch {
                     database.productosDao().delete(producto)
+                    ImageController.deleteImage(this@ProductoActivity, producto.idProducto.toLong())
+
                     this@ProductoActivity.finish()
                 }
 
@@ -67,6 +78,16 @@ class ProductoActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
 
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        when{
+            requestCode == EDIT_ACTIVITY && resultCode == Activity.RESULT_OK ->{
+                imagen.setImageURI(data!!.data)
+            }
+        }
     }
 
 }
