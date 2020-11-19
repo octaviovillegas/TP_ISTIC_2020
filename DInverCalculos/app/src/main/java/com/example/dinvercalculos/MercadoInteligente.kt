@@ -6,6 +6,7 @@ import android.widget.Button
 import android.app.AlertDialog
 import android.widget.ListView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_mercado_inteligente.*
 import java.lang.reflect.MalformedParametersException
 
 class MercadoInteligente : AppCompatActivity() {
@@ -19,6 +20,8 @@ class MercadoInteligente : AppCompatActivity() {
         val btnEMA = findViewById<Button>(R.id.btnEMA)
         val btnRSI = findViewById<Button>(R.id.btnRSI)
 
+        val btnEjecutar = findViewById<Button>(R.id.btnEjecutar)
+
         btnVolumen.setOnClickListener {
             volumen()
         }
@@ -27,6 +30,10 @@ class MercadoInteligente : AppCompatActivity() {
         }
         btnRSI.setOnClickListener {
             rsi()
+        }
+
+        btnEjecutar.setOnClickListener {
+            txtResultInteligente.text = "Riesgo de compra 20 %"
         }
 
     }
@@ -70,7 +77,7 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton EMA
     fun ema(){
         lateinit var mAlertButton: Button
-        val  programming_lang = arrayOf("Creciendo - bajo","Descendente - bajo","Creciendo - Alto","Descendente - alto")
+        val  programming_lang = arrayOf("Debajo EMA DE 8","Sobre EMA DE 8","Debajo EMA DE 21","Sobre EMA DE 21")
         var checkedItem = 1
 
         mAlertButton = findViewById(R.id.btnEMA)
@@ -106,7 +113,7 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton RSI
     fun rsi(){
         lateinit var mAlertButton: Button
-        val  programming_lang = arrayOf("Creciendo - bajo","Descendente - bajo","Creciendo - Alto","Descendente - alto")
+        val  programming_lang = arrayOf("Sobre compra","Sobre venta")
         var checkedItem = 1
 
         mAlertButton = findViewById(R.id.btnRSI)
@@ -114,7 +121,7 @@ class MercadoInteligente : AppCompatActivity() {
 
             val mAlertDialogBuilder = AlertDialog.Builder(this@MercadoInteligente)
 
-            mAlertDialogBuilder.setTitle("EMA Exponencial")
+            mAlertDialogBuilder.setTitle("Indice de fuerza relativa")
             mAlertDialogBuilder.setIcon(R.mipmap.ic_launcher)
             mAlertDialogBuilder.setCancelable(false)
 
