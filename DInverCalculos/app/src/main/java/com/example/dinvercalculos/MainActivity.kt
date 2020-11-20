@@ -17,7 +17,13 @@ class MainActivity : AppCompatActivity() {
 
     private var mIsShowPass = false
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        //Thread.sleep(1000)
+        setTheme(R.style.AppTheme)//Tema para splashscreem
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
