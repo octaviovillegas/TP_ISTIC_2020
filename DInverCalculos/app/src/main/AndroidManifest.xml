@@ -19,7 +19,7 @@
         <activity android:name=".MercadoInteligente" />
         <activity android:name=".ActividadDollar" />
         <activity android:name=".Menu" />
-        <activity android:name=".QuienSoy" />
+        <activity android:name=".PreApp" />
         <activity android:name=".Registro" />
         <activity
             android:name=".MainActivity"

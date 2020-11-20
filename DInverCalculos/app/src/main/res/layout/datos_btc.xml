@@ -49,7 +49,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="NombreCripto"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

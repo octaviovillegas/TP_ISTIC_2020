@@ -10,14 +10,14 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_quien_soy.*
+import kotlinx.android.synthetic.main.activity_pre_app.*
 import java.io.IOException
 
-class QuienSoy : AppCompatActivity() {
+class PreApp : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quien_soy)
+        setContentView(R.layout.activity_pre_app)
 
         val usrlogin=intent.getStringExtra("usuarioLogueado");
         if(usrlogin == null)//Valido si el dato viene null
@@ -38,9 +38,6 @@ class QuienSoy : AppCompatActivity() {
             fSobreLaApp()
         }
 
-        lblLegajo.setOnClickListener {
-            claseFunciones.ttoas("Numero de Legajo",this)
-        }
 
         val Salir = findViewById<ImageView>(R.id.btnOut)
         Salir.setOnClickListener{
@@ -50,7 +47,7 @@ class QuienSoy : AppCompatActivity() {
 
     //Funcion para salir de la app
     private fun salir(){
-        val btnsalir = AlertDialog.Builder(this@QuienSoy) //Dialogo para salir
+        val btnsalir = AlertDialog.Builder(this@PreApp) //Dialogo para salir
         btnsalir.setTitle("Salir")
         btnsalir.setIcon(R.mipmap.ic_launcher)
         btnsalir.setMessage("¿Esta seguro que desea salir?")
@@ -76,7 +73,7 @@ class QuienSoy : AppCompatActivity() {
     private fun fSobreLaApp()//Funcion sobre la app
     {
         try {
-            val btnBorrarDialogBuilder = AlertDialog.Builder(this@QuienSoy) //Dialogo para sobre la app
+            val btnBorrarDialogBuilder = AlertDialog.Builder(this@PreApp) //Dialogo para sobre la app
             btnBorrarDialogBuilder.setTitle("Sobre la App")
             btnBorrarDialogBuilder.setIcon(R.mipmap.ic_launcher)
             btnBorrarDialogBuilder.setMessage("Aplicacion dedicada a calculos de inversion. No encontrara recomendaciones." +

@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         val botonIngresar = findViewById<Button>(R.id.btnIngresar) //Declaracion para boton ingresar
         botonIngresar.setOnClickListener{//Boton ingresar
             //loginArchivo()
-            val menuIntent = Intent(this, QuienSoy::class.java)
+            val menuIntent = Intent(this, PreApp::class.java)
             startActivity(menuIntent)
         }
 
@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                     if (it.isSuccessful)
                     {
                         val usrlogin = txtUsuarioLogin.text
-                        val menuIntent = Intent(this, QuienSoy::class.java)
+                        val menuIntent = Intent(this, PreApp::class.java)
                         menuIntent.putExtra("usuarioLogueado", "$usrlogin")
                         startActivity(menuIntent)
                     }else
