@@ -13,6 +13,20 @@ class ConfirmarTurno : AppCompatActivity() {
         setContentView(R.layout.activity_confirmar_turno)
 
         //Esta activity solo la ven los empleados
+
+        BtnVolver2.setOnClickListener {
+            val rodrigo = Intent(this, Cambios::class.java)
+            startActivity(rodrigo)
+            finish()
+        }
+        /*
+        BtnTurnos.setOnClickListener {
+            val parlante = Intent(this, ListaTurnos::class.java)
+            startActivity(parlante)
+            finish()
+        } */
+
+        /*
         val objetoIntent: Intent=intent
         var Nombre = objetoIntent.getStringExtra("Nombre")
         textView13.text = "El cliente se llama $Nombre" //escribo lo que mostrara el textView
@@ -31,5 +45,6 @@ class ConfirmarTurno : AppCompatActivity() {
 
         var Celular = objetoIntent.getStringExtra("Celular") //recibo lo que manda SacarTurno
         textView18.text = "Su número es $Celular"
+                 */
     }
 }

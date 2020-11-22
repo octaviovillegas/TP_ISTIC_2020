@@ -3,34 +3,87 @@ package com.example.lubriapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
 
 class Login : AppCompatActivity() {
-
-   private var clave = "12345678910" //traer de la base de datos con una funcion conectada con sql lite, en el proyecto del profe esta como hacerlo con sql lite
-                                    // que cada empleado tenga un perfil propio con su clave, asi puedo saber quien entra
-                                    // con clientes hago lo mismo, cada cliente puede loguearse y se lo redirige a una activity especifica
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-       var valorIngresado: String = (editText.text.toString()) // declaro la variable dodne se guarda lo que ingresa el usuario por teclado
+        val BtnRegistrar: Button = findViewById<Button>(R.id.BtnRegistrar)
+        val BtnIngresar: Button = findViewById<Button>(R.id.BtnIngresar)
+        val lblUsuario: EditText = findViewById<EditText>(R.id.lblUsuario)
+        val lblPass: EditText = findViewById<EditText>(R.id.lblPass)
 
-        BtnVerificar.setOnClickListener { //Cuando aprietan el boton de verificar, entra al if para checkear que la clave sea la correcta
-
-            if (clave == valorIngresado) {
-                val intento = Intent(this, Cambios::class.java)
-                startActivity(intento)
-            } else {
-                Toast.makeText(this, "Clave incorrecta, vuelva a intentarlo", Toast.LENGTH_SHORT)
-            }
+        BtnRegistrar.setOnClickListener {
+            val intent2: Intent = Intent(this, ActividadRegistro::class.java)
+            startActivity(intent2)
+            finish()
         }
 
 
+        BtnIngresar.setOnClickListener {
+            if (lblUsuario.text.toString().isEmpty() or lblPass.text.toString().isEmpty()) {
+
+                Toast.makeText(this, "Campos vacios ", Toast.LENGTH_LONG).show()
+            } else {
 
 
-    }
-}
+                UsuarioQuePuedeLogearse()
+            }
+        }
+    } //cierrro el Bundle
+
+    private fun UsuarioQuePuedeLogearse() {
+
+        (fileList().contains("registros.txt"))
+        try {
+
+            var banderaUsuario: String = "no"
+
+            val archivo = InputStreamReader(openFileInput("registros.txt"))
+            val br = BufferedReader(archivo)
+            var linea = br.readLine()
+            while (linea != null) {
+
+                val arrayDatos = linea.split("=>")
+                if (arrayDatos[2] == lblUsuario.text.toString() && arrayDatos[3] == lblPass.text.toString()) {
+
+                    banderaUsuario = "si"
+                    val Usuario_Logueado = lblUsuario.text.toString()
+                    val intent: Intent = Intent(this, Cambios::class.java)
+
+                    intent.putExtra("mail", Usuario_Logueado)
+                    startActivity(intent)
+                    break
+
+                }
+
+
+                linea = br.readLine()
+            }
+
+            if (banderaUsuario == "no") {
+                Toast.makeText(this, "Usuario y/o contraseña incorecto ", Toast.LENGTH_LONG).show()
+
+            }
+
+            br.close()
+            archivo.close()
+
+        } catch (e: IOException) {
+        }
+    } //cierro private fun UsuarioQuePuedeLogearse
+} //cierro el AppCompatActivity
+
+
+
+

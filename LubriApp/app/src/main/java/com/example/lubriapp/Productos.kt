@@ -48,7 +48,7 @@ class Productos : AppCompatActivity() {
                 R.drawable.refri
             )
             val producto6 = Producto(
-                "Líquido par afrenos",
+                "Líquido para frenos",
                 "Marca Bardhal, contiene 1 litro",
                 1100,
                 6,
