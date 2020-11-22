@@ -46,6 +46,7 @@ class NuevoProducto : AppCompatActivity() {
 
             if (idProducto != null) {
                 CoroutineScope(Dispatchers.IO).launch {
+                    producto.idProducto = idProducto
                     db.productosDao().update(producto)
 
                     imageUri?.let {

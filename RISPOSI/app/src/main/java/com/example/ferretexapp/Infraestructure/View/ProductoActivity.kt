@@ -4,8 +4,10 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
@@ -16,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_producto2.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivityForResult
 
 class ProductoActivity : AppCompatActivity() {
@@ -46,6 +49,26 @@ class ProductoActivity : AppCompatActivity() {
             detalles_producto.text = producto.descripcion
         })
 
+        val btnEditProduct=find<Button>(R.id.btnEditProduct)
+        val btnBorrarProduct = findViewById<Button>(R.id.btnBorrarProduct)
+
+        btnBorrarProduct.setOnClickListener() {
+            productoLiveData.removeObservers(this)
+
+            CoroutineScope(Dispatchers.IO).launch {
+                database.productosDao().delete(producto)
+                ImageController.deleteImage(this@ProductoActivity, producto.idProducto.toLong())
+
+                this@ProductoActivity.finish()
+            }
+        }
+
+        btnEditProduct.setOnClickListener(){
+            val intent = Intent(this, NuevoProducto::class.java)
+            intent.putExtra("producto", producto)
+
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?):Boolean{
@@ -59,8 +82,10 @@ class ProductoActivity : AppCompatActivity() {
             R.id.edit_item -> {
                 val intent = Intent(this, NuevoProducto::class.java)
                 intent.putExtra("producto", producto)
+                //startActivity(intent)
+                Log.w("StarActivity", "Actividad Editar")
                 startActivityForResult(intent, EDIT_ACTIVITY)
-
+                Log.w("StarActivity2", "actEdt")
             }
 
             R.id.delete_item -> {
@@ -88,6 +113,8 @@ class ProductoActivity : AppCompatActivity() {
                 imagen.setImageURI(data!!.data)
             }
         }
+
+
     }
 
 }

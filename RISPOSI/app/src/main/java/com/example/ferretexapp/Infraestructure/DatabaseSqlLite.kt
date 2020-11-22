@@ -8,7 +8,7 @@ import com.example.ferretexapp.Infraestructure.Model.Producto
 import com.example.ferretexapp.Infraestructure.Interface.ProductoDao
 
 @Database(entities = [Producto::class], version = 1)
-abstract class DatabaseSqlLite : RoomDatabase(){
+abstract class DatabaseSqlLite : androidx.room.RoomDatabase(){
     abstract fun productosDao(): ProductoDao
 
     companion object{
