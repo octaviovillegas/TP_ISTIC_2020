@@ -5,7 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ferretexapp.Client.Controller.ProductoActivity
 import com.example.ferretexapp.Client.Models.Producto
+import com.example.ferretexapp.Infraestructure.Controller.ProductosAdapter
+import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
 import com.example.ferretexapp.R
+import kotlinx.android.synthetic.main.activity_prinpal.*
+import androidx.lifecycle.Observer
+
 import kotlinx.android.synthetic.main.activity_producto_list.*
 
 class ProductoList : AppCompatActivity() {
@@ -14,6 +19,7 @@ class ProductoList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_producto_list)
 
+/*
         val producto = Producto("Tornillos", 100.0, "Tornillos de cabeza hexagonal", R.drawable.tornillos)
         val producto2 = Producto("Tester", 2500.0, "Multimetro chino", R.drawable.tester)
         val producto3 = Producto("Destornillador", 170.0, "Destornillador tipo philliphs", R.drawable.destornillador)
@@ -31,6 +37,31 @@ class ProductoList : AppCompatActivity() {
             val intent = Intent(this, ProductoActivity::class.java)
             intent.putExtra("producto", listaProducto[position])
             startActivity(intent)
+    }
+
+ */
+
+
+
+
+        var listaProductos = emptyList<com.example.ferretexapp.Infraestructure.Model.Producto>()
+        val db = DatabaseSqlLite.getDatabase(this)
+
+        db.productosDao().getAll().observe(this, Observer{
+            listaProductos = it
+
+            val adapter = ProductosAdapter(this, listaProductos)
+
+            listElementos.adapter = adapter
+        })
+
+
+        listElementos.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this, com.example.ferretexapp.Client.Controller.ProductoActivity::class.java)
+            intent.putExtra("producto", listaProductos[position])
+            startActivity(intent)
         }
     }
+
+
 }

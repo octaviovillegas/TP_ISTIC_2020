@@ -25,7 +25,7 @@ class NuevoProducto : AppCompatActivity() {
 
         var idProducto: Int? = null
         if (intent.hasExtra("producto")) {
-            val producto = intent.extras?.getSerializable("productos") as Producto
+            val producto = intent.extras?.getSerializable("producto") as Producto
             name_et.setText(producto.nombre)
             precio_et.setText(producto.precio.toString())
             descripcion_et.setText(producto.descripcion)

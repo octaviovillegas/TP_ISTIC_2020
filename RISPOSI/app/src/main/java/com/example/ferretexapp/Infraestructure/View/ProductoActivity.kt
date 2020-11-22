@@ -64,8 +64,13 @@ class ProductoActivity : AppCompatActivity() {
         }
 
         btnEditProduct.setOnClickListener(){
+            Log.d("Traigo Producto","Product${producto}")
             val intent = Intent(this, NuevoProducto::class.java)
             intent.putExtra("producto", producto)
+
+            startActivityForResult(intent, EDIT_ACTIVITY)
+            //Probando otra forma
+            //Update()
 
         }
 
@@ -116,6 +121,24 @@ class ProductoActivity : AppCompatActivity() {
 
 
     }
+
+
+
+    //Otra forma de Update
+    /*fun Update(){
+        val admin = AdminSQLiteOpenHelper(this, "administracion", null, 1)
+        val bd = admin.writableDatabase
+        val registro = ContentValues()
+        registro.put("descripcion", et2.text.toString())
+        registro.put("precio", et3.text.toString())
+        val cant = bd.update("articulos", registro, "codigo=${et1.text.toString()}", null)
+        bd.close()
+        if (cant == 1)
+            Toast.makeText(this, "se modificaron los datos", Toast.LENGTH_SHORT).show()
+        else
+            Toast.makeText(this, "no existe un artículo con el código ingresado", Toast.LENGTH_SHORT).show()
+    }*/
+
 
 }
 
