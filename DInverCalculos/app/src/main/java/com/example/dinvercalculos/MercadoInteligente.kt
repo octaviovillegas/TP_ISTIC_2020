@@ -5,12 +5,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.app.AlertDialog
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_mercado_inteligente.*
+import java.io.IOException
 import java.lang.reflect.MalformedParametersException
 
 class MercadoInteligente : AppCompatActivity() {
+
+    var cvol:Double = 1.00
+    var cema:Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,13 +27,16 @@ class MercadoInteligente : AppCompatActivity() {
 
 
         btnEjecutar.setOnClickListener {
-            txtResultInteligente.text = "Riesgo de compra 20 %"
+            calculoInteligente()
+            //txtResultInteligente.text = "Riesgo de compra 20 %"
         }
 
     }
 
     //Funcion para el boton volumen
     fun volumen(view : View){
+        //var cvol:Int = 1
+        try {
 
         val  programming_lang = arrayOf("Creciendo - bajo","Descendente - bajo","Creciendo - Alto","Descendente - alto")
         var checkedItem = -1
@@ -42,10 +50,24 @@ class MercadoInteligente : AppCompatActivity() {
             mAlertDialogBuilder.setSingleChoiceItems(programming_lang, checkedItem) {dialog, which ->
                 when (which){
                     which -> {
+                        if (which == 0)
+                        {
+                            cvol = 0.50
+                        }else if (which == 1)
+                        {
+                            cvol = 0.25
+                        }else if (which == 2)
+                        {
+                            cvol = 1.00
+                        }else if (which == 3)
+                        {
+                            cvol = 0.00
+                        }
                         Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
                     }
                 }
             }
+
             mAlertDialogBuilder.setPositiveButton("Aceptar"){_, _->
                 Toast.makeText(this@MercadoInteligente, "Volumen seleccionado", Toast.LENGTH_LONG).show()
             }
@@ -57,6 +79,10 @@ class MercadoInteligente : AppCompatActivity() {
             }
             val mAlertDialog = mAlertDialogBuilder.create()
             mAlertDialog.show()
+
+        }catch (e: IOException) {
+            claseFunciones.ttoas("Error en boton volumen",this)
+        }
 
     }//Finaliza funcion volumen
 
@@ -229,6 +255,12 @@ class MercadoInteligente : AppCompatActivity() {
 
     }//Finaliza funcion PSAR
 
+    fun calculoInteligente()
+    {
+
+            txtResultInteligente.text = cvol.toString()
+
+    }
 
 
 }
