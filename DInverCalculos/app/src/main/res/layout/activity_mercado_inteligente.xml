@@ -25,7 +25,25 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/btnEMA"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:onClick="volumen"/>
+
+    <Button
+        android:id="@+id/btnEMA"
+        android:layout_width="141dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="EMA"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVolumen"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:onClick="ema"/>
 
     <Button
         android:id="@+id/btnRSI"
@@ -41,7 +59,25 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/btnKoncorde"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVolumen" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVolumen"
+        android:onClick="rsi"/>
+
+    <Button
+        android:id="@+id/btnKoncorde"
+        android:layout_width="141dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="Koncorde"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRSI"
+        app:layout_constraintTop_toBottomOf="@+id/btnEMA"
+        android:onClick="koncorde"/>
 
     <Button
         android:id="@+id/btnMACD"
@@ -57,7 +93,25 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/btnPSar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRSI" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRSI"
+        android:onClick="macd"/>
+
+    <Button
+        android:id="@+id/btnPSar"
+        android:layout_width="141dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/custom_button"
+        android:text="Parabolic Sar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMACD"
+        app:layout_constraintTop_toBottomOf="@+id/btnKoncorde"
+        android:onClick="psar"/>
 
     <Button
         android:id="@+id/btnEjecutar"
@@ -91,53 +145,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtResultInteligente" />
 
-    <Button
-        android:id="@+id/btnEMA"
-        android:layout_width="141dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="68dp"
-        android:background="@drawable/custom_button"
-        android:text="EMA"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnVolumen"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/btnKoncorde"
-        android:layout_width="141dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="68dp"
-        android:background="@drawable/custom_button"
-        android:text="Koncorde"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnRSI"
-        app:layout_constraintTop_toBottomOf="@+id/btnEMA" />
-
-    <Button
-        android:id="@+id/btnPSar"
-        android:layout_width="141dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="68dp"
-        android:background="@drawable/custom_button"
-        android:text="Parabolic Sar"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnMACD"
-        app:layout_constraintTop_toBottomOf="@+id/btnKoncorde" />
 
     <TextView
         android:id="@+id/txtResultInteligente"
