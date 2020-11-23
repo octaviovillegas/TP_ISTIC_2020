@@ -3,8 +3,12 @@ package com.example.ferretexapp.Client.Controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
+import com.example.ferretexapp.Infraestructure.Model.ImageController
 import com.example.ferretexapp.Infraestructure.Model.Producto
 import com.example.ferretexapp.R
 import com.example.ferretexapp.TiempoEspera
@@ -25,14 +29,21 @@ class ProductoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_producto)
 
+        val txtNameProduct = findViewById<TextView>(R.id.txtNameProduct)
+        val txtDescripcionProducto = findViewById<TextView>(R.id.txtDescripcionProducto)
+        val txtPrecioProducto=findViewById<TextView>(R.id.txtPrecioProducto)
+        val imageView2 = findViewById<ImageView>(R.id.imageView2)
 
         val producto = intent.getSerializableExtra("producto") as Producto
-
+        Log.d("Image","Image{$producto}")
         txtNameProduct.text=producto.nombre
         txtDescripcionProducto.text=producto.descripcion
         txtPrecioProducto.text=producto.precio.toString()
-        imageView2.setImageResource(producto.imagen)
+        //imageView2.setImageResource(producto.imagen)
+        val idProducto = producto.idProducto
 
+        val imageUri = ImageController.getImageUri(this, idProducto.toLong())
+        imageView2.setImageURI(imageUri)
 
         //==========================================================================
         //Firebase Guardado

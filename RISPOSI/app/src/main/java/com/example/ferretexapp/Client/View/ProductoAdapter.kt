@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.example.ferretexapp.Client.Models.Producto
 import com.example.ferretexapp.R
+import kotlinx.android.synthetic.main.activity_producto.view.*
 import kotlinx.android.synthetic.main.item_producto.view.*
 
 //Clase Adaptador para que coloque la clase Producto en el listView
