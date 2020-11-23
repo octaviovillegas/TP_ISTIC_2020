@@ -7,7 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
@@ -32,6 +35,22 @@ class ProductoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_producto2)
 
+        //Definicion de los elementos para las animaciones
+//===============================================================================================
+        val imagen = findViewById<ImageView>(R.id.imagen)
+        val btnEditProduct=find<Button>(R.id.btnEditProduct)
+        val btnBorrarProduct = findViewById<Button>(R.id.btnBorrarProduct)
+//==============================================================================================
+
+//=================================================================================================
+        //Animaciones
+        val animacionParaArriba = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba)
+        imagen.animation = animacionParaArriba;
+        btnEditProduct.animation = animacionParaArriba;
+        btnBorrarProduct.animation = animacionParaArriba;
+
+//=================================================================================================
+
         database = DatabaseSqlLite.getDatabase(this)
         val idProducto = intent.getIntExtra("id",0 )
 
@@ -49,8 +68,6 @@ class ProductoActivity : AppCompatActivity() {
             detalles_producto.text = producto.descripcion
         })
 
-        val btnEditProduct=find<Button>(R.id.btnEditProduct)
-        val btnBorrarProduct = findViewById<Button>(R.id.btnBorrarProduct)
 
         btnBorrarProduct.setOnClickListener() {
             productoLiveData.removeObservers(this)

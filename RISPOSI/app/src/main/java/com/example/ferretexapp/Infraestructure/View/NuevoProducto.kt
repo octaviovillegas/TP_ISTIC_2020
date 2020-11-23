@@ -5,6 +5,9 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.ImageView
 import com.example.ferretexapp.Infraestructure.DatabaseSqlLite
 import com.example.ferretexapp.Infraestructure.Model.ImageController
 import com.example.ferretexapp.Infraestructure.Model.Producto
@@ -13,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_nuevo_producto.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.jetbrains.anko.find
 
 class NuevoProducto : AppCompatActivity() {
 
@@ -22,6 +26,26 @@ class NuevoProducto : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_producto)
+
+        //Definicion de los elementos para las animaciones
+//===============================================================================================
+        val imageSelectIv = findViewById<ImageView>(R.id.imageSelectIv)
+        val guardar_btn=find<Button>(R.id.guardar_btn)
+
+//==============================================================================================
+
+//=================================================================================================
+        //Animaciones
+        val animacionParaArriba = AnimationUtils.loadAnimation(this, R.anim.desplazamiento_arriba)
+        val animacionParaAbajo=AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo)
+        imageSelectIv.animation = animacionParaArriba;
+        guardar_btn.animation = animacionParaArriba;
+
+        name_et.animation=animacionParaAbajo
+        precio_et.animation=animacionParaAbajo
+        descripcion_et.animation=animacionParaAbajo
+
+//=================================================================================================
 
         var idProducto: Int? = null
         if (intent.hasExtra("producto")) {
