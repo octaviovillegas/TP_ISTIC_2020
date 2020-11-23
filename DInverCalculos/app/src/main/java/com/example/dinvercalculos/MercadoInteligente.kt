@@ -21,7 +21,6 @@ class MercadoInteligente : AppCompatActivity() {
         val btnEjecutar = findViewById<Button>(R.id.btnEjecutar)
 
 
-
         btnEjecutar.setOnClickListener {
             txtResultInteligente.text = "Riesgo de compra 20 %"
         }
@@ -99,9 +98,9 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton RSI
     fun rsi(view : View){
 
-        val  programming_lang = arrayOf("HOLA")
-        var checked_items = booleanArrayOf(false)
-
+        val  programming_lang = arrayOf("Sobre compra","Sobre venta",">50 bajando",">50 Creciendo",
+                                        "<50 bajando", "<50 Creciendo")
+        var checkedItem = -1
 
             val mAlertDialogBuilder = AlertDialog.Builder(this@MercadoInteligente)
 
@@ -109,13 +108,13 @@ class MercadoInteligente : AppCompatActivity() {
             mAlertDialogBuilder.setIcon(R.mipmap.ic_launcher)
             mAlertDialogBuilder.setCancelable(false)
 
-            mAlertDialogBuilder.setMultiChoiceItems(programming_lang,checked_items) { dialog, which, isChecked ->
-                when(which){
-                    which -> {
-                        Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
-                    }
+        mAlertDialogBuilder.setSingleChoiceItems(programming_lang, checkedItem) {dialog, which ->
+            when (which){
+                which -> {
+                    Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
                 }
             }
+        }
             mAlertDialogBuilder.setPositiveButton("Aceptar"){_, _->
                 Toast.makeText(this@MercadoInteligente, "RSI seleccionado", Toast.LENGTH_LONG).show()
             }
@@ -133,8 +132,8 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton Koncorde
     fun koncorde(view : View){
 
-        val  programming_lang = arrayOf("HOLA")
-        var checked_items = booleanArrayOf(false)
+        val  programming_lang = arrayOf("Ballenas compran","Peces compran","Ballenas Venden","Peces Venden")
+        var checked_items = booleanArrayOf(false,false,false,false)
 
             val mAlertDialogBuilder = AlertDialog.Builder(this@MercadoInteligente)
 
@@ -166,8 +165,9 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton MACD
     fun macd(view : View){
 
-        val  programming_lang = arrayOf("HOLA")
-        var checked_items = booleanArrayOf(false)
+        val  programming_lang = arrayOf("Compra creciente","Compra decreciente","Venta creciente","Venta decreciente",
+                                         "Compra","Venta")
+        var checkedItem = -1
 
             val mAlertDialogBuilder = AlertDialog.Builder(this@MercadoInteligente)
 
@@ -175,13 +175,13 @@ class MercadoInteligente : AppCompatActivity() {
             mAlertDialogBuilder.setIcon(R.mipmap.ic_launcher)
             mAlertDialogBuilder.setCancelable(false)
 
-            mAlertDialogBuilder.setMultiChoiceItems(programming_lang,checked_items) { dialog, which, isChecked ->
-                when(which){
-                    which -> {
-                        Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
-                    }
+        mAlertDialogBuilder.setSingleChoiceItems(programming_lang, checkedItem) {dialog, which ->
+            when (which){
+                which -> {
+                    Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
                 }
             }
+        }
             mAlertDialogBuilder.setPositiveButton("Aceptar"){_, _->
                 Toast.makeText(this@MercadoInteligente, "MACD seleccionado", Toast.LENGTH_LONG).show()
             }
@@ -199,30 +199,30 @@ class MercadoInteligente : AppCompatActivity() {
     //Funcion para el boton PSAR
     fun psar(view : View){
 
-        val  programming_lang = arrayOf("HOLA")
-        var checked_items = booleanArrayOf(false)
+        val  programming_lang = arrayOf("Compra","Venta")
+        var checkedItem = -1
 
         val mAlertDialogBuilder = AlertDialog.Builder(this@MercadoInteligente)
 
-        mAlertDialogBuilder.setTitle("MACD")
+        mAlertDialogBuilder.setTitle("Parabolic sar")
         mAlertDialogBuilder.setIcon(R.mipmap.ic_launcher)
         mAlertDialogBuilder.setCancelable(false)
 
-        mAlertDialogBuilder.setMultiChoiceItems(programming_lang,checked_items) { dialog, which, isChecked ->
-            when(which){
+        mAlertDialogBuilder.setSingleChoiceItems(programming_lang, checkedItem) {dialog, which ->
+            when (which){
                 which -> {
                     Toast.makeText(this@MercadoInteligente, programming_lang[which], Toast.LENGTH_LONG).show()
                 }
             }
         }
         mAlertDialogBuilder.setPositiveButton("Aceptar"){_, _->
-            Toast.makeText(this@MercadoInteligente, "MACD seleccionado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MercadoInteligente, "PSAR seleccionado", Toast.LENGTH_LONG).show()
         }
         mAlertDialogBuilder.setNegativeButton("Borrar"){_, _ ->
-            Toast.makeText(this@MercadoInteligente, "MACD borrada", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MercadoInteligente, "PSAR borrada", Toast.LENGTH_LONG).show()
         }
         mAlertDialogBuilder.setNeutralButton("Cancelar"){_, _ ->
-            Toast.makeText(this@MercadoInteligente, "MACD cancelada", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MercadoInteligente, "PSAR cancelada", Toast.LENGTH_LONG).show()
         }
         val mAlertDialog = mAlertDialogBuilder.create()
         mAlertDialog.show()
