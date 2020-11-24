@@ -4,6 +4,7 @@
     <item>
         <bitmap android:src="@mipmap/mysplash"
             android:gravity="center"/>
+
     </item>
 
 </layer-list>
