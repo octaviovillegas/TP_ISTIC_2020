@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Volumen"></activity>
+        <activity android:name=".Spread"></activity>
+        <activity android:name=".Volumen" />
         <activity android:name=".Calculos" />
         <activity android:name=".MisClaves" />
         <activity android:name=".ActividadBitcoin" />
@@ -24,7 +25,6 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/SplashTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

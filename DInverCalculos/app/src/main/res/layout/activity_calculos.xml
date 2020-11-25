@@ -129,7 +129,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
         android:text="Calculos"
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
