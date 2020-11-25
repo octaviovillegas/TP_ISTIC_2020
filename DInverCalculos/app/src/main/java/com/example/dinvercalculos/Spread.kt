@@ -51,7 +51,7 @@ class Spread : AppCompatActivity() {
     fun calcularSpreadNum()
     {
         try {
-            resultadoSpreadPor = (txtValorCompra.text.toString().toDouble() - txtValorVenta.text.toString().toDouble())
+            resultadoSpreadPor = Math.round(((txtValorCompra.text.toString().toDouble() - txtValorVenta.text.toString().toDouble())) * 100.0) / 100.0
             txtSpreadNum.text =  "$" + resultadoSpreadPor.toString()
         }catch (e: IOException) {
             claseFunciones.ttoas("Revise los campos",this)
