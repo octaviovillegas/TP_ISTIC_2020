@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".BajaServicio">
+
+    <EditText
+        android:id="@+id/lblNumeroItem"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="89dp"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:hint="Ingrese item a borrar"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/BtnEliminar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnEliminar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Borrar"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/BtnVolver3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumeroItem" />
+
+    <Button
+        android:id="@+id/BtnVolver3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="volver"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/BtnEliminar2"
+        app:layout_constraintTop_toBottomOf="@+id/BtnEliminar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
