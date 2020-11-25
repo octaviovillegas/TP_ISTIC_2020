@@ -47,10 +47,7 @@ class AltaServicios : AppCompatActivity() {
         BtnItem.setOnClickListener {
             val admin = AdminSQLiteOpenHelper(this, "servicios", null, 1)
             val bd = admin.writableDatabase
-            val fila = bd.rawQuery(
-                "select nombre,auto from servicios where item=${etItem.text.toString()}",
-                null
-            )
+            val fila = bd.rawQuery("select nombre,auto from servicios where item=${etItem.text.toString()}", null)
             if (fila.moveToFirst()) {
                 etNombre.setText(fila.getString(0))
                 etAuto.setText(fila.getString(1))
