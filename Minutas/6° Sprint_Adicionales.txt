@@ -1,0 +1,4 @@
+6° Sprint Adicionales 25 de Noviembre
+1- Icono personalizado.
+2- Splash Screen
+3- Boton de ayuda con Show Alert de informacion

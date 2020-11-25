@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context=".P4B0N">
+
+        <ImageButton
+            android:id="@+id/IbtnFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_facebook"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnLinkedin"
+            app:layout_constraintStart_toEndOf="@+id/IbtnGit"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageButton
+            android:id="@+id/IbtnLinkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_linkedin"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnYoutube"
+            app:layout_constraintStart_toEndOf="@+id/IbtnFacebook"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/IbtnYoutube"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_youtube"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnGmail"
+            app:layout_constraintStart_toEndOf="@+id/IbtnLinkedin"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/IbtnGmail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_shortcut_gmail"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IbtnYoutube"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/IbtnGit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_github"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnFacebook"
+            app:layout_constraintStart_toEndOf="@+id/IbtnInstagram"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/IbtnInstagram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_instagram"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnGit"
+            app:layout_constraintStart_toEndOf="@+id/IbtnTwitter"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/IbtnTwitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_shortcut_twitter"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/IbtnInstagram"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/alex_brush"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImgMia" />
+
+        <ImageView
+            android:id="@+id/ImgMia"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/mia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="CONTINUAR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IbtnFacebook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
