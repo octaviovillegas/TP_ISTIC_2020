@@ -43,6 +43,19 @@ class PreApp : AppCompatActivity() {
         Salir.setOnClickListener{
             salir()
         }
+
+        val btnConexion = findViewById<Button>(R.id.btnConexion)
+        btnConexion.setOnClickListener{
+            if (ControlDeConexion.hayConexion(this))
+            {
+                Toast.makeText(this,"Hay Conexión",Toast.LENGTH_SHORT).show()
+
+            }else
+            {
+                Toast.makeText(this,"Sin Conexión",Toast.LENGTH_SHORT).show()
+            }
+        }
+
     }
 
     //Funcion para salir de la app

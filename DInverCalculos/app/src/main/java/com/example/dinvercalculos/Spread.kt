@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_spread.*
+import java.io.IOException
 
 class Spread : AppCompatActivity() {
 
@@ -21,25 +22,39 @@ class Spread : AppCompatActivity() {
         val btnCalcSpread = findViewById<Button>(R.id.btnCalcSpread)
 
         btnCalcSpread.setOnClickListener {
+            try {
             calcularSpreadPorc()
             calcularSpreadNum()
+            }catch (e: IOException) {
+                claseFunciones.ttoas("Revise los campos",this)
+            }
         }
 
     }
 
     fun calcularSpreadPorc()
     {
-        valorCompra = txtValorCompra.text.toString().toDouble()
-        valorVenta = txtValorVenta.text.toString().toDouble()
+        try {
+            valorCompra = txtValorCompra.text.toString().toDouble()
+            valorVenta = txtValorVenta.text.toString().toDouble()
 
-        resultadoSpreadPor = Math.round((((valorCompra - valorVenta) / valorVenta) * 100) * 100.0) / 100.0
+            resultadoSpreadPor = Math.round((((valorCompra - valorVenta) / valorVenta) * 100) * 100.0) / 100.0
 
-        txtSpreadPorc.text = resultadoSpreadPor.toString() + "%"
+            txtSpreadPorc.text = resultadoSpreadPor.toString() + "%"
+
+        }catch (e: IOException) {
+            claseFunciones.ttoas("Revise los campos",this)
+        }
+
     }
 
     fun calcularSpreadNum()
     {
-        resultadoSpreadPor = (txtValorCompra.text.toString().toDouble() - txtValorVenta.text.toString().toDouble())
-        txtSpreadNum.text =  "$" + resultadoSpreadPor.toString()
+        try {
+            resultadoSpreadPor = (txtValorCompra.text.toString().toDouble() - txtValorVenta.text.toString().toDouble())
+            txtSpreadNum.text =  "$" + resultadoSpreadPor.toString()
+        }catch (e: IOException) {
+            claseFunciones.ttoas("Revise los campos",this)
+        }
     }
 }
