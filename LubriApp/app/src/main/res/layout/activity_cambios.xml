@@ -11,10 +11,12 @@
         android:id="@+id/BtnProxServices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="50dp"
-        android:text="Ver los próximos servicios"
-        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        android:text="Ver los servicios hechos"
+        app:layout_constraintBottom_toTopOf="@+id/BtnComandos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,22 +32,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnProxServices" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="352dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@android:color/background_light"
-        android:text="Nota: para ver, agendar un turno, dar de baja un turno o buscarlo, usamos el calendario de gmail"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/BtnProxServices"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/BtnProductos"
