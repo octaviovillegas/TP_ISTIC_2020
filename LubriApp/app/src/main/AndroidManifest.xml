@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaTurnos"></activity>
+        <activity android:name=".AltaServiciosPrueba"></activity>
+        <activity android:name=".ListaTurnos" />
         <activity android:name=".BajaServicio" />
         <activity android:name=".AltaServicios" />
         <activity android:name=".RegistroExitoso" />

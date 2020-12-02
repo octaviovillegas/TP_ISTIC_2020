@@ -10,10 +10,11 @@ class bdd(context: Context, name: String, factory: SQLiteDatabase.CursorFactory?
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL("create table servicios(item text, nombre text, fecha text, hora text, auto text, servicio text, celular real)")
 
-
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
 
     }
+
+
 }

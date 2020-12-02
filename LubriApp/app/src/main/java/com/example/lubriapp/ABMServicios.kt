@@ -5,6 +5,8 @@ import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.util.Log.d
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -26,8 +28,12 @@ class ABMServicios : AppCompatActivity() {
 
 
         BtnAlta.setOnClickListener {
-            val intent4 = Intent(this, AltaServicios::class.java)
+            val intent4 = Intent(this, AltaServiciosPrueba::class.java)
+            d("ERROR 18 ", "ERROR 18")
+
             startActivity(intent4)
+            d("ERROR 7 ", "ERROR 7")
+
         }
 
         BtnModificar.setOnClickListener {
