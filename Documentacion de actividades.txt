@@ -38,3 +38,14 @@ También puede buscar por ítem de servicio, la búsqueda devuelve al nombre y auto
 12) Actividad ListaTurnos: recibe al empleado que le envió ABMServicios. Aqúi el empleado ve la lista de los próximos servicios a realizar.
  
 
+
+
+-----------------------
+
+MODIFICACIONES:
+
+02/12
+A) Logré conectar el android studio a un celular para hacer el log, y los logs en la activity ALtaServicios no aparecen en logcat.
+B) Creé un activity llamado ALtaServicioPrueba para ver si el error estaba en el botón de ABMServicios y no, no estaba ahí el error.
+C)Crré una nueva base de datos en la actividad MSQLiteOpenHelper y cuando la agregué al kt de AltaServicioPrueba, ahí pinchó todo
+
