@@ -4,33 +4,42 @@ Actividades que tendrá la aplicación:
 
 1) Actividad menu:
 Su funcionalidad es mostrar los botones para logearse como cliente o como empleado:
-Los botones son dos: Cliente (va a la actividad Cliente , que tiene los servicios que hace el taller en un botón  y los productos disponibles para que el cliente compre en el botón Nuestros productos.
+Los botones son dos: Cliente (va a la actividad Cliente , que tiene los servicios que hace el taller en un botón  y los productos disponibles para que el cliente
+ compre en el botón Nuestros productos.
 Envía datos a la actividdad Cliente o Login.
 
 
 2) Actividad Clientes : Su función es la de dirigir al cliente a las act. Productos o act. pedir un Turno según el botón que apriete.
 Recibe datos de la act. CLiente
 
-3) Actividad Productos: recibe a los clientes que le envía la act. Clientes y muestra el stock de cada producto a la venta.Muestra los productos en un listView cargado previamente,
+3) Actividad Productos: recibe a los clientes que le envía la act. Clientes y muestra el stock de cada producto a la venta.Muestra los productos en un listView
+ cargado previamente,
 se puede acceder al detalle de un producto, haciendo clic sobre el
 
 4) Actividad PedirUn Turno: recibe al cliente que quiere pedir un turno. El cliente ingresa sus datos y 
-haciendo click en el boton "Preguntar via gmail" envia sus datos por gmail al correo del taller. Después puede volver a la actividad Clientes aprentando en el boton "volver
+haciendo click en el boton "Preguntar via gmail" envia sus datos por gmail al correo del taller. Después puede volver a la actividad Clientes aprentando en el boton 
+"volver
 
-5) Actividad Login: El empleado puede ingresar, cargando su gmail y su clave. En caso de tener un usuario creado, tiene un boton para ir a registrarse.En caso de ya tener al usuario creado, carga sus gmail y clave, aquí la app comprueba que sean los correctos, e ingresa a la Actividad Cambios.
+5) Actividad Login: El empleado puede ingresar, cargando su gmail y su clave. En caso de tener un usuario creado, tiene un boton para ir a registrarse.En caso 
+de ya tener al usuario creado, carga sus gmail y clave, aquí la app comprueba que sean los correctos, e ingresa a la Actividad Cambios.
 
 
-6) Actividad Registro: Recibe al empleado que le envía Actividad Login. Aquí el empleado crea su usuario cargando: nombre, apellido, gmail y clave. Unavez cargados estos datos aprieta en el boton registrarse, que lo lleva a la activdad RegistroExitoso.
+6) Actividad Registro: Recibe al empleado que le envía Actividad Login. Aquí el empleado crea su usuario cargando: nombre, apellido, gmail y clave. Unavez cargados 
+estos datos aprieta en el boton registrarse, que lo lleva a la activdad RegistroExitoso.
 
 7) Actividad REgistroExitoso, recibe al empleado y le muestra que se cargó correctamente. Muestra el boton de Ingresar, que lo llevará a la actividad Login.
 
 
-8) Actividad Cambios: recibe a los empleados ya logueados y muestra botones para hacer el ABM de un próximo servicio, ver los servicios hechos o ver la lista de productos en stock.
+8) Actividad Cambios: recibe a los empleados ya logueados y muestra botones para hacer el ABM de un próximo servicio, ver los servicios hechos o ver la lista de
+ productos en stock.
 
-9) Actividad ABMServicios: Recibe al empleado que le envió ActividaCambios. Tiene los siguientes botones: agregar un nuevo turno/servicio, modificar un servicio próximo, eliminar un servicio próximo y ver lista de turnos próximos. El primer boton lo llevará a la Actividad AltaServicios, el segundo boton lo llevará a la Actividad AltaServicios,
+9) Actividad ABMServicios: Recibe al empleado que le envió ActividaCambios. Tiene los siguientes botones: agregar un nuevo turno/servicio, modificar un
+ servicio próximo, eliminar un servicio próximo y ver lista de turnos próximos. El primer boton lo llevará a la Actividad AltaServicios, el segundo boton 
+lo llevará a la Actividad AltaServicios,
 el tercer boton lo llevará a la Activad BajaServicio y el cuarto a la Actividad ListaTurnos.
 
-10) Actividad AltaServicios: recibe al empleado que le envió ABMServicios. Aquí el empleado puede cargar un próximo servicio nuevo, con los datos que recibió por gmail del cliente.
+10) Actividad AltaServicios: recibe al empleado que le envió ABMServicios. Aquí el empleado puede cargar un próximo servicio nuevo, con los datos que 
+recibió por gmail del cliente.
 También puede buscar por ítem de servicio, la búsqueda devuelve al nombre y auto que estén registrados con el ítem que ingresó.
 
 11) Actividad BajaServicio: recibe al empleado que le envió ABMServicios. Aquí el empleado puede eleiminar un servicio cargando el ítem del mismo.
