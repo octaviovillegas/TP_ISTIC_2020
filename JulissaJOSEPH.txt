@@ -1,0 +1,28 @@
+JulissaJOSEPH
+
+1) PULRestaurante
+2) Registrar los Usuarios
+3) Si, Usuario
+4) Si, Base De Datos
+
+
+#2
+
+1)No, Iniciar Session o Registrar
+2)si
+3)No recibe Datos
+
+
+#3
+
+1) Detalle de los platos
+2) Muestra los detalles de cada Platos
+3) Enviar los datos en el BD
+
+
+
+#4
+
+1) Pedido
+2) ............
+3) 
